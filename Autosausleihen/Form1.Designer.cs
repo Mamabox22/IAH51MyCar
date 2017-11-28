@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.TBSucheName = new System.Windows.Forms.TextBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.Name = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TBSucheModell = new System.Windows.Forms.TextBox();
             this.Hersteller = new System.Windows.Forms.Label();
@@ -81,14 +81,14 @@
             this.TBSucheName.TabIndex = 2;
             this.TBSucheName.TextChanged += new System.EventHandler(this.TBSucheName_TextChanged);
             // 
-            // Name
+            // NameLabel
             // 
-            this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(201, 148);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(35, 13);
-            this.Name.TabIndex = 6;
-            this.Name.Text = "Name";
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Location = new System.Drawing.Point(201, 148);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(35, 13);
+            this.NameLabel.TabIndex = 6;
+            this.NameLabel.Text = "Name";
             // 
             // label1
             // 
@@ -479,7 +479,7 @@
             this.Controls.Add(this.TBSucheHersteller);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TBSucheModell);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.TBSucheName);
             this.Name = "Form1";
             this.Text = "Autos leihen ";
@@ -494,7 +494,7 @@
 
         private System.Windows.Forms.TextBox TBSucheName;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TBSucheModell;
         private System.Windows.Forms.Label Hersteller;
