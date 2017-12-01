@@ -11,13 +11,15 @@ using MySql.Data.MySqlClient;
 
 namespace Autosausleihen
 {
-    public partial class Form1 : Form
+    public partial class AutoAnzeige : Form
     {
 
         MySQL mysql = new MySQL();
-        public Form1()
+        
+        public AutoAnzeige()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -56,14 +58,5 @@ namespace Autosausleihen
             //   dateTimePicker1.CustomFormat = "MMMM dd, yyyy - dddd";
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

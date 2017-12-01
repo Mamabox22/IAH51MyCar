@@ -1,6 +1,6 @@
 ﻿namespace Autosausleihen
 {
-    partial class Form1
+    partial class AutoAnzeige
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -189,7 +189,6 @@
             this.listView1.Size = new System.Drawing.Size(121, 319);
             this.listView1.TabIndex = 97;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -217,7 +216,6 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 79);
             this.checkedListBox1.TabIndex = 99;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -440,7 +438,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 417);
+            this.ClientSize = new System.Drawing.Size(927, 483);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.BHinzufügen);
             this.Controls.Add(this.checkBox8);
