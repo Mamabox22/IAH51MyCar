@@ -55,6 +55,11 @@ namespace Autosausleihen
             AGBs = true;
         }
 
+        private void Anmeldung_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
         // Fehler! Wenn man die Checkbox anklickt und dann wieder aus ist der bool noch gesetzt
     }

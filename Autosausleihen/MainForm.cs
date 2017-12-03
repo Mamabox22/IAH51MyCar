@@ -21,6 +21,7 @@ namespace Autosausleihen
         {
             Anmeldung login = new Anmeldung();
             login.Show();
+            Hide();
         }
 
         private void Anmeldung_Load(object sender, EventArgs e)
@@ -30,7 +31,9 @@ namespace Autosausleihen
 
         private void BTLogIN_Click(object sender, EventArgs e)
         {
-
+            LogIn login = new LogIn();
+            login.Show();
+            Hide();
         }
     }
 }

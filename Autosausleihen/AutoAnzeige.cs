@@ -45,6 +45,7 @@ namespace Autosausleihen
         private void BHinzufügen_Click(object sender, EventArgs e)
         {
             mysql.Insert(TBSucheHersteller.Text, TBSucheName.Text, TBSucheModell.Text, dateTimePicker1.Value.Date);
+            
                 
             ////using (var myCommand = new MySqlCommand("INSERT INTO ",mysql))
             ////{
@@ -58,5 +59,25 @@ namespace Autosausleihen
             //   dateTimePicker1.CustomFormat = "MMMM dd, yyyy - dddd";
         }
 
+        private void BTSuche_Click(object sender, EventArgs e)
+        {
+            //TBSucheHersteller.Text = mysql.GetAutodaten(Hersteller);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void BTMieten_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
