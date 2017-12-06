@@ -10,39 +10,99 @@ namespace Autosausleihen
 {
     class MySQL
     {
-        private string connectionString = @"host=localhost;user=root;database=autohaus"; //Connectionstring zur SQLDatenbank
+        public string ConnectionString => @"host=localhost;user=root;database=autohaus"; //Connectionstring zur SQLDatenbank
 
-        internal void Insert(string Hersteller, string Modell, string Name,DateTime Baujahr)
+        internal void Insert(string Hersteller, string Modell, string Name, DateTime Baujahr)
         {
-                // create SqlConnection object
-                using (MySqlConnection con = new MySqlConnection(connectionString))
+            // create SqlConnection object
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+                try
                 {
-                    try
-                    {
-                        // open connection to database
-                        con.Open();
-                        MessageBox.Show("Connected");
-                        MySqlCommand com = new MySqlCommand("insert into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '"+ Baujahr + "')", con);
-                        MessageBox.Show("User wurde erstellt");
+                    // open connection to database
+                    con.Open();
+                    MessageBox.Show("Connected");
+                    MySqlCommand com = new MySqlCommand("insert into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MessageBox.Show("User wurde erstellt");
                     // INTERACTION WITH DATABASE COMES HERE
 
-                        com.ExecuteNonQuery();
-                
+                    com.ExecuteNonQuery();
+
                 }
-                    catch (Exception e)
-                    {
-                        throw e;
-                    }
-                    finally
-                    {
-                        // close connection to database
-                        con.Close();
-                    }
+                catch (Exception e)
+                {
+                    throw e;
                 }
-            
+                finally
+                {
+                    // close connection to database
+                    con.Close();
+                }
+            }
+
 
         }
 
+        internal void Update(string Hersteller, string Modell, string Name, DateTime Baujahr)
+        {
+            // create SqlConnection object
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+                try
+                {
+                    // open connection to database
+                    con.Open();
+                    MessageBox.Show("Connected");
+                    MySqlCommand com = new MySqlCommand("Update into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MessageBox.Show("User wurde erstellt");
+                    // INTERACTION WITH DATABASE COMES HERE
 
+                    com.ExecuteNonQuery();
+
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+                finally
+                {
+                    // close connection to database
+                    con.Close();
+                }
+            }
+
+
+        }
+
+        internal void Delete(string Hersteller, string Modell, string Name, DateTime Baujahr)
+        {
+            // create SqlConnection object
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+                try
+                {
+                    // open connection to database
+                    con.Open();
+                    MessageBox.Show("Connected");
+                    MySqlCommand com = new MySqlCommand("Delete into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MessageBox.Show("User wurde erstellt");
+                    // INTERACTION WITH DATABASE COMES HERE
+
+                    com.ExecuteNonQuery();
+
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+                finally
+                {
+                    // close connection to database
+                    con.Close();
+                }
+            }
+
+
+        }
     }
 }
