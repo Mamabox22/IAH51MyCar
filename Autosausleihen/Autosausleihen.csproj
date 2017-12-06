@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutosHinzufügen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutosHinzufügen.Designer.cs">
+      <DependentUpon>AutosHinzufügen.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,12 +82,9 @@
     <Compile Include="Passwort Sicherheit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Test2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Test2.Designer.cs">
-      <DependentUpon>Test2.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="AutosHinzufügen.resx">
+      <DependentUpon>AutosHinzufügen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,9 +106,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Test2.resx">
-      <DependentUpon>Test2.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

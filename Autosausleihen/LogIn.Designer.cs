@@ -81,7 +81,7 @@
             this.BTLEinlogen.Name = "BTLEinlogen";
             this.BTLEinlogen.Size = new System.Drawing.Size(75, 23);
             this.BTLEinlogen.TabIndex = 5;
-            this.BTLEinlogen.Text = "Einlogen";
+            this.BTLEinlogen.Text = "Einloggen";
             this.BTLEinlogen.UseVisualStyleBackColor = true;
             this.BTLEinlogen.Click += new System.EventHandler(this.BTLEinlogen_Click);
             // 

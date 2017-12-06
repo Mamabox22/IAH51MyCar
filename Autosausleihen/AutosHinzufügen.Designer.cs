@@ -1,6 +1,6 @@
 ﻿namespace Autosausleihen
 {
-    partial class Test2
+    partial class AutosHinzufügen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lvAutos = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // TestForm
+            // lvAutos
+            // 
+            this.lvAutos.FormattingEnabled = true;
+            this.lvAutos.Location = new System.Drawing.Point(24, 64);
+            this.lvAutos.Name = "lvAutos";
+            this.lvAutos.Size = new System.Drawing.Size(195, 394);
+            this.lvAutos.TabIndex = 0;
+            // 
+            // AutosHinzufügen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "TestForm";
-            this.Text = "TestForm";
-            this.Load += new System.EventHandler(this.TestForm_Load);
+            this.ClientSize = new System.Drawing.Size(704, 483);
+            this.Controls.Add(this.lvAutos);
+            this.Name = "AutosHinzufügen";
+            this.Text = "AutosHinzufügen";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lvAutos;
     }
 }
