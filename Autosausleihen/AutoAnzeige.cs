@@ -19,6 +19,27 @@ namespace Autosausleihen
         public AutoAnzeige()
         {
             InitializeComponent();
+            InitializeAutoListbox();
+        }
+
+        private void InitializeAutoListbox()
+        {
+            using (var con = new MySqlConnection(mysql.ConnectionString))
+            {
+                using (var dataAdapter = new MySqlDataAdapter("select name, modell,hersteller from autos", con))
+                {
+                    var autoTable = new DataTable();
+                    dataAdapter.Fill(autoTable);
+                    foreach (DataRow row in autoTable.Rows)
+                    {
+                        var listviewItem = new ListViewItem(row["hersteller"] as string);
+                        listviewItem.SubItems.Add(row["modell"] as string);
+                        listviewItem.SubItems.Add(row["name"] as string);
+
+                        lvAutos.Items.Add(listviewItem);
+                    }
+                }
+            }
 
         }
 
@@ -44,7 +65,7 @@ namespace Autosausleihen
 
         private void BHinzufügen_Click(object sender, EventArgs e)
         {
-            mysql.Insert(TBSucheHersteller.Text, TBSucheName.Text, TBSucheModell.Text, dateTimePicker1.Value.Date);
+            //mysql.Insert(TBSucheHersteller.Text, TBSucheName.Text, TBSucheModell.Text);
             
                 
             ////using (var myCommand = new MySqlCommand("INSERT INTO ",mysql))
@@ -78,6 +99,12 @@ namespace Autosausleihen
         private void BTMieten_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lvAutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(lvAutos.FocusedItem != null)
+            TBAModell.Text = lvAutos.FocusedItem.Text;   
         }
     }
 }

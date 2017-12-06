@@ -10,12 +10,12 @@ namespace Autosausleihen
 {
     class MySQL
     {
-        private string connectionString = @"host=localhost;user=root;database=autohaus"; //Connectionstring zur SQLDatenbank
+        public string ConnectionString => @"host=localhost;user=root;database=autohaus"; //Connectionstring zur SQLDatenbank
 
         internal void Insert(string Hersteller, string Modell, string Name, DateTime Baujahr)
         {
             // create SqlConnection object
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
             {
                 try
                 {
@@ -42,90 +42,67 @@ namespace Autosausleihen
 
 
         }
-        
-        /*
-        string GetKundendaten()
+
+        internal void Update(string Hersteller, string Modell, string Name, DateTime Baujahr)
         {
-
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            // create SqlConnection object
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
             {
-                con.Open();
-
-                using (MySqlCommand command = con.CreateCommand())
+                try
                 {
-                    command.CommandText = "Select * FROM autohaus.Kunde";
+                    // open connection to database
+                    con.Open();
+                    MessageBox.Show("Connected");
+                    MySqlCommand com = new MySqlCommand("Update into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MessageBox.Show("User wurde erstellt");
+                    // INTERACTION WITH DATABASE COMES HERE
 
-                    using (MySqlDataReader myReader = command.ExecuteReader())
-                    {
-                        try
-                        {
-                            StringBuilder sb = new StringBuilder();
+                    com.ExecuteNonQuery();
 
-                            while (myReader.Read())
-                            {
-                                if (sb.Length > 0)
-                                    sb.Append(Environment.NewLine);
-
-                                for (int i = 0; i < myReader.FieldCount; i++)
-                                    sb.AppendFormat("{0}    ", myReader[i]);
-                            }
-
-                            return sb.ToString();
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
-                    }
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+                finally
+                {
+                    // close connection to database
+                    con.Close();
                 }
             }
-
-            return string.Empty;
 
 
         }
 
-        internal string GetAutodaten()
+        internal void Delete(string Hersteller, string Modell, string Name, DateTime Baujahr)
         {
-
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            // create SqlConnection object
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
             {
-                con.Open();
-
-                using (MySqlCommand command = con.CreateCommand())
+                try
                 {
-                    command.CommandText = "Select * FROM autohaus.Autos";
+                    // open connection to database
+                    con.Open();
+                    MessageBox.Show("Connected");
+                    MySqlCommand com = new MySqlCommand("Delete into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MessageBox.Show("User wurde erstellt");
+                    // INTERACTION WITH DATABASE COMES HERE
 
-                    using (MySqlDataReader myReader = command.ExecuteReader())
-                    {
-                        try
-                        {
-                            StringBuilder sb = new StringBuilder();
+                    com.ExecuteNonQuery();
 
-                            while (myReader.Read())
-                            {
-                                if (sb.Length > 0)
-                                    sb.Append(Environment.NewLine);
-
-                                for (int i = 0; i < myReader.FieldCount; i++)
-                                    sb.AppendFormat("{0}    ", myReader[i]);
-                            }
-
-                            return sb.ToString();
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
-                    }
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+                finally
+                {
+                    // close connection to database
+                    con.Close();
                 }
             }
 
-            return string.Empty;
-            
 
         }
-
-        */
     }
 }
