@@ -24,30 +24,35 @@ namespace Autosausleihen
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            // Noch Pflichtfeld abgrage nötig
-            if (TBRPasswort.Text == TBRPasswortW.Text)
-            {
+            // Noch Pflichtfeld abgrage nötig#
+            // && TBREmail is null && TBRAdresse is null && TBRPasswort is null && TBRZahlung is null
 
-
-                if (AGBs == false)
+                if (TBRPasswort.Text == TBRPasswortW.Text)
                 {
-                    MessageBox.Show("Du musst die AGB's bestätigen");
+
+
+                    if (AGBs == false)
+                    {
+                        MessageBox.Show("Du musst die AGB's bestätigen");
+                    }
+                    else
+                    {
+                        // mysql.Insert(TBRName.Text, TBRVorname.Text, TBRAdresse.Text, TBROrt.Text, TBRPostleitzahl.Text, TBREmail, TBRTelefon.Text,TBRPasswort.Text,TBRPasswortW.Text);
+                        AutoAnzeige Auswahl = new AutoAnzeige();
+                        Auswahl.Show();
+                        Close();
+                    }
+
                 }
                 else
                 {
-                    // mysql.Insert(TBRName.Text, TBRVorname.Text, TBRAdresse.Text, TBROrt.Text, TBRPostleitzahl.Text, TBREmail, TBRTelefon.Text);
-                    MessageBox.Show("Hat geklappt!");
-                    AutoAnzeige Auswahl = new AutoAnzeige();
-                    Auswahl.Show();
-                    Close();
+                    MessageBox.Show("Passwort muss gleich sein!");
                 }
-
-            }
-            else
-            {
-                MessageBox.Show("Passwort muss gleich sein!");
-            }
-            
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Alle Pflichtfelder müssen ausgefüllt werden!");
+            //}
         }
 
         private void CBAGBs_CheckedChanged(object sender, EventArgs e)

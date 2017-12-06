@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anmeldung));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TBRInsert = new System.Windows.Forms.Button();
@@ -50,12 +51,16 @@
             this.TBRPasswort = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.PBWerbung = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PBWerbung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(115, 61);
+            this.label1.Location = new System.Drawing.Point(299, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 0;
@@ -64,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(115, 122);
+            this.label2.Location = new System.Drawing.Point(299, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 1;
@@ -72,7 +77,7 @@
             // 
             // TBRInsert
             // 
-            this.TBRInsert.Location = new System.Drawing.Point(118, 337);
+            this.TBRInsert.Location = new System.Drawing.Point(421, 405);
             this.TBRInsert.Name = "TBRInsert";
             this.TBRInsert.Size = new System.Drawing.Size(75, 23);
             this.TBRInsert.TabIndex = 2;
@@ -83,7 +88,7 @@
             // CBAGBs
             // 
             this.CBAGBs.AutoSize = true;
-            this.CBAGBs.Location = new System.Drawing.Point(118, 301);
+            this.CBAGBs.Location = new System.Drawing.Point(322, 357);
             this.CBAGBs.Name = "CBAGBs";
             this.CBAGBs.Size = new System.Drawing.Size(281, 17);
             this.CBAGBs.TabIndex = 4;
@@ -93,28 +98,28 @@
             // 
             // TBRName
             // 
-            this.TBRName.Location = new System.Drawing.Point(118, 77);
+            this.TBRName.Location = new System.Drawing.Point(302, 70);
             this.TBRName.Name = "TBRName";
             this.TBRName.Size = new System.Drawing.Size(100, 20);
             this.TBRName.TabIndex = 1;
             // 
             // TBRVorname
             // 
-            this.TBRVorname.Location = new System.Drawing.Point(118, 138);
+            this.TBRVorname.Location = new System.Drawing.Point(302, 124);
             this.TBRVorname.Name = "TBRVorname";
             this.TBRVorname.Size = new System.Drawing.Size(100, 20);
             this.TBRVorname.TabIndex = 6;
             // 
             // TBRTelefon
             // 
-            this.TBRTelefon.Location = new System.Drawing.Point(118, 249);
+            this.TBRTelefon.Location = new System.Drawing.Point(522, 294);
             this.TBRTelefon.Name = "TBRTelefon";
             this.TBRTelefon.Size = new System.Drawing.Size(100, 20);
             this.TBRTelefon.TabIndex = 10;
             // 
             // TBREmail
             // 
-            this.TBREmail.Location = new System.Drawing.Point(118, 188);
+            this.TBREmail.Location = new System.Drawing.Point(302, 181);
             this.TBREmail.Name = "TBREmail";
             this.TBREmail.Size = new System.Drawing.Size(100, 20);
             this.TBREmail.TabIndex = 9;
@@ -122,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 233);
+            this.label3.Location = new System.Drawing.Point(519, 278);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 8;
@@ -131,7 +136,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(115, 172);
+            this.label4.Location = new System.Drawing.Point(299, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 7;
@@ -139,14 +144,14 @@
             // 
             // TBRZahlung
             // 
-            this.TBRZahlung.Location = new System.Drawing.Point(299, 249);
+            this.TBRZahlung.Location = new System.Drawing.Point(522, 236);
             this.TBRZahlung.Name = "TBRZahlung";
             this.TBRZahlung.Size = new System.Drawing.Size(100, 20);
             this.TBRZahlung.TabIndex = 18;
             // 
             // TBROrt
             // 
-            this.TBROrt.Location = new System.Drawing.Point(299, 188);
+            this.TBROrt.Location = new System.Drawing.Point(522, 181);
             this.TBROrt.Name = "TBROrt";
             this.TBROrt.Size = new System.Drawing.Size(100, 20);
             this.TBROrt.TabIndex = 17;
@@ -154,7 +159,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(296, 233);
+            this.label5.Location = new System.Drawing.Point(519, 220);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 13);
             this.label5.TabIndex = 16;
@@ -163,7 +168,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(296, 172);
+            this.label6.Location = new System.Drawing.Point(519, 165);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 13);
             this.label6.TabIndex = 15;
@@ -171,14 +176,14 @@
             // 
             // TBRPostleitzahl
             // 
-            this.TBRPostleitzahl.Location = new System.Drawing.Point(299, 138);
+            this.TBRPostleitzahl.Location = new System.Drawing.Point(522, 124);
             this.TBRPostleitzahl.Name = "TBRPostleitzahl";
             this.TBRPostleitzahl.Size = new System.Drawing.Size(100, 20);
             this.TBRPostleitzahl.TabIndex = 14;
             // 
             // TBRAdresse
             // 
-            this.TBRAdresse.Location = new System.Drawing.Point(299, 77);
+            this.TBRAdresse.Location = new System.Drawing.Point(522, 70);
             this.TBRAdresse.Name = "TBRAdresse";
             this.TBRAdresse.Size = new System.Drawing.Size(100, 20);
             this.TBRAdresse.TabIndex = 12;
@@ -186,7 +191,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(296, 122);
+            this.label7.Location = new System.Drawing.Point(519, 108);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 13);
             this.label7.TabIndex = 13;
@@ -195,7 +200,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(296, 61);
+            this.label8.Location = new System.Drawing.Point(519, 54);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 13);
             this.label8.TabIndex = 11;
@@ -203,14 +208,14 @@
             // 
             // TBRPasswortW
             // 
-            this.TBRPasswortW.Location = new System.Drawing.Point(479, 138);
+            this.TBRPasswortW.Location = new System.Drawing.Point(302, 294);
             this.TBRPasswortW.Name = "TBRPasswortW";
             this.TBRPasswortW.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswortW.TabIndex = 22;
             // 
             // TBRPasswort
             // 
-            this.TBRPasswort.Location = new System.Drawing.Point(479, 77);
+            this.TBRPasswort.Location = new System.Drawing.Point(302, 236);
             this.TBRPasswort.Name = "TBRPasswort";
             this.TBRPasswort.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswort.TabIndex = 20;
@@ -219,7 +224,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(476, 122);
+            this.label9.Location = new System.Drawing.Point(299, 278);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(114, 13);
             this.label9.TabIndex = 21;
@@ -228,17 +233,39 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(476, 61);
+            this.label10.Location = new System.Drawing.Point(299, 220);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 13);
             this.label10.TabIndex = 19;
             this.label10.Text = "Passwort*";
+            // 
+            // PBWerbung
+            // 
+            this.PBWerbung.Image = ((System.Drawing.Image)(resources.GetObject("PBWerbung.Image")));
+            this.PBWerbung.Location = new System.Drawing.Point(686, 12);
+            this.PBWerbung.Name = "PBWerbung";
+            this.PBWerbung.Size = new System.Drawing.Size(229, 459);
+            this.PBWerbung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBWerbung.TabIndex = 23;
+            this.PBWerbung.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(229, 459);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // Anmeldung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 483);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PBWerbung);
             this.Controls.Add(this.TBRPasswortW);
             this.Controls.Add(this.TBRPasswort);
             this.Controls.Add(this.label9);
@@ -264,6 +291,8 @@
             this.Name = "Anmeldung";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Anmeldung_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PBWerbung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +322,7 @@
         private System.Windows.Forms.TextBox TBRPasswort;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox PBWerbung;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
