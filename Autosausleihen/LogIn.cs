@@ -12,15 +12,18 @@ namespace Autosausleihen
 {
     public partial class LogIn : Form
     {
-        public LogIn()
+        private MainForm form;
+
+        public LogIn(MainForm form)
         {
+            this.form = form;
             InitializeComponent();
         }
 
         private void BTLEinlogen_Click(object sender, EventArgs e)
         {
             
-            AutoAnzeige Anzeige = new AutoAnzeige();
+            AutoAnzeige Anzeige = new AutoAnzeige(form);
             Anzeige.Show();
             Close();
         }

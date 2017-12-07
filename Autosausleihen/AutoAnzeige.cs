@@ -13,13 +13,14 @@ namespace Autosausleihen
 {
     public partial class AutoAnzeige : Form
     {
-
+        MainForm form;
         MySQL mysql = new MySQL();
         
-        public AutoAnzeige()
+        public AutoAnzeige(MainForm form)
         {
             InitializeComponent();
             InitializeAutoListbox();
+            this.form = form;
         }
 
         private void InitializeAutoListbox()
@@ -105,6 +106,11 @@ namespace Autosausleihen
         {
             if(lvAutos.FocusedItem != null)
             TBAModell.Text = lvAutos.FocusedItem.Text;   
+        }
+
+        private void AutoAnzeige_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form.Close();
         }
     }
 }

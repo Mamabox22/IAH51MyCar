@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnmeldungController.cs" />
+    <Compile Include="AnmeldungModel.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>

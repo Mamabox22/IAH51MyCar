@@ -73,9 +73,9 @@
             this.ComBFarbe = new System.Windows.Forms.ComboBox();
             this.ComBBaujahr = new System.Windows.Forms.ComboBox();
             this.lvAutos = new System.Windows.Forms.ListView();
-            this.nameColum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.modelColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.herstellerColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.modelColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nameColum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -460,17 +460,17 @@
             this.lvAutos.View = System.Windows.Forms.View.Details;
             this.lvAutos.SelectedIndexChanged += new System.EventHandler(this.lvAutos_SelectedIndexChanged);
             // 
-            // nameColum
+            // herstellerColumn
             // 
-            this.nameColum.Text = "Name";
+            this.herstellerColumn.Text = "Hersteller";
             // 
             // modelColumn
             // 
             this.modelColumn.Text = "Model";
             // 
-            // herstellerColumn
+            // nameColum
             // 
-            this.herstellerColumn.Text = "Hersteller";
+            this.nameColum.Text = "Name";
             // 
             // AutoAnzeige
             // 
@@ -522,6 +522,7 @@
             this.Controls.Add(this.NameLabel);
             this.Name = "AutoAnzeige";
             this.Text = "Autos leihen ";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AutoAnzeige_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

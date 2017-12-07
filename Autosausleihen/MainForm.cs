@@ -20,6 +20,7 @@ namespace Autosausleihen
         private void BTRegistrierung_Click(object sender, EventArgs e)
         {
             Anmeldung login = new Anmeldung();
+            AnmeldungController controller = new AnmeldungController(login, this);
             login.Show();
             Hide();
         }
@@ -31,7 +32,7 @@ namespace Autosausleihen
 
         private void BTLogIN_Click(object sender, EventArgs e)
         {
-            LogIn login = new LogIn();
+            LogIn login = new LogIn(this);
             login.Show();
             Hide();
         }
