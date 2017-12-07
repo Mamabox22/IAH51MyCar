@@ -10,7 +10,7 @@ namespace Autosausleihen
 {
     class MySQL
     {
-        public string ConnectionString => @"host=localhost;user=root;database=autohaus"; //Connectionstring zur SQLDatenbank
+        public string ConnectionString => @"host=localhost;user=root;database=mycar"; //Connectionstring zur SQLDatenbank
 
         internal void Insert(string Hersteller, string Modell, string Name, DateTime Baujahr)
         {
@@ -22,7 +22,7 @@ namespace Autosausleihen
                     // open connection to database
                     con.Open();
                     MessageBox.Show("Connected");
-                    MySqlCommand com = new MySqlCommand("insert into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MySqlCommand com = new MySqlCommand("insert into auto (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
                     MessageBox.Show("User wurde erstellt");
                     // INTERACTION WITH DATABASE COMES HERE
 
@@ -53,7 +53,7 @@ namespace Autosausleihen
                     // open connection to database
                     con.Open();
                     MessageBox.Show("Connected");
-                    MySqlCommand com = new MySqlCommand("Update into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MySqlCommand com = new MySqlCommand("Update into auto (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
                     MessageBox.Show("User wurde erstellt");
                     // INTERACTION WITH DATABASE COMES HERE
 
@@ -84,7 +84,7 @@ namespace Autosausleihen
                     // open connection to database
                     con.Open();
                     MessageBox.Show("Connected");
-                    MySqlCommand com = new MySqlCommand("Delete into autos (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
+                    MySqlCommand com = new MySqlCommand("Delete into auto (Hersteller, Modell, Name, Baujahr) values ('" + Hersteller + "','" + Modell + "' ,'" + Name + "', '" + Baujahr + "' '" + Baujahr + "')", con);
                     MessageBox.Show("User wurde erstellt");
                     // INTERACTION WITH DATABASE COMES HERE
 

@@ -26,7 +26,7 @@ namespace Autosausleihen
         {
             using (var con = new MySqlConnection(mysql.ConnectionString))
             {
-                using (var dataAdapter = new MySqlDataAdapter("select name, modell,hersteller from autos", con))
+                using (var dataAdapter = new MySqlDataAdapter("select name, modell,hersteller from auto", con))
                 {
                     var autoTable = new DataTable();
                     dataAdapter.Fill(autoTable);
