@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBModell = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -50,12 +50,12 @@
             this.nameColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // textBox1
+            // TBModell
             // 
-            this.textBox1.Location = new System.Drawing.Point(247, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 1;
+            this.TBModell.Location = new System.Drawing.Point(247, 122);
+            this.TBModell.Name = "TBModell";
+            this.TBModell.Size = new System.Drawing.Size(121, 20);
+            this.TBModell.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -197,6 +197,7 @@
             this.lvAutos.TabIndex = 17;
             this.lvAutos.UseCompatibleStateImageBehavior = false;
             this.lvAutos.View = System.Windows.Forms.View.Details;
+            this.lvAutos.SelectedIndexChanged += new System.EventHandler(this.lvAutos_SelectedIndexChanged);
             // 
             // herstellerColumn
             // 
@@ -231,7 +232,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TBModell);
             this.Name = "AutosHinzufügen";
             this.Text = "AutosHinzufügen";
             this.ResumeLayout(false);
@@ -240,7 +241,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBModell;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;

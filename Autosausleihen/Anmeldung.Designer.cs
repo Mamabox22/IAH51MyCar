@@ -28,47 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LBName = new System.Windows.Forms.Label();
+            this.LBVorname = new System.Windows.Forms.Label();
             this.TBRInsert = new System.Windows.Forms.Button();
             this.CBAGBs = new System.Windows.Forms.CheckBox();
             this.TBRName = new System.Windows.Forms.TextBox();
             this.TBRVorname = new System.Windows.Forms.TextBox();
             this.TBRTelefon = new System.Windows.Forms.TextBox();
             this.TBREmail = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.LBTelefon = new System.Windows.Forms.Label();
+            this.LBEmail = new System.Windows.Forms.Label();
             this.TBRZahlung = new System.Windows.Forms.TextBox();
             this.TBROrt = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.LBZahlung = new System.Windows.Forms.Label();
+            this.LBOrt = new System.Windows.Forms.Label();
             this.TBRPostleitzahl = new System.Windows.Forms.TextBox();
             this.TBRAdresse = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.LBPostleitzahl = new System.Windows.Forms.Label();
+            this.LBAdresse = new System.Windows.Forms.Label();
             this.TBRPasswortW = new System.Windows.Forms.TextBox();
             this.TBRPasswort = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.LBPasswortW = new System.Windows.Forms.Label();
+            this.LBPasswort = new System.Windows.Forms.Label();
+            this.TBRUsername = new System.Windows.Forms.TextBox();
+            this.LBUsername = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // LBName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(115, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name*";
+            this.LBName.AutoSize = true;
+            this.LBName.Location = new System.Drawing.Point(115, 61);
+            this.LBName.Name = "LBName";
+            this.LBName.Size = new System.Drawing.Size(39, 13);
+            this.LBName.TabIndex = 0;
+            this.LBName.Text = "Name*";
             // 
-            // label2
+            // LBVorname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(115, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Vorname";
+            this.LBVorname.AutoSize = true;
+            this.LBVorname.Location = new System.Drawing.Point(115, 122);
+            this.LBVorname.Name = "LBVorname";
+            this.LBVorname.Size = new System.Drawing.Size(49, 13);
+            this.LBVorname.TabIndex = 1;
+            this.LBVorname.Text = "Vorname";
             // 
             // TBRInsert
             // 
@@ -119,23 +121,23 @@
             this.TBREmail.Size = new System.Drawing.Size(100, 20);
             this.TBREmail.TabIndex = 9;
             // 
-            // label3
+            // LBTelefon
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 233);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Telefon";
+            this.LBTelefon.AutoSize = true;
+            this.LBTelefon.Location = new System.Drawing.Point(115, 233);
+            this.LBTelefon.Name = "LBTelefon";
+            this.LBTelefon.Size = new System.Drawing.Size(43, 13);
+            this.LBTelefon.TabIndex = 8;
+            this.LBTelefon.Text = "Telefon";
             // 
-            // label4
+            // LBEmail
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(115, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Email*";
+            this.LBEmail.AutoSize = true;
+            this.LBEmail.Location = new System.Drawing.Point(115, 172);
+            this.LBEmail.Name = "LBEmail";
+            this.LBEmail.Size = new System.Drawing.Size(36, 13);
+            this.LBEmail.TabIndex = 7;
+            this.LBEmail.Text = "Email*";
             // 
             // TBRZahlung
             // 
@@ -151,23 +153,23 @@
             this.TBROrt.Size = new System.Drawing.Size(100, 20);
             this.TBROrt.TabIndex = 17;
             // 
-            // label5
+            // LBZahlung
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(296, 233);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 13);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "PseudoZahlungsbetrag*";
+            this.LBZahlung.AutoSize = true;
+            this.LBZahlung.Location = new System.Drawing.Point(296, 233);
+            this.LBZahlung.Name = "LBZahlung";
+            this.LBZahlung.Size = new System.Drawing.Size(121, 13);
+            this.LBZahlung.TabIndex = 16;
+            this.LBZahlung.Text = "PseudoZahlungsbetrag*";
             // 
-            // label6
+            // LBOrt
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(296, 172);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(21, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Ort";
+            this.LBOrt.AutoSize = true;
+            this.LBOrt.Location = new System.Drawing.Point(296, 172);
+            this.LBOrt.Name = "LBOrt";
+            this.LBOrt.Size = new System.Drawing.Size(21, 13);
+            this.LBOrt.TabIndex = 15;
+            this.LBOrt.Text = "Ort";
             // 
             // TBRPostleitzahl
             // 
@@ -183,84 +185,102 @@
             this.TBRAdresse.Size = new System.Drawing.Size(100, 20);
             this.TBRAdresse.TabIndex = 12;
             // 
-            // label7
+            // LBPostleitzahl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(296, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Postleitzahl*";
+            this.LBPostleitzahl.AutoSize = true;
+            this.LBPostleitzahl.Location = new System.Drawing.Point(296, 122);
+            this.LBPostleitzahl.Name = "LBPostleitzahl";
+            this.LBPostleitzahl.Size = new System.Drawing.Size(64, 13);
+            this.LBPostleitzahl.TabIndex = 13;
+            this.LBPostleitzahl.Text = "Postleitzahl*";
             // 
-            // label8
+            // LBAdresse
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(296, 61);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Adresse*";
+            this.LBAdresse.AutoSize = true;
+            this.LBAdresse.Location = new System.Drawing.Point(296, 61);
+            this.LBAdresse.Name = "LBAdresse";
+            this.LBAdresse.Size = new System.Drawing.Size(49, 13);
+            this.LBAdresse.TabIndex = 11;
+            this.LBAdresse.Text = "Adresse*";
             // 
             // TBRPasswortW
             // 
-            this.TBRPasswortW.Location = new System.Drawing.Point(479, 138);
+            this.TBRPasswortW.Location = new System.Drawing.Point(479, 188);
             this.TBRPasswortW.Name = "TBRPasswortW";
             this.TBRPasswortW.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswortW.TabIndex = 22;
             // 
             // TBRPasswort
             // 
-            this.TBRPasswort.Location = new System.Drawing.Point(479, 77);
+            this.TBRPasswort.Location = new System.Drawing.Point(479, 138);
             this.TBRPasswort.Name = "TBRPasswort";
             this.TBRPasswort.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswort.TabIndex = 20;
             this.TBRPasswort.UseSystemPasswordChar = true;
             // 
-            // label9
+            // LBPasswortW
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(476, 122);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 13);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Passwort wiederholen*";
+            this.LBPasswortW.AutoSize = true;
+            this.LBPasswortW.Location = new System.Drawing.Point(476, 172);
+            this.LBPasswortW.Name = "LBPasswortW";
+            this.LBPasswortW.Size = new System.Drawing.Size(114, 13);
+            this.LBPasswortW.TabIndex = 21;
+            this.LBPasswortW.Text = "Passwort wiederholen*";
             // 
-            // label10
+            // LBPasswort
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(476, 61);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Passwort*";
+            this.LBPasswort.AutoSize = true;
+            this.LBPasswort.Location = new System.Drawing.Point(476, 122);
+            this.LBPasswort.Name = "LBPasswort";
+            this.LBPasswort.Size = new System.Drawing.Size(54, 13);
+            this.LBPasswort.TabIndex = 19;
+            this.LBPasswort.Text = "Passwort*";
+            // 
+            // TBRUsername
+            // 
+            this.TBRUsername.Location = new System.Drawing.Point(479, 77);
+            this.TBRUsername.Name = "TBRUsername";
+            this.TBRUsername.Size = new System.Drawing.Size(100, 20);
+            this.TBRUsername.TabIndex = 23;
+            // 
+            // LBUsername
+            // 
+            this.LBUsername.AutoSize = true;
+            this.LBUsername.Location = new System.Drawing.Point(476, 61);
+            this.LBUsername.Name = "LBUsername";
+            this.LBUsername.Size = new System.Drawing.Size(55, 13);
+            this.LBUsername.TabIndex = 24;
+            this.LBUsername.Text = "Username";
             // 
             // Anmeldung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 483);
+            this.Controls.Add(this.LBUsername);
+            this.Controls.Add(this.TBRUsername);
             this.Controls.Add(this.TBRPasswortW);
             this.Controls.Add(this.TBRPasswort);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.LBPasswortW);
+            this.Controls.Add(this.LBPasswort);
             this.Controls.Add(this.TBRZahlung);
             this.Controls.Add(this.TBROrt);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.LBZahlung);
+            this.Controls.Add(this.LBOrt);
             this.Controls.Add(this.TBRPostleitzahl);
             this.Controls.Add(this.TBRAdresse);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.LBPostleitzahl);
+            this.Controls.Add(this.LBAdresse);
             this.Controls.Add(this.TBRTelefon);
             this.Controls.Add(this.TBREmail);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.LBTelefon);
+            this.Controls.Add(this.LBEmail);
             this.Controls.Add(this.TBRVorname);
             this.Controls.Add(this.TBRName);
             this.Controls.Add(this.CBAGBs);
             this.Controls.Add(this.TBRInsert);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LBVorname);
+            this.Controls.Add(this.LBName);
             this.Name = "Anmeldung";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Anmeldung_Load);
@@ -271,27 +291,29 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LBName;
+        private System.Windows.Forms.Label LBVorname;
         private System.Windows.Forms.Button TBRInsert;
         private System.Windows.Forms.CheckBox CBAGBs;
         private System.Windows.Forms.TextBox TBRName;
         private System.Windows.Forms.TextBox TBRVorname;
         private System.Windows.Forms.TextBox TBRTelefon;
         private System.Windows.Forms.TextBox TBREmail;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LBTelefon;
+        private System.Windows.Forms.Label LBEmail;
         private System.Windows.Forms.TextBox TBRZahlung;
         private System.Windows.Forms.TextBox TBROrt;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label LBZahlung;
+        private System.Windows.Forms.Label LBOrt;
         private System.Windows.Forms.TextBox TBRPostleitzahl;
         private System.Windows.Forms.TextBox TBRAdresse;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label LBPostleitzahl;
+        private System.Windows.Forms.Label LBAdresse;
         private System.Windows.Forms.TextBox TBRPasswortW;
         private System.Windows.Forms.TextBox TBRPasswort;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label LBPasswortW;
+        private System.Windows.Forms.Label LBPasswort;
+        private System.Windows.Forms.TextBox TBRUsername;
+        private System.Windows.Forms.Label LBUsername;
     }
 }

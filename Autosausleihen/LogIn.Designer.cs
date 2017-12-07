@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LBUsername = new System.Windows.Forms.Label();
             this.TBLUsername = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.TBLPasswort = new System.Windows.Forms.TextBox();
-            this.lPasswort = new System.Windows.Forms.Label();
+            this.LBPasswort = new System.Windows.Forms.Label();
             this.BTLEinlogen = new System.Windows.Forms.Button();
             this.BTLRegistrierung = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // LBUsername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Username";
+            this.LBUsername.AutoSize = true;
+            this.LBUsername.Location = new System.Drawing.Point(50, 78);
+            this.LBUsername.Name = "LBUsername";
+            this.LBUsername.Size = new System.Drawing.Size(55, 13);
+            this.LBUsername.TabIndex = 0;
+            this.LBUsername.Text = "Username";
             // 
             // TBLUsername
             // 
@@ -66,14 +66,14 @@
             this.TBLPasswort.Size = new System.Drawing.Size(100, 20);
             this.TBLPasswort.TabIndex = 4;
             // 
-            // lPasswort
+            // LBPasswort
             // 
-            this.lPasswort.AutoSize = true;
-            this.lPasswort.Location = new System.Drawing.Point(188, 78);
-            this.lPasswort.Name = "lPasswort";
-            this.lPasswort.Size = new System.Drawing.Size(50, 13);
-            this.lPasswort.TabIndex = 3;
-            this.lPasswort.Text = "Passwort";
+            this.LBPasswort.AutoSize = true;
+            this.LBPasswort.Location = new System.Drawing.Point(188, 78);
+            this.LBPasswort.Name = "LBPasswort";
+            this.LBPasswort.Size = new System.Drawing.Size(50, 13);
+            this.LBPasswort.TabIndex = 3;
+            this.LBPasswort.Text = "Passwort";
             // 
             // BTLEinlogen
             // 
@@ -103,9 +103,9 @@
             this.Controls.Add(this.BTLRegistrierung);
             this.Controls.Add(this.BTLEinlogen);
             this.Controls.Add(this.TBLPasswort);
-            this.Controls.Add(this.lPasswort);
+            this.Controls.Add(this.LBPasswort);
             this.Controls.Add(this.TBLUsername);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LBUsername);
             this.Name = "LogIn";
             this.Text = "LogIn";
             this.ResumeLayout(false);
@@ -115,11 +115,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LBUsername;
         private System.Windows.Forms.TextBox TBLUsername;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox TBLPasswort;
-        private System.Windows.Forms.Label lPasswort;
+        private System.Windows.Forms.Label LBPasswort;
         private System.Windows.Forms.Button BTLEinlogen;
         private System.Windows.Forms.Button BTLRegistrierung;
     }

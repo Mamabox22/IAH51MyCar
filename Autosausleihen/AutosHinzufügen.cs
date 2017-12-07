@@ -40,5 +40,10 @@ namespace Autosausleihen
             }
 
         }
+
+        private void lvAutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,5 +35,12 @@ namespace Autosausleihen
             login.Show();
             Hide();
         }
+
+        private void BTHinzufügen_Click(object sender, EventArgs e)
+        {
+            AutosHinzufügen hinzufügen = new AutosHinzufügen();  
+            hinzufügen.Show();
+            Hide();
+        }
     }
 }
