@@ -52,6 +52,12 @@
     <Compile Include="Model\AnmeldungModel.cs" />
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Model\MainFormModel.cs" />
+    <Compile Include="View\AutosHinzufügen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AutosHinzufügen.Designer.cs">
+      <DependentUpon>AutosHinzufügen.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Passwort Sicherheit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\AutosHinzufügen.resx">
+      <DependentUpon>AutosHinzufügen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
