@@ -80,7 +80,6 @@
             this.TBRInsert.TabIndex = 2;
             this.TBRInsert.Text = "Registrieren";
             this.TBRInsert.UseVisualStyleBackColor = true;
-            this.TBRInsert.Click += new System.EventHandler(this.Button1_Click);
             // 
             // CBAGBs
             // 
@@ -91,7 +90,6 @@
             this.CBAGBs.TabIndex = 4;
             this.CBAGBs.Text = "Ich stimme den AGBs zu und aktzeptiere ihre Kriterien.";
             this.CBAGBs.UseVisualStyleBackColor = true;
-            this.CBAGBs.CheckedChanged += new System.EventHandler(this.CBAGBs_CheckedChanged);
             // 
             // TBRName
             // 
@@ -283,7 +281,6 @@
             this.Controls.Add(this.LBName);
             this.Name = "Anmeldung";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Anmeldung_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
