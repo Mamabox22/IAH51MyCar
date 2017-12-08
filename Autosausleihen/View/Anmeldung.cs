@@ -20,9 +20,5 @@ namespace Autosausleihen
         {
             InitializeComponent();
         }
-
-        private void Anmeldung_FormClosed(object sender, FormClosedEventArgs e)
-        {
-        }
     }
 }

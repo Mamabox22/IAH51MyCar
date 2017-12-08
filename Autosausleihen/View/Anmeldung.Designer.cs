@@ -80,7 +80,7 @@
             this.TBRInsert.Location = new System.Drawing.Point(421, 405);
             this.TBRInsert.Name = "TBRInsert";
             this.TBRInsert.Size = new System.Drawing.Size(75, 23);
-            this.TBRInsert.TabIndex = 2;
+            this.TBRInsert.TabIndex = 12;
             this.TBRInsert.Text = "Registrieren";
             this.TBRInsert.UseVisualStyleBackColor = true;
             // 
@@ -90,7 +90,7 @@
             this.CBAGBs.Location = new System.Drawing.Point(322, 357);
             this.CBAGBs.Name = "CBAGBs";
             this.CBAGBs.Size = new System.Drawing.Size(281, 17);
-            this.CBAGBs.TabIndex = 4;
+            this.CBAGBs.TabIndex = 11;
             this.CBAGBs.Text = "Ich stimme den AGBs zu und aktzeptiere ihre Kriterien.";
             this.CBAGBs.UseVisualStyleBackColor = true;
             // 
@@ -106,7 +106,7 @@
             this.TBRVorname.Location = new System.Drawing.Point(302, 124);
             this.TBRVorname.Name = "TBRVorname";
             this.TBRVorname.Size = new System.Drawing.Size(100, 20);
-            this.TBRVorname.TabIndex = 6;
+            this.TBRVorname.TabIndex = 2;
             // 
             // TBRTelefon
             // 
@@ -120,7 +120,7 @@
             this.TBREmail.Location = new System.Drawing.Point(302, 181);
             this.TBREmail.Name = "TBREmail";
             this.TBREmail.Size = new System.Drawing.Size(100, 20);
-            this.TBREmail.TabIndex = 9;
+            this.TBREmail.TabIndex = 3;
             // 
             // label3
             // 
@@ -145,14 +145,14 @@
             this.TBRZahlung.Location = new System.Drawing.Point(522, 236);
             this.TBRZahlung.Name = "TBRZahlung";
             this.TBRZahlung.Size = new System.Drawing.Size(100, 20);
-            this.TBRZahlung.TabIndex = 18;
+            this.TBRZahlung.TabIndex = 9;
             // 
             // TBROrt
             // 
             this.TBROrt.Location = new System.Drawing.Point(522, 181);
             this.TBROrt.Name = "TBROrt";
             this.TBROrt.Size = new System.Drawing.Size(100, 20);
-            this.TBROrt.TabIndex = 17;
+            this.TBROrt.TabIndex = 8;
             // 
             // label5
             // 
@@ -177,14 +177,14 @@
             this.TBRPostleitzahl.Location = new System.Drawing.Point(522, 124);
             this.TBRPostleitzahl.Name = "TBRPostleitzahl";
             this.TBRPostleitzahl.Size = new System.Drawing.Size(100, 20);
-            this.TBRPostleitzahl.TabIndex = 14;
+            this.TBRPostleitzahl.TabIndex = 7;
             // 
             // TBRAdresse
             // 
             this.TBRAdresse.Location = new System.Drawing.Point(522, 70);
             this.TBRAdresse.Name = "TBRAdresse";
             this.TBRAdresse.Size = new System.Drawing.Size(100, 20);
-            this.TBRAdresse.TabIndex = 12;
+            this.TBRAdresse.TabIndex = 6;
             // 
             // label7
             // 
@@ -209,14 +209,15 @@
             this.TBRPasswortW.Location = new System.Drawing.Point(302, 294);
             this.TBRPasswortW.Name = "TBRPasswortW";
             this.TBRPasswortW.Size = new System.Drawing.Size(100, 20);
-            this.TBRPasswortW.TabIndex = 22;
+            this.TBRPasswortW.TabIndex = 5;
+            this.TBRPasswortW.UseSystemPasswordChar = true;
             // 
             // TBRPasswort
             // 
             this.TBRPasswort.Location = new System.Drawing.Point(302, 236);
             this.TBRPasswort.Name = "TBRPasswort";
             this.TBRPasswort.Size = new System.Drawing.Size(100, 20);
-            this.TBRPasswort.TabIndex = 20;
+            this.TBRPasswort.TabIndex = 4;
             this.TBRPasswort.UseSystemPasswordChar = true;
             // 
             // label9
@@ -288,7 +289,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Anmeldung";
             this.Text = "Login";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Anmeldung_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.PBWerbung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
