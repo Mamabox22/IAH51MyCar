@@ -457,6 +457,7 @@
             this.lvAutos.TabIndex = 131;
             this.lvAutos.UseCompatibleStateImageBehavior = false;
             this.lvAutos.View = System.Windows.Forms.View.Details;
+
             // 
             // herstellerColumn
             // 
