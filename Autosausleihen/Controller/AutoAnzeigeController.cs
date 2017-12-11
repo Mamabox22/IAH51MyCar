@@ -1,49 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
-namespace Autosausleihen
+
+
+namespace Autosausleihen.Controller
 {
-    public partial class AutoAnzeige : Form
+    class AutoAnzeigeController
     {
-        MySQL mysql = new MySQL();
-        MainForm form;
-        public AutoAnzeige(MainForm form)
-        {
-            InitializeComponent();
-            InitializeAutoListbox();
-            this.form = form;
-        }
-
- 
-        private void BHinzufügen_Click(object sender, EventArgs e)
-        {
-            //mysql.Insert(TBSucheHersteller.Text, TBSucheName.Text, TBSucheModell.Text);
-            
-                
-            ////using (var myCommand = new MySqlCommand("INSERT INTO ",mysql))
-            ////{
-            ////    myCommand.ExecuteNonQuery();
-            ////}
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            //   dateTimePicker1.CustomFormat = "MMMM dd, yyyy - dddd";
-        }
-
-        private void BTSuche_Click(object sender, EventArgs e)
-        {
-            //TBSucheHersteller.Text = mysql.GetAutodaten(Hersteller);
-        }
         public void InitializeAutoListbox()
         {
             using (var con = new MySQL.MySqlConnection(mysql.ConnectionString))
@@ -64,7 +30,8 @@ namespace Autosausleihen
             }
 
         }
-
+        
+        
         public void lvAutos_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lvAutos.FocusedItem != null)
@@ -75,5 +42,7 @@ namespace Autosausleihen
         {
             form.Close();
         }
+
+
     }
 }

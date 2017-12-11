@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
-namespace AutosHinzufügen
-{
     namespace Autosausleihen
     {
         class MySQL
@@ -108,4 +106,4 @@ namespace AutosHinzufügen
             }
         }
     }
-}
+

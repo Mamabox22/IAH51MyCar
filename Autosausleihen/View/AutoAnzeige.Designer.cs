@@ -418,7 +418,6 @@
             this.BTMieten.TabIndex = 127;
             this.BTMieten.Text = "Dieses Auto mieten";
             this.BTMieten.UseVisualStyleBackColor = true;
-            this.BTMieten.Click += new System.EventHandler(this.BTMieten_Click);
             // 
             // ComBSitzplätze
             // 
@@ -458,7 +457,6 @@
             this.lvAutos.TabIndex = 131;
             this.lvAutos.UseCompatibleStateImageBehavior = false;
             this.lvAutos.View = System.Windows.Forms.View.Details;
-            this.lvAutos.SelectedIndexChanged += new System.EventHandler(this.lvAutos_SelectedIndexChanged);
             // 
             // herstellerColumn
             // 
@@ -522,8 +520,6 @@
             this.Controls.Add(this.NameLabel);
             this.Name = "AutoAnzeige";
             this.Text = "Autos leihen ";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AutoAnzeige_FormClosed);
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

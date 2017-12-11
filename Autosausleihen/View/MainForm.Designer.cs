@@ -45,7 +45,6 @@
             this.BTRegistrierung.TabIndex = 0;
             this.BTRegistrierung.Text = "Jetzt Registrieren";
             this.BTRegistrierung.UseVisualStyleBackColor = false;
-            this.BTRegistrierung.Click += new System.EventHandler(this.BTRegistrierung_Click);
             // 
             // pictureBox1
             // 
@@ -66,7 +65,6 @@
             this.BTLogIN.TabIndex = 2;
             this.BTLogIN.Text = "Einloggen";
             this.BTLogIN.UseVisualStyleBackColor = true;
-            this.BTLogIN.Click += new System.EventHandler(this.BTLogIN_Click);
             // 
             // BTHinzufügen
             // 
@@ -76,7 +74,6 @@
             this.BTHinzufügen.TabIndex = 3;
             this.BTHinzufügen.Text = "Autoshinzufügen (Test)";
             this.BTHinzufügen.UseVisualStyleBackColor = true;
-            this.BTHinzufügen.Click += new System.EventHandler(this.BTHinzufügen_Click);
             // 
             // MainForm
             // 
@@ -89,7 +86,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "MainForm";
             this.Text = "MyCar";
-            this.Load += new System.EventHandler(this.Anmeldung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

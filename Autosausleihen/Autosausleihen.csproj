@@ -49,8 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AnmeldungController.cs" />
-    <Compile Include="Model\AnmeldungModel.cs" />
+    <Compile Include="Controller\AutoAnzeigeController.cs" />
     <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Model\AnmeldungModel.cs" />
+    <Compile Include="Model\AutoAnzeigeModel.cs" />
     <Compile Include="Model\MainFormModel.cs" />
     <Compile Include="View\LogIn.cs">
       <SubType>Form</SubType>
@@ -77,7 +79,7 @@
       <DependentUpon>Anmeldung.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\MainFormController.cs" />
-    <Compile Include="MySQL.cs" />
+    <Compile Include="Controller\MySQL.cs" />
     <Compile Include="Passwort Sicherheit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

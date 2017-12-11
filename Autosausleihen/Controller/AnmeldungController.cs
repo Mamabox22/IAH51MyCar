@@ -7,11 +7,12 @@ using System.Windows.Forms;
 
 namespace Autosausleihen
 {
-    class AnmeldungController : Controller
+    class AnmeldungController : Controller.Controller
     {
         public AnmeldungController(Form view, MainForm mainForm) : base(view, new AnmeldungModel())
         {
             getControl("TBRInsert").Click += AnmeldungController_Click;
+
             ((AnmeldungModel)model).MainForm = mainForm;
             ((CheckBox)getControl("CBAGBs")).CheckedChanged += RegistrierungController_CheckedChanged;
         }
@@ -19,12 +20,12 @@ namespace Autosausleihen
         private void RegistrierungController_CheckedChanged(object sender, EventArgs e)
         {
             ((AnmeldungModel)model).AGB = true;
+            //Muss noch abgeschaltet werden bei unchecken
         }
 
         private void AnmeldungController_Click(object sender, EventArgs e)
         {
-            // Noch Pflichtfeld abgrage nötig#
-            // && TBREmail is null && TBRAdresse is null && TBRPasswort is null && TBRZahlung is null
+            // Noch Pflichtfeld abgrage nötig
             if (!(string.IsNullOrWhiteSpace(getControl("TBRPasswort").Text) || string.IsNullOrEmpty(getControl("TBRPasswort").Text) || 
                 string.IsNullOrWhiteSpace(getControl("TBRName").Text) || string.IsNullOrEmpty(getControl("TBRName").Text) || 
                 string.IsNullOrWhiteSpace(getControl("TBRAdresse").Text) || string.IsNullOrEmpty(getControl("TBRAdresse").Text) || 

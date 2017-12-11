@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Autosausleihen.Model
 {
-    class MainFormModel
+    class AutoAnzeigeModel
     {
-        public bool Test { get; set; }
+        public MainForm form { get; set; }
+
+        public MySQL mysql = new MySQL();
     }
 }

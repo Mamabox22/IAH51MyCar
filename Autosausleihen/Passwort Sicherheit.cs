@@ -23,10 +23,5 @@ namespace Autosausleihen
             }
             return builder.ToString();
         }
-
-
-
-
-
     }
 }

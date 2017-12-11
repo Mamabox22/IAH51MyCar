@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Autosausleihen
+namespace Autosausleihen.Controller
 {
     abstract class Controller
     {
@@ -26,5 +26,6 @@ namespace Autosausleihen
         {
             return view.Controls.Find(name, false).First();
         }
+
     }
 }
