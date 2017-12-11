@@ -50,9 +50,11 @@
   <ItemGroup>
     <Compile Include="Controller\AnmeldungController.cs" />
     <Compile Include="Controller\AutoAnzeigeController.cs" />
+    <Compile Include="Controller\AutoHinzufügenController.cs" />
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Model\AnmeldungModel.cs" />
     <Compile Include="Model\AutoAnzeigeModel.cs" />
+    <Compile Include="Model\AutosHinzufügenModel.cs" />
     <Compile Include="Model\MainFormModel.cs" />
     <Compile Include="Model\MySqlModel.cs" />
     <Compile Include="View\AutosHinzufügen.cs">
