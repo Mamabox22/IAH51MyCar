@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Autosausleihen.Model;
+using Autosausleihen;
 
 namespace Autosausleihen
 {
@@ -17,15 +18,12 @@ namespace Autosausleihen
 
         private void BTRegistrierung_Click(object sender, EventArgs e)
         {
-            MainForm mainform = new MainForm(this);
-            mainform.Show();
-            view.Hide();
+
+
         }
         private void BTLogIN_Click(object sender, EventArgs e)
         {
-            LogIn login = new LogIn(this);
-            login.Show();
-            this.Hide();
+
         }
     }
 }

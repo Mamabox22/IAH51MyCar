@@ -259,7 +259,6 @@
             this.BSuche.TabIndex = 11;
             this.BSuche.Text = "Filtern";
             this.BSuche.UseVisualStyleBackColor = true;
-            this.BSuche.Click += new System.EventHandler(this.BHinzufügen_Click);
             // 
             // pictureBox1
             // 

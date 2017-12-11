@@ -197,7 +197,6 @@
             this.lvAutos.TabIndex = 17;
             this.lvAutos.UseCompatibleStateImageBehavior = false;
             this.lvAutos.View = System.Windows.Forms.View.Details;
-            this.lvAutos.SelectedIndexChanged += new System.EventHandler(this.lvAutos_SelectedIndexChanged);
             // 
             // herstellerColumn
             // 

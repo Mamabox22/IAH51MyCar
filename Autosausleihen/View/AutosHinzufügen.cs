@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Autosausleihen.Model;
 
 namespace Autosausleihen
 {
@@ -22,7 +23,7 @@ namespace Autosausleihen
 
         private void InitializeAutoListbox()
         {
-            using (var con = new MySqlConnection(mysql.ConnectionString))
+            using (var con = new MySqlConnection(new MySqlModel().ConnectionString))
             {
                 using (var dataAdapter = new MySqlDataAdapter("select name, modell,hersteller from autos", con))
                 {

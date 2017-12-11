@@ -54,6 +54,7 @@
     <Compile Include="Model\AnmeldungModel.cs" />
     <Compile Include="Model\AutoAnzeigeModel.cs" />
     <Compile Include="Model\MainFormModel.cs" />
+    <Compile Include="Model\MySqlModel.cs" />
     <Compile Include="View\AutosHinzufügen.cs">
       <SubType>Form</SubType>
     </Compile>

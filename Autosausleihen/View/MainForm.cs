@@ -12,11 +12,5 @@ namespace Autosausleihen
 {
     public partial class MainForm : Form
     {
-        private MainFormController mainFormController;
-
-        public MainForm()
-        {
-            InitializeComponent();
-        }
     }
 }

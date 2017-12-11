@@ -10,9 +10,9 @@ using System.Windows.Forms;
     {
         class MySQL
         {
-            public string ConnectionString => @"host=localhost;user=root;database=mycar"; //Connectionstring zur SQLDatenbank
+          //Connectionstring zur SQLDatenbank
 
-            internal void Insert(string Hersteller, string Modell, string Name, DateTime Baujahr)
+            /*internal void Insert(string Hersteller, string Modell, string Name, DateTime Baujahr)
             {
                 // create SqlConnection object
                 using (MySqlConnection con = new MySqlConnection(ConnectionString))
@@ -104,6 +104,7 @@ using System.Windows.Forms;
 
 
             }
+            */
         }
     }
 

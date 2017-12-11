@@ -22,9 +22,8 @@ namespace Autosausleihen
 
         private void BTLEinlogen_Click(object sender, EventArgs e)
         {
-            
-            AutoAnzeige Anzeige = new AutoAnzeige(form);
-            Anzeige.Show();
+           
+            //Anzeige.Show();
             Close();
         }
 

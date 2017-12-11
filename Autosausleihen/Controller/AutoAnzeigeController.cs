@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
+using MySql.Data.MySqlClient;
+using System.Data;
+using Autosausleihen.Model;
+using System.Windows.Forms;
 
 namespace Autosausleihen.Controller
 {
-    class AutoAnzeigeController
+    public class AutoAnzeigeController
     {
         public void InitializeAutoListbox()
         {
-            using (var con = new MySQL.MySqlConnection(mysql.ConnectionString))
+            using (var con = new MySqlConnection(new MySqlModel().ConnectionString))
             {
-                using (var dataAdapter = new MySQL.MySqlDataAdapter("select name, modell,hersteller from auto", con))
+                using (var dataAdapter = new MySqlDataAdapter("select name, modell,hersteller from auto", con))
                 {
                     var autoTable = new DataTable();
                     dataAdapter.Fill(autoTable);
@@ -24,7 +26,7 @@ namespace Autosausleihen.Controller
                         listviewItem.SubItems.Add(row["modell"] as string);
                         listviewItem.SubItems.Add(row["name"] as string);
 
-                        lvAutos.Items.Add(listviewItem);
+                        //lvAutos.Items.Add(listviewItem);
                     }
                 }
             }
@@ -34,13 +36,14 @@ namespace Autosausleihen.Controller
         
         public void lvAutos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (lvAutos.FocusedItem != null)
-                TBAModell.Text = lvAutos.FocusedItem.Text;
+            //if (lvAutos.FocusedItem != null)
+            //    TBAModell.Text = lvAutos.FocusedItem.Text;
+                
         }
 
         public void AutoAnzeige_FormClosed(object sender, FormClosedEventArgs e)
         {
-            form.Close();
+            //form.Close();
         }
 
 

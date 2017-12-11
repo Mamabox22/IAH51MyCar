@@ -45,8 +45,8 @@ namespace Autosausleihen
                     else
                     {
                         // mysql.Insert(TBRName.Text, TBRVorname.Text, TBRAdresse.Text, TBROrt.Text, TBRPostleitzahl.Text, TBREmail, TBRTelefon.Text,TBRPasswort.Text,TBRPasswortW.Text);
-                        AutoAnzeige Auswahl = new AutoAnzeige(((AnmeldungModel)model).MainForm);
-                        Auswahl.Show();
+                       // AutoAnzeige Auswahl = new AutoAnzeige(((AnmeldungModel)model).MainForm);
+                       // Auswahl.Show();
                         view.Close();
                     }
 

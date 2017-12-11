@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Autosausleihen.Model
 {
-    class AutoAnzeigeModel
+    class MySqlModel
     {
-        public MainForm form { get; set; }
-
-        public MySQL mysql = new MySQL();
-        
+        public string ConnectionString = @"host=localhost;user=root;database=mycar";
     }
 }
