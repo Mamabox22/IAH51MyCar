@@ -26,7 +26,7 @@ namespace Autosausleihen
         {
             //TBLUsername.Text = Passwort;
 
-            using (var con = new MySqlConnection(new MySqlModel().ConnectionString))
+            using (var con = new MySqlConnection(MySQL.ConnectionString))
             {
                 using (var dataAdapter = new MySqlDataAdapter("select username from Kunde", con))
                 {

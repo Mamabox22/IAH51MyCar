@@ -49,7 +49,7 @@ namespace Autosausleihen
                     else
                     {
                         
-                        MySQL.InsertUser(TBRName.Text, TBRVorname.Text, TBREmail.Text, TBRTelefon.Text, TBRAdresse, TBRPostleitzahl.Text, TBROrt, TBRUsername, TBRPasswort.Text);
+                        //MySQL.InsertUser(TBRName.Text, TBRVorname.Text, TBREmail.Text, TBRTelefon.Text, TBRAdresse, TBRPostleitzahl.Text, TBROrt, TBRUsername, TBRPasswort.Text);
                         AutoAnzeige Auswahl = new AutoAnzeige();
                         Auswahl.Show();
                         

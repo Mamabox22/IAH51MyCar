@@ -93,7 +93,6 @@
             this.BTLRegistrierung.TabIndex = 6;
             this.BTLRegistrierung.Text = "Noch kein Konto ?";
             this.BTLRegistrierung.UseVisualStyleBackColor = true;
-            this.BTLRegistrierung.Click += new System.EventHandler(this.BTLRegistrierung_Click);
             // 
             // LogIn
             // 
