@@ -117,6 +117,8 @@ namespace Autosausleihen
             else
                 {
                 MessageBox.Show("Sie haben ihr Passwort nicht korrekt wiederholt eingegeben.");
+                TBRPasswort.Clear();
+                TBRPasswortW.Clear();
                 }
         }
 
