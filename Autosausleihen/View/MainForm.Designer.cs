@@ -69,11 +69,11 @@
             // 
             // BTHinzufügen
             // 
-            this.BTHinzufügen.Location = new System.Drawing.Point(639, 360);
+            this.BTHinzufügen.Location = new System.Drawing.Point(644, 360);
             this.BTHinzufügen.Name = "BTHinzufügen";
             this.BTHinzufügen.Size = new System.Drawing.Size(210, 70);
             this.BTHinzufügen.TabIndex = 3;
-            this.BTHinzufügen.Text = "Autoshinzufügen (Test)";
+            this.BTHinzufügen.Text = "Autos hinzufügen (Test)";
             this.BTHinzufügen.UseVisualStyleBackColor = true;
             // 
             // MainForm

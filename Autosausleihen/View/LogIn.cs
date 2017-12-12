@@ -50,7 +50,7 @@ namespace Autosausleihen
 
         private void BTLRegistrierung_Click(object sender, EventArgs e)
         {
-            Anmeldung anmeldung = new Anmeldung();
+            Anmeldung anmeldung = new Anmeldung();           //Aus irgendwelchen Gründen wurde die Registrierung als Anmeldung benannt
             anmeldung.Show();
             Close();
         }

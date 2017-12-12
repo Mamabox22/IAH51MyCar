@@ -296,6 +296,7 @@
             this.MaximumSize = new System.Drawing.Size(387, 490);
             this.MinimumSize = new System.Drawing.Size(387, 490);
             this.Name = "Anmeldung";
+            this.ShowIcon = false;
             this.Text = "Registrieren";
             this.ResumeLayout(false);
             this.PerformLayout();

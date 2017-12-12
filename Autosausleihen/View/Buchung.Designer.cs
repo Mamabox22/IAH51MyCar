@@ -60,7 +60,7 @@
             this.TBModell.Location = new System.Drawing.Point(136, 176);
             this.TBModell.Name = "TBModell";
             this.TBModell.Size = new System.Drawing.Size(100, 20);
-            this.TBModell.TabIndex = 1;
+            this.TBModell.TabIndex = 4;
             // 
             // TBName
             // 
@@ -74,28 +74,28 @@
             this.TBHersteller.Location = new System.Drawing.Point(12, 176);
             this.TBHersteller.Name = "TBHersteller";
             this.TBHersteller.Size = new System.Drawing.Size(100, 20);
-            this.TBHersteller.TabIndex = 3;
+            this.TBHersteller.TabIndex = 1;
             // 
             // TBBaujahr
             // 
             this.TBBaujahr.Location = new System.Drawing.Point(136, 228);
             this.TBBaujahr.Name = "TBBaujahr";
             this.TBBaujahr.Size = new System.Drawing.Size(100, 20);
-            this.TBBaujahr.TabIndex = 4;
+            this.TBBaujahr.TabIndex = 5;
             // 
             // TBPreis
             // 
             this.TBPreis.Location = new System.Drawing.Point(136, 275);
             this.TBPreis.Name = "TBPreis";
             this.TBPreis.Size = new System.Drawing.Size(100, 20);
-            this.TBPreis.TabIndex = 5;
+            this.TBPreis.TabIndex = 6;
             // 
             // TBFarbe
             // 
             this.TBFarbe.Location = new System.Drawing.Point(12, 275);
             this.TBFarbe.Name = "TBFarbe";
             this.TBFarbe.Size = new System.Drawing.Size(100, 20);
-            this.TBFarbe.TabIndex = 6;
+            this.TBFarbe.TabIndex = 3;
             // 
             // LBHersteller
             // 
@@ -154,15 +154,15 @@
             // CBZahlungsart
             // 
             this.CBZahlungsart.FormattingEnabled = true;
-            this.CBZahlungsart.Location = new System.Drawing.Point(12, 332);
+            this.CBZahlungsart.Location = new System.Drawing.Point(12, 325);
             this.CBZahlungsart.Name = "CBZahlungsart";
             this.CBZahlungsart.Size = new System.Drawing.Size(121, 21);
-            this.CBZahlungsart.TabIndex = 13;
+            this.CBZahlungsart.TabIndex = 7;
             // 
             // LBZahlungsart
             // 
             this.LBZahlungsart.AutoSize = true;
-            this.LBZahlungsart.Location = new System.Drawing.Point(41, 316);
+            this.LBZahlungsart.Location = new System.Drawing.Point(41, 309);
             this.LBZahlungsart.Name = "LBZahlungsart";
             this.LBZahlungsart.Size = new System.Drawing.Size(63, 13);
             this.LBZahlungsart.TabIndex = 14;
@@ -173,7 +173,7 @@
             this.BTNBuchen.Location = new System.Drawing.Point(162, 316);
             this.BTNBuchen.Name = "BTNBuchen";
             this.BTNBuchen.Size = new System.Drawing.Size(75, 36);
-            this.BTNBuchen.TabIndex = 15;
+            this.BTNBuchen.TabIndex = 8;
             this.BTNBuchen.Text = "Buchen";
             this.BTNBuchen.UseVisualStyleBackColor = true;
             // 
@@ -198,7 +198,12 @@
             this.Controls.Add(this.TBName);
             this.Controls.Add(this.TBModell);
             this.Controls.Add(this.pBAuto);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(265, 403);
+            this.MinimumSize = new System.Drawing.Size(265, 403);
             this.Name = "Buchung";
+            this.ShowIcon = false;
             this.Text = "Buchung";
             ((System.ComponentModel.ISupportInitialize)(this.pBAuto)).EndInit();
             this.ResumeLayout(false);

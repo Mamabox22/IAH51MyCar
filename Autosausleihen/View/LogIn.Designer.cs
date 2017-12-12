@@ -106,6 +106,7 @@
             this.Controls.Add(this.TBLUsername);
             this.Controls.Add(this.LBUsername);
             this.Name = "LogIn";
+            this.ShowIcon = false;
             this.Text = "LogIn";
             this.ResumeLayout(false);
             this.PerformLayout();
