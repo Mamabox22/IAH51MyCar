@@ -48,15 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\AnmeldungController.cs" />
-    <Compile Include="Controller\AutoAnzeigeController.cs" />
-    <Compile Include="Controller\AutoHinzufügenController.cs" />
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Model\AnmeldungModel.cs" />
+    <Compile Include="Model\AutoModel.cs" />
     <Compile Include="Model\AutoAnzeigeModel.cs" />
     <Compile Include="Model\AutosHinzufügenModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
     <Compile Include="Model\MainFormModel.cs" />
-    <Compile Include="Model\MySqlModel.cs" />
     <Compile Include="View\AutosHinzufügen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,9 +85,8 @@
     <Compile Include="View\Anmeldung.Designer.cs">
       <DependentUpon>Anmeldung.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controller\MainFormController.cs" />
     <Compile Include="Controller\MySQL.cs" />
-    <Compile Include="Passwort Sicherheit.cs" />
+    <Compile Include="Controller\Passwort Sicherheit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\AutosHinzufügen.resx">
