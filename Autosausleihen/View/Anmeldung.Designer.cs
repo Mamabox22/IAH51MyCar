@@ -98,6 +98,7 @@
             this.TBRName.Name = "TBRName";
             this.TBRName.Size = new System.Drawing.Size(100, 20);
             this.TBRName.TabIndex = 1;
+            this.TBRName.TextChanged += new System.EventHandler(this.TBRName_TextChanged);
             // 
             // TBRVorname
             // 
@@ -105,6 +106,7 @@
             this.TBRVorname.Name = "TBRVorname";
             this.TBRVorname.Size = new System.Drawing.Size(100, 20);
             this.TBRVorname.TabIndex = 2;
+            this.TBRVorname.TextChanged += new System.EventHandler(this.TBRVorname_TextChanged);
             // 
             // TBRTelefon
             // 
@@ -112,6 +114,7 @@
             this.TBRTelefon.Name = "TBRTelefon";
             this.TBRTelefon.Size = new System.Drawing.Size(100, 20);
             this.TBRTelefon.TabIndex = 4;
+            this.TBRTelefon.TextChanged += new System.EventHandler(this.TBRTelefon_TextChanged);
             // 
             // TBREmail
             // 
@@ -119,6 +122,7 @@
             this.TBREmail.Name = "TBREmail";
             this.TBREmail.Size = new System.Drawing.Size(100, 20);
             this.TBREmail.TabIndex = 3;
+            this.TBREmail.TextChanged += new System.EventHandler(this.TBREmail_TextChanged);
             // 
             // LBTelefon
             // 
@@ -144,6 +148,7 @@
             this.TBRZahlung.Name = "TBRZahlung";
             this.TBRZahlung.Size = new System.Drawing.Size(100, 20);
             this.TBRZahlung.TabIndex = 11;
+            this.TBRZahlung.TextChanged += new System.EventHandler(this.TBRZahlung_TextChanged);
             // 
             // TBROrt
             // 
@@ -151,6 +156,7 @@
             this.TBROrt.Name = "TBROrt";
             this.TBROrt.Size = new System.Drawing.Size(100, 20);
             this.TBROrt.TabIndex = 10;
+            this.TBROrt.TextChanged += new System.EventHandler(this.TBROrt_TextChanged);
             // 
             // LBZahlung
             // 
@@ -176,6 +182,7 @@
             this.TBRPostleitzahl.Name = "TBRPostleitzahl";
             this.TBRPostleitzahl.Size = new System.Drawing.Size(100, 20);
             this.TBRPostleitzahl.TabIndex = 6;
+            this.TBRPostleitzahl.TextChanged += new System.EventHandler(this.TBRPostleitzahl_TextChanged);
             // 
             // TBRAdresse
             // 
@@ -183,6 +190,7 @@
             this.TBRAdresse.Name = "TBRAdresse";
             this.TBRAdresse.Size = new System.Drawing.Size(100, 20);
             this.TBRAdresse.TabIndex = 5;
+            this.TBRAdresse.TextChanged += new System.EventHandler(this.TBRAdresse_TextChanged);
             // 
             // LBPostleitzahl
             // 
@@ -208,6 +216,7 @@
             this.TBRPasswortW.Name = "TBRPasswortW";
             this.TBRPasswortW.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswortW.TabIndex = 9;
+            this.TBRPasswortW.TextChanged += new System.EventHandler(this.TBRPasswortW_TextChanged);
             // 
             // TBRPasswort
             // 
@@ -216,6 +225,7 @@
             this.TBRPasswort.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswort.TabIndex = 8;
             this.TBRPasswort.UseSystemPasswordChar = true;
+            this.TBRPasswort.TextChanged += new System.EventHandler(this.TBRPasswort_TextChanged);
             // 
             // LBPasswortW
             // 
@@ -241,6 +251,7 @@
             this.TBRUsername.Name = "TBRUsername";
             this.TBRUsername.Size = new System.Drawing.Size(100, 20);
             this.TBRUsername.TabIndex = 7;
+            this.TBRUsername.TextChanged += new System.EventHandler(this.TBRUsername_TextChanged);
             // 
             // LBUsername
             // 
