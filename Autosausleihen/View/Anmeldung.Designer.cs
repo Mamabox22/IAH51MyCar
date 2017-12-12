@@ -91,6 +91,7 @@
             this.CBAGBs.TabIndex = 12;
             this.CBAGBs.Text = "Ich stimme den AGBs zu und aktzeptiere ihre Kriterien.";
             this.CBAGBs.UseVisualStyleBackColor = true;
+            this.CBAGBs.CheckedChanged += new System.EventHandler(this.CBAGBs_CheckedChanged);
             // 
             // TBRName
             // 

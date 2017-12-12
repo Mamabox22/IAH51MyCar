@@ -137,6 +137,11 @@ namespace Autosausleihen
             RegistrierenButtonEnableDisable();
         }
         #endregion
+
+        private void CBAGBs_CheckedChanged(object sender, EventArgs e)
+        {
+            RegistrierenButtonEnableDisable();
+        }
     }
 
 }
