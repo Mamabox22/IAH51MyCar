@@ -106,48 +106,20 @@ namespace Autosausleihen
 
         private void TBRInsert_Click(object sender, EventArgs e)
         {
-            if (!(  string.IsNullOrWhiteSpace(TBRPasswort.Text) || string.IsNullOrEmpty(TBRPasswort.Text) ||
-                    string.IsNullOrWhiteSpace(TBRName.Text) || string.IsNullOrEmpty(TBRName.Text) ||
-                    string.IsNullOrWhiteSpace(TBRAdresse.Text) || string.IsNullOrEmpty(TBRAdresse.Text) ||
-                    string.IsNullOrWhiteSpace(TBRZahlung.Text) || string.IsNullOrEmpty(TBRZahlung.Text)))
-
+            if (TBRPasswort.Text == TBRPasswortW.Text)      //Hier müssen noch die Daten in die Datenbank eingetragen werden
             {
-
-
-                if (TBRPasswort.Text == TBRPasswortW.Text)
-                {
-
-
-                    if (AGB == false)
-                    {
-                        MessageBox.Show("Du musst die AGB's bestätigen");
-                    }
-                    else
-                    {
-
-                        TBRPasswort.Text = Passwortkodiert;
-                        Passwort.EncryptMP5(Passwortkodiert);
-                        Test.Text = Passwortkodiert;
-
-                        //MySQL.InsertUser(TBRName.Text, TBRVorname.Text, TBREmail.Text, TBRTelefon.Text, TBRAdresse, TBRPostleitzahl.Text, TBROrt, TBRUsername, TBRPasswort.Text);
-                        AutoAnzeige Auswahl = new AutoAnzeige();
-                        Auswahl.Show();
-
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show("Passwort muss gleich sein!");
-                }
+                
+                //MySQL.InsertUser(TBRName.Text, TBRVorname.Text, TBREmail.Text, TBRTelefon.Text, TBRAdresse, TBRPostleitzahl.Text, TBROrt, TBRUsername, TBRPasswort.Text);
+                AutoAnzeige Auswahl = new AutoAnzeige();
+                Auswahl.Show();
+                
             }
             else
-            {
-                MessageBox.Show("Bitte alle Pflichfelder ausfüllen!");
-            }
+                {
+                MessageBox.Show("Sie haben ihr Passwort nicht korrekt wiederholt eingegeben.");
+                }
         }
 
-        
     }
 
 }
