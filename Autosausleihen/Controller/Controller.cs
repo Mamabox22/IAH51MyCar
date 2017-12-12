@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Autosausleihen.Controller
 {
-    abstract class Controller
+    public abstract class Controller
     {
         //Instanz von View
         protected Form view;

@@ -12,10 +12,22 @@ namespace Autosausleihen
 {
     public partial class MainForm : Form
     {
+        
         public MainForm()
         {
             InitializeComponent();
         }
 
+        private void BTRegistrierung_Click(object sender, EventArgs e)
+        {
+            Anmeldung anmeldung = new Anmeldung();
+            anmeldung.Show();
+
+        }
+        private void BTLogIN_Click(object sender, EventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+        }
     }
 }

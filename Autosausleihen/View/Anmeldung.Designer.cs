@@ -57,7 +57,7 @@
             // LBName
             // 
             this.LBName.AutoSize = true;
-            this.LBName.Location = new System.Drawing.Point(115, 61);
+            this.LBName.Location = new System.Drawing.Point(224, 65);
             this.LBName.Name = "LBName";
             this.LBName.Size = new System.Drawing.Size(39, 13);
             this.LBName.TabIndex = 0;
@@ -66,7 +66,7 @@
             // LBVorname
             // 
             this.LBVorname.AutoSize = true;
-            this.LBVorname.Location = new System.Drawing.Point(115, 122);
+            this.LBVorname.Location = new System.Drawing.Point(224, 126);
             this.LBVorname.Name = "LBVorname";
             this.LBVorname.Size = new System.Drawing.Size(49, 13);
             this.LBVorname.TabIndex = 1;
@@ -74,7 +74,7 @@
             // 
             // TBRInsert
             // 
-            this.TBRInsert.Location = new System.Drawing.Point(118, 337);
+            this.TBRInsert.Location = new System.Drawing.Point(313, 330);
             this.TBRInsert.Name = "TBRInsert";
             this.TBRInsert.Size = new System.Drawing.Size(75, 23);
             this.TBRInsert.TabIndex = 2;
@@ -84,7 +84,7 @@
             // CBAGBs
             // 
             this.CBAGBs.AutoSize = true;
-            this.CBAGBs.Location = new System.Drawing.Point(118, 301);
+            this.CBAGBs.Location = new System.Drawing.Point(313, 294);
             this.CBAGBs.Name = "CBAGBs";
             this.CBAGBs.Size = new System.Drawing.Size(281, 17);
             this.CBAGBs.TabIndex = 4;
@@ -93,28 +93,28 @@
             // 
             // TBRName
             // 
-            this.TBRName.Location = new System.Drawing.Point(118, 77);
+            this.TBRName.Location = new System.Drawing.Point(227, 81);
             this.TBRName.Name = "TBRName";
             this.TBRName.Size = new System.Drawing.Size(100, 20);
             this.TBRName.TabIndex = 1;
             // 
             // TBRVorname
             // 
-            this.TBRVorname.Location = new System.Drawing.Point(118, 138);
+            this.TBRVorname.Location = new System.Drawing.Point(227, 142);
             this.TBRVorname.Name = "TBRVorname";
             this.TBRVorname.Size = new System.Drawing.Size(100, 20);
             this.TBRVorname.TabIndex = 6;
             // 
             // TBRTelefon
             // 
-            this.TBRTelefon.Location = new System.Drawing.Point(118, 249);
+            this.TBRTelefon.Location = new System.Drawing.Point(227, 253);
             this.TBRTelefon.Name = "TBRTelefon";
             this.TBRTelefon.Size = new System.Drawing.Size(100, 20);
             this.TBRTelefon.TabIndex = 10;
             // 
             // TBREmail
             // 
-            this.TBREmail.Location = new System.Drawing.Point(118, 188);
+            this.TBREmail.Location = new System.Drawing.Point(227, 192);
             this.TBREmail.Name = "TBREmail";
             this.TBREmail.Size = new System.Drawing.Size(100, 20);
             this.TBREmail.TabIndex = 9;
@@ -122,7 +122,7 @@
             // LBTelefon
             // 
             this.LBTelefon.AutoSize = true;
-            this.LBTelefon.Location = new System.Drawing.Point(115, 233);
+            this.LBTelefon.Location = new System.Drawing.Point(224, 237);
             this.LBTelefon.Name = "LBTelefon";
             this.LBTelefon.Size = new System.Drawing.Size(43, 13);
             this.LBTelefon.TabIndex = 8;
@@ -131,7 +131,7 @@
             // LBEmail
             // 
             this.LBEmail.AutoSize = true;
-            this.LBEmail.Location = new System.Drawing.Point(115, 172);
+            this.LBEmail.Location = new System.Drawing.Point(224, 176);
             this.LBEmail.Name = "LBEmail";
             this.LBEmail.Size = new System.Drawing.Size(36, 13);
             this.LBEmail.TabIndex = 7;
@@ -139,14 +139,14 @@
             // 
             // TBRZahlung
             // 
-            this.TBRZahlung.Location = new System.Drawing.Point(299, 249);
+            this.TBRZahlung.Location = new System.Drawing.Point(408, 253);
             this.TBRZahlung.Name = "TBRZahlung";
             this.TBRZahlung.Size = new System.Drawing.Size(100, 20);
             this.TBRZahlung.TabIndex = 18;
             // 
             // TBROrt
             // 
-            this.TBROrt.Location = new System.Drawing.Point(299, 188);
+            this.TBROrt.Location = new System.Drawing.Point(408, 192);
             this.TBROrt.Name = "TBROrt";
             this.TBROrt.Size = new System.Drawing.Size(100, 20);
             this.TBROrt.TabIndex = 17;
@@ -154,7 +154,7 @@
             // LBZahlung
             // 
             this.LBZahlung.AutoSize = true;
-            this.LBZahlung.Location = new System.Drawing.Point(296, 233);
+            this.LBZahlung.Location = new System.Drawing.Point(405, 237);
             this.LBZahlung.Name = "LBZahlung";
             this.LBZahlung.Size = new System.Drawing.Size(121, 13);
             this.LBZahlung.TabIndex = 16;
@@ -163,7 +163,7 @@
             // LBOrt
             // 
             this.LBOrt.AutoSize = true;
-            this.LBOrt.Location = new System.Drawing.Point(296, 172);
+            this.LBOrt.Location = new System.Drawing.Point(405, 176);
             this.LBOrt.Name = "LBOrt";
             this.LBOrt.Size = new System.Drawing.Size(21, 13);
             this.LBOrt.TabIndex = 15;
@@ -171,14 +171,14 @@
             // 
             // TBRPostleitzahl
             // 
-            this.TBRPostleitzahl.Location = new System.Drawing.Point(299, 138);
+            this.TBRPostleitzahl.Location = new System.Drawing.Point(408, 142);
             this.TBRPostleitzahl.Name = "TBRPostleitzahl";
             this.TBRPostleitzahl.Size = new System.Drawing.Size(100, 20);
             this.TBRPostleitzahl.TabIndex = 14;
             // 
             // TBRAdresse
             // 
-            this.TBRAdresse.Location = new System.Drawing.Point(299, 77);
+            this.TBRAdresse.Location = new System.Drawing.Point(408, 81);
             this.TBRAdresse.Name = "TBRAdresse";
             this.TBRAdresse.Size = new System.Drawing.Size(100, 20);
             this.TBRAdresse.TabIndex = 12;
@@ -186,7 +186,7 @@
             // LBPostleitzahl
             // 
             this.LBPostleitzahl.AutoSize = true;
-            this.LBPostleitzahl.Location = new System.Drawing.Point(296, 122);
+            this.LBPostleitzahl.Location = new System.Drawing.Point(405, 126);
             this.LBPostleitzahl.Name = "LBPostleitzahl";
             this.LBPostleitzahl.Size = new System.Drawing.Size(64, 13);
             this.LBPostleitzahl.TabIndex = 13;
@@ -195,7 +195,7 @@
             // LBAdresse
             // 
             this.LBAdresse.AutoSize = true;
-            this.LBAdresse.Location = new System.Drawing.Point(296, 61);
+            this.LBAdresse.Location = new System.Drawing.Point(405, 65);
             this.LBAdresse.Name = "LBAdresse";
             this.LBAdresse.Size = new System.Drawing.Size(49, 13);
             this.LBAdresse.TabIndex = 11;
@@ -203,14 +203,14 @@
             // 
             // TBRPasswortW
             // 
-            this.TBRPasswortW.Location = new System.Drawing.Point(479, 188);
+            this.TBRPasswortW.Location = new System.Drawing.Point(588, 192);
             this.TBRPasswortW.Name = "TBRPasswortW";
             this.TBRPasswortW.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswortW.TabIndex = 22;
             // 
             // TBRPasswort
             // 
-            this.TBRPasswort.Location = new System.Drawing.Point(479, 138);
+            this.TBRPasswort.Location = new System.Drawing.Point(588, 142);
             this.TBRPasswort.Name = "TBRPasswort";
             this.TBRPasswort.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswort.TabIndex = 20;
@@ -219,7 +219,7 @@
             // LBPasswortW
             // 
             this.LBPasswortW.AutoSize = true;
-            this.LBPasswortW.Location = new System.Drawing.Point(476, 172);
+            this.LBPasswortW.Location = new System.Drawing.Point(585, 176);
             this.LBPasswortW.Name = "LBPasswortW";
             this.LBPasswortW.Size = new System.Drawing.Size(114, 13);
             this.LBPasswortW.TabIndex = 21;
@@ -228,7 +228,7 @@
             // LBPasswort
             // 
             this.LBPasswort.AutoSize = true;
-            this.LBPasswort.Location = new System.Drawing.Point(476, 122);
+            this.LBPasswort.Location = new System.Drawing.Point(585, 126);
             this.LBPasswort.Name = "LBPasswort";
             this.LBPasswort.Size = new System.Drawing.Size(54, 13);
             this.LBPasswort.TabIndex = 19;
@@ -236,7 +236,7 @@
             // 
             // TBRUsername
             // 
-            this.TBRUsername.Location = new System.Drawing.Point(479, 77);
+            this.TBRUsername.Location = new System.Drawing.Point(588, 81);
             this.TBRUsername.Name = "TBRUsername";
             this.TBRUsername.Size = new System.Drawing.Size(100, 20);
             this.TBRUsername.TabIndex = 23;
@@ -244,7 +244,7 @@
             // LBUsername
             // 
             this.LBUsername.AutoSize = true;
-            this.LBUsername.Location = new System.Drawing.Point(476, 61);
+            this.LBUsername.Location = new System.Drawing.Point(585, 65);
             this.LBUsername.Name = "LBUsername";
             this.LBUsername.Size = new System.Drawing.Size(55, 13);
             this.LBUsername.TabIndex = 24;

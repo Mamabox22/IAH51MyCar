@@ -45,6 +45,7 @@
             this.BTRegistrierung.TabIndex = 0;
             this.BTRegistrierung.Text = "Jetzt Registrieren";
             this.BTRegistrierung.UseVisualStyleBackColor = false;
+            this.BTRegistrierung.Click += new System.EventHandler(this.BTRegistrierung_Click);
             // 
             // pictureBox1
             // 
