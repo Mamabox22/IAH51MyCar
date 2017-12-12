@@ -41,7 +41,7 @@
             // LBUsername
             // 
             this.LBUsername.AutoSize = true;
-            this.LBUsername.Location = new System.Drawing.Point(50, 78);
+            this.LBUsername.Location = new System.Drawing.Point(42, 27);
             this.LBUsername.Name = "LBUsername";
             this.LBUsername.Size = new System.Drawing.Size(55, 13);
             this.LBUsername.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // TBLUsername
             // 
-            this.TBLUsername.Location = new System.Drawing.Point(53, 94);
+            this.TBLUsername.Location = new System.Drawing.Point(45, 43);
             this.TBLUsername.Name = "TBLUsername";
             this.TBLUsername.Size = new System.Drawing.Size(100, 20);
             this.TBLUsername.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // TBLPasswort
             // 
-            this.TBLPasswort.Location = new System.Drawing.Point(191, 94);
+            this.TBLPasswort.Location = new System.Drawing.Point(45, 82);
             this.TBLPasswort.Name = "TBLPasswort";
             this.TBLPasswort.Size = new System.Drawing.Size(100, 20);
             this.TBLPasswort.TabIndex = 4;
@@ -69,7 +69,7 @@
             // LBPasswort
             // 
             this.LBPasswort.AutoSize = true;
-            this.LBPasswort.Location = new System.Drawing.Point(188, 78);
+            this.LBPasswort.Location = new System.Drawing.Point(42, 66);
             this.LBPasswort.Name = "LBPasswort";
             this.LBPasswort.Size = new System.Drawing.Size(50, 13);
             this.LBPasswort.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // BTLEinlogen
             // 
-            this.BTLEinlogen.Location = new System.Drawing.Point(138, 139);
+            this.BTLEinlogen.Location = new System.Drawing.Point(54, 119);
             this.BTLEinlogen.Name = "BTLEinlogen";
             this.BTLEinlogen.Size = new System.Drawing.Size(75, 23);
             this.BTLEinlogen.TabIndex = 5;
@@ -87,24 +87,28 @@
             // 
             // BTLRegistrierung
             // 
-            this.BTLRegistrierung.Location = new System.Drawing.Point(238, 12);
+            this.BTLRegistrierung.Location = new System.Drawing.Point(54, 148);
             this.BTLRegistrierung.Name = "BTLRegistrierung";
-            this.BTLRegistrierung.Size = new System.Drawing.Size(108, 23);
+            this.BTLRegistrierung.Size = new System.Drawing.Size(75, 23);
             this.BTLRegistrierung.TabIndex = 6;
-            this.BTLRegistrierung.Text = "Noch kein Konto ?";
+            this.BTLRegistrierung.Text = "Registrieren";
             this.BTLRegistrierung.UseVisualStyleBackColor = true;
             // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 193);
+            this.ClientSize = new System.Drawing.Size(188, 193);
             this.Controls.Add(this.BTLRegistrierung);
             this.Controls.Add(this.BTLEinlogen);
             this.Controls.Add(this.TBLPasswort);
             this.Controls.Add(this.LBPasswort);
             this.Controls.Add(this.TBLUsername);
             this.Controls.Add(this.LBUsername);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(204, 232);
+            this.MinimumSize = new System.Drawing.Size(204, 232);
             this.Name = "LogIn";
             this.ShowIcon = false;
             this.Text = "LogIn";
