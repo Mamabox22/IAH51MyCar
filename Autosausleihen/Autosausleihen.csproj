@@ -61,6 +61,12 @@
     <Compile Include="View\AutosHinzufügen.Designer.cs">
       <DependentUpon>AutosHinzufügen.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Buchung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Buchung.Designer.cs">
+      <DependentUpon>Buchung.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\AutosHinzufügen.resx">
       <DependentUpon>AutosHinzufügen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Buchung.resx">
+      <DependentUpon>Buchung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
