@@ -53,6 +53,8 @@
             this.TBRUsername = new System.Windows.Forms.TextBox();
             this.LBUsername = new System.Windows.Forms.Label();
             this.LBSternchen = new System.Windows.Forms.Label();
+            this.Test = new System.Windows.Forms.TextBox();
+            this.BTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBName
@@ -81,6 +83,7 @@
             this.TBRInsert.TabIndex = 13;
             this.TBRInsert.Text = "Registrieren";
             this.TBRInsert.UseVisualStyleBackColor = true;
+            this.TBRInsert.Click += new System.EventHandler(this.TBRInsert_Click);
             // 
             // CBAGBs
             // 
@@ -273,11 +276,30 @@
             this.LBSternchen.TabIndex = 25;
             this.LBSternchen.Text = "Die mit * markierten Felder sind Pflichtfelder";
             // 
+            // Test
+            // 
+            this.Test.Location = new System.Drawing.Point(228, 273);
+            this.Test.Name = "Test";
+            this.Test.Size = new System.Drawing.Size(100, 20);
+            this.Test.TabIndex = 26;
+            // 
+            // BTest
+            // 
+            this.BTest.Location = new System.Drawing.Point(206, 386);
+            this.BTest.Name = "BTest";
+            this.BTest.Size = new System.Drawing.Size(75, 23);
+            this.BTest.TabIndex = 27;
+            this.BTest.Text = "button1";
+            this.BTest.UseVisualStyleBackColor = true;
+            this.BTest.Click += new System.EventHandler(this.BTest_Click);
+            // 
             // Anmeldung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 451);
+            this.Controls.Add(this.BTest);
+            this.Controls.Add(this.Test);
             this.Controls.Add(this.LBSternchen);
             this.Controls.Add(this.LBUsername);
             this.Controls.Add(this.TBRUsername);
@@ -342,5 +364,7 @@
         private System.Windows.Forms.TextBox TBRUsername;
         private System.Windows.Forms.Label LBUsername;
         private System.Windows.Forms.Label LBSternchen;
+        private System.Windows.Forms.TextBox Test;
+        private System.Windows.Forms.Button BTest;
     }
 }

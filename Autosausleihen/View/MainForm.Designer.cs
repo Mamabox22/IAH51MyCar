@@ -66,6 +66,7 @@
             this.BTLogIN.TabIndex = 2;
             this.BTLogIN.Text = "Einloggen";
             this.BTLogIN.UseVisualStyleBackColor = true;
+            this.BTLogIN.Click += new System.EventHandler(this.BTLogIN_Click);
             // 
             // BTHinzufügen
             // 

@@ -22,12 +22,15 @@ namespace Autosausleihen
         {
             Anmeldung anmeldung = new Anmeldung();                          //Aus irgendwelchen Gründen wurde die Registrierung als Anmeldung benannt
             anmeldung.Show();
+            Hide();
 
         }
+
         private void BTLogIN_Click(object sender, EventArgs e)
         {
             LogIn login = new LogIn();
             login.Show();
+            Hide();
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 
 namespace Autosausleihen
 {
-    class Passwort
+    static class Passwort
     {
         public static string EncryptMP5(string passwort)
         {
