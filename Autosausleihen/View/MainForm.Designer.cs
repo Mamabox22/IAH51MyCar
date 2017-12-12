@@ -39,9 +39,9 @@
             // BTRegistrierung
             // 
             this.BTRegistrierung.BackColor = System.Drawing.SystemColors.Window;
-            this.BTRegistrierung.Location = new System.Drawing.Point(27, 363);
+            this.BTRegistrierung.Location = new System.Drawing.Point(80, 360);
             this.BTRegistrierung.Name = "BTRegistrierung";
-            this.BTRegistrierung.Size = new System.Drawing.Size(289, 70);
+            this.BTRegistrierung.Size = new System.Drawing.Size(210, 70);
             this.BTRegistrierung.TabIndex = 0;
             this.BTRegistrierung.Text = "Jetzt Registrieren";
             this.BTRegistrierung.UseVisualStyleBackColor = false;
@@ -69,7 +69,7 @@
             // 
             // BTHinzufügen
             // 
-            this.BTHinzufügen.Location = new System.Drawing.Point(616, 363);
+            this.BTHinzufügen.Location = new System.Drawing.Point(639, 360);
             this.BTHinzufügen.Name = "BTHinzufügen";
             this.BTHinzufügen.Size = new System.Drawing.Size(210, 70);
             this.BTHinzufügen.TabIndex = 3;
@@ -85,6 +85,10 @@
             this.Controls.Add(this.BTLogIN);
             this.Controls.Add(this.BTRegistrierung);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(943, 522);
+            this.MinimumSize = new System.Drawing.Size(943, 522);
             this.Name = "MainForm";
             this.Text = "MyCar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
