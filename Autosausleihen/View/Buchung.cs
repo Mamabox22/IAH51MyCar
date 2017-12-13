@@ -17,6 +17,7 @@ namespace Autosausleihen.View
 
         public Buchung()
         {
+
             using (var con = new MySqlConnection(MySQL.ConnectionString))
             {
                 using (var cmdHersteller = new MySqlCommand("select hersteller from auto", con))
@@ -91,10 +92,47 @@ namespace Autosausleihen.View
             }
 
         }
-
-        private void BTNBuchen_Click(object sender, EventArgs e)
+        public void BuchungButtonEnableDisable() //Diese Methode dient dazu den Buchenbutton erst dann freizugeben wenn in alle Pflichtfelder etwas eingetragen wurde
         {
-
+            if (!string.IsNullOrWhiteSpace(TBBaujahr.Text) & !string.IsNullOrWhiteSpace(TBFarbe.Text) &!string.IsNullOrWhiteSpace(TBHersteller.Text) &!string.IsNullOrWhiteSpace(TBModell.Text) &!string.IsNullOrWhiteSpace(TBName.Text) &!string.IsNullOrWhiteSpace(TBPreis.Text))
+            {
+                BTNBuchen.Enabled = true;
+            }
+            else
+            {
+                BTNBuchen.Enabled = false;
+            }
         }
+        #region Textbox Textchanged
+        private void TBHersteller_TextChanged(object sender, EventArgs e)
+        {
+            BuchungButtonEnableDisable();
+        }
+
+        private void TBModell_TextChanged(object sender, EventArgs e)
+        {
+            BuchungButtonEnableDisable();
+        }
+
+        private void TBName_TextChanged(object sender, EventArgs e)
+        {
+            BuchungButtonEnableDisable();
+        }
+
+        private void TBBaujahr_TextChanged(object sender, EventArgs e)
+        {
+            BuchungButtonEnableDisable();
+        }
+
+        private void TBFarbe_TextChanged(object sender, EventArgs e)
+        {
+            BuchungButtonEnableDisable();
+        }
+
+        private void TBPreis_TextChanged(object sender, EventArgs e)
+        {
+            BuchungButtonEnableDisable();
+        }
+        #endregion
     }
 }
