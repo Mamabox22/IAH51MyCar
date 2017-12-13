@@ -102,6 +102,7 @@ namespace Autosausleihen
         private void CBAGBs_CheckedChanged(object sender, EventArgs e)
         {
             RegistrierenButtonEnableDisable();
+            AGB = true;
         }
 
         private void TBRInsert_Click(object sender, EventArgs e)
