@@ -59,6 +59,7 @@
             this.TBModell.Name = "TBModell";
             this.TBModell.Size = new System.Drawing.Size(100, 20);
             this.TBModell.TabIndex = 4;
+            this.TBModell.TextChanged += new System.EventHandler(this.TBModell_TextChanged);
             // 
             // TBName
             // 
@@ -66,6 +67,7 @@
             this.TBName.Name = "TBName";
             this.TBName.Size = new System.Drawing.Size(100, 20);
             this.TBName.TabIndex = 2;
+            this.TBName.TextChanged += new System.EventHandler(this.TBName_TextChanged);
             // 
             // TBHersteller
             // 
@@ -73,6 +75,7 @@
             this.TBHersteller.Name = "TBHersteller";
             this.TBHersteller.Size = new System.Drawing.Size(100, 20);
             this.TBHersteller.TabIndex = 1;
+            this.TBHersteller.TextChanged += new System.EventHandler(this.TBHersteller_TextChanged);
             // 
             // TBBaujahr
             // 
@@ -80,6 +83,7 @@
             this.TBBaujahr.Name = "TBBaujahr";
             this.TBBaujahr.Size = new System.Drawing.Size(100, 20);
             this.TBBaujahr.TabIndex = 5;
+            this.TBBaujahr.TextChanged += new System.EventHandler(this.TBBaujahr_TextChanged);
             // 
             // TBPreis
             // 
@@ -87,6 +91,7 @@
             this.TBPreis.Name = "TBPreis";
             this.TBPreis.Size = new System.Drawing.Size(100, 20);
             this.TBPreis.TabIndex = 6;
+            this.TBPreis.TextChanged += new System.EventHandler(this.TBPreis_TextChanged);
             // 
             // TBFarbe
             // 
@@ -94,6 +99,7 @@
             this.TBFarbe.Name = "TBFarbe";
             this.TBFarbe.Size = new System.Drawing.Size(100, 20);
             this.TBFarbe.TabIndex = 3;
+            this.TBFarbe.TextChanged += new System.EventHandler(this.TBFarbe_TextChanged);
             // 
             // LBHersteller
             // 
@@ -162,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 364);
+            this.ClientSize = new System.Drawing.Size(249, 365);
             this.Controls.Add(this.BTNBuchen);
             this.Controls.Add(this.LBPreis);
             this.Controls.Add(this.LBFarbe);
