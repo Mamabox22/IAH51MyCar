@@ -18,7 +18,7 @@ namespace Autosausleihen.View
         public Buchung()
         {
 
-            using (var con = new MySqlConnection(MySQL.ConnectionString))
+            using (var con = new MySqlConnection(MySQL.ConnectionString)) //Werte werden aus der Datenbank gelesen und in die Textboxen geschrieben.
             {
                 using (var cmdHersteller = new MySqlCommand("select hersteller from auto", con))
                 {
@@ -89,7 +89,22 @@ namespace Autosausleihen.View
 
 
                 }
+
+                using (var cmdA_ID = new MySqlCommand("select A_ID from auto", con))
+                {
+                    reader = cmdA_ID.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        TBA_ID.Text = Convert.ToString(reader);
+                    }
+
+
+                }
+
+
             }
+
 
         }
         public void BuchungButtonEnableDisable() //Diese Methode dient dazu den Buchenbutton erst dann freizugeben wenn in alle Pflichtfelder etwas eingetragen wurde
@@ -133,6 +148,29 @@ namespace Autosausleihen.View
         {
             BuchungButtonEnableDisable();
         }
+
+        private void TBA_ID_TextChanged(object sender, EventArgs e)
+        {
+            BuchungButtonEnableDisable();
+        }
         #endregion
+
+        private void BTNBuchen_Click(object sender, EventArgs e) //Werte werden aus der Textbox geholt und mit einem Insert Befehl
+        {                                                        //in die Datenbank geschrieben
+            using (var con = new MySqlConnection(MySQL.ConnectionString))
+            {
+                using (var cmdEinfuegen = new MySqlCommand("INSERT INTO reservierung`(`hersteller`, `modell`, `name`, `baujahr`, `farbe`, `preis`, `a_id`) VALUES (@hersteller, @modell, @name, @baujahr, @farbe, @preis, @a_id)", con))
+                {
+                    cmdEinfuegen.Parameters.AddWithValue("@hersteller", TBHersteller.Text);
+                    cmdEinfuegen.Parameters.AddWithValue("@modell", TBModell.Text);
+                    cmdEinfuegen.Parameters.AddWithValue("@name", TBName.Text);
+                    cmdEinfuegen.Parameters.AddWithValue("@baujahr", TBBaujahr.Text);
+                    cmdEinfuegen.Parameters.AddWithValue("@farbe", TBFarbe.Text);
+                    cmdEinfuegen.Parameters.AddWithValue("@preis", TBPreis.Text);
+                    cmdEinfuegen.Parameters.AddWithValue("@a_id", TBA_ID.Text);
+                }
+            }
+        }
+
     }
 }

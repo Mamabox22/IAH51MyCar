@@ -42,6 +42,8 @@
             this.LBFarbe = new System.Windows.Forms.Label();
             this.LBPreis = new System.Windows.Forms.Label();
             this.BTNBuchen = new System.Windows.Forms.Button();
+            this.TBA_ID = new System.Windows.Forms.TextBox();
+            this.LBA_ID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pBAuto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,19 +159,37 @@
             // 
             // BTNBuchen
             // 
-            this.BTNBuchen.Location = new System.Drawing.Point(83, 316);
+            this.BTNBuchen.Location = new System.Drawing.Point(136, 316);
             this.BTNBuchen.Name = "BTNBuchen";
-            this.BTNBuchen.Size = new System.Drawing.Size(75, 36);
+            this.BTNBuchen.Size = new System.Drawing.Size(100, 36);
             this.BTNBuchen.TabIndex = 8;
             this.BTNBuchen.Text = "Buchen";
             this.BTNBuchen.UseVisualStyleBackColor = true;
             this.BTNBuchen.Click += new System.EventHandler(this.BTNBuchen_Click);
             // 
+            // TBA_ID
+            // 
+            this.TBA_ID.Location = new System.Drawing.Point(12, 316);
+            this.TBA_ID.Name = "TBA_ID";
+            this.TBA_ID.Size = new System.Drawing.Size(100, 20);
+            this.TBA_ID.TabIndex = 13;
+            // 
+            // LBA_ID
+            // 
+            this.LBA_ID.AutoSize = true;
+            this.LBA_ID.Location = new System.Drawing.Point(41, 300);
+            this.LBA_ID.Name = "LBA_ID";
+            this.LBA_ID.Size = new System.Drawing.Size(43, 13);
+            this.LBA_ID.TabIndex = 14;
+            this.LBA_ID.Text = "Auto ID";
+            // 
             // Buchung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 365);
+            this.ClientSize = new System.Drawing.Size(249, 364);
+            this.Controls.Add(this.LBA_ID);
+            this.Controls.Add(this.TBA_ID);
             this.Controls.Add(this.BTNBuchen);
             this.Controls.Add(this.LBPreis);
             this.Controls.Add(this.LBFarbe);
@@ -213,5 +233,7 @@
         private System.Windows.Forms.Label LBFarbe;
         private System.Windows.Forms.Label LBPreis;
         private System.Windows.Forms.Button BTNBuchen;
+        private System.Windows.Forms.TextBox TBA_ID;
+        private System.Windows.Forms.Label LBA_ID;
     }
 }
