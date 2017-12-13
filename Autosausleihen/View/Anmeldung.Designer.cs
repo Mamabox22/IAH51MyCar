@@ -291,7 +291,6 @@
             this.BTest.TabIndex = 27;
             this.BTest.Text = "button1";
             this.BTest.UseVisualStyleBackColor = true;
-            this.BTest.Click += new System.EventHandler(this.BTest_Click);
             // 
             // Anmeldung
             // 
