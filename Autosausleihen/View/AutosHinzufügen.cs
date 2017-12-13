@@ -17,11 +17,27 @@ namespace Autosausleihen
         public AutosHinzufügen()
         {
             InitializeComponent();
+            InitializeAutoListbox();
         }
 
         private void InitializeAutoListbox()
         {
+            using (var con = new MySqlConnection(MySQL.ConnectionString))
+            {
+                using (var dataAdapter = new MySqlDataAdapter("select name, modell,hersteller from auto", con))
+                {
+                    var autoTable = new DataTable();
+                    dataAdapter.Fill(autoTable);
+                    foreach (DataRow row in autoTable.Rows)
+                    {
+                        var listviewItem = new ListViewItem(row["hersteller"] as string);
+                        listviewItem.SubItems.Add(row["modell"] as string);
+                        listviewItem.SubItems.Add(row["name"] as string);
 
+                        lvAutos.Items.Add(listviewItem);
+                    }
+                }
+            }
 
         }
 
