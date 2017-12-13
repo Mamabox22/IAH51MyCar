@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Autosausleihen.View
 {
@@ -14,7 +15,14 @@ namespace Autosausleihen.View
     {
         public Buchung()
         {
-            InitializeComponent();
+            using (var con = new MySqlConnection(MySQL.ConnectionString))
+            {
+                using (var dataAdapter = new MySqlDataAdapter("select hersteller, modell, name, baujahr, farbe, preis from auto", con))
+                {
+
+                }
+            }
+
         }
     }
 }

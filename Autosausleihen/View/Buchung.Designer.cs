@@ -41,8 +41,6 @@
             this.LBName = new System.Windows.Forms.Label();
             this.LBFarbe = new System.Windows.Forms.Label();
             this.LBPreis = new System.Windows.Forms.Label();
-            this.CBZahlungsart = new System.Windows.Forms.ComboBox();
-            this.LBZahlungsart = new System.Windows.Forms.Label();
             this.BTNBuchen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pBAuto)).BeginInit();
             this.SuspendLayout();
@@ -151,26 +149,9 @@
             this.LBPreis.TabIndex = 12;
             this.LBPreis.Text = "Preis";
             // 
-            // CBZahlungsart
-            // 
-            this.CBZahlungsart.FormattingEnabled = true;
-            this.CBZahlungsart.Location = new System.Drawing.Point(12, 325);
-            this.CBZahlungsart.Name = "CBZahlungsart";
-            this.CBZahlungsart.Size = new System.Drawing.Size(121, 21);
-            this.CBZahlungsart.TabIndex = 7;
-            // 
-            // LBZahlungsart
-            // 
-            this.LBZahlungsart.AutoSize = true;
-            this.LBZahlungsart.Location = new System.Drawing.Point(41, 309);
-            this.LBZahlungsart.Name = "LBZahlungsart";
-            this.LBZahlungsart.Size = new System.Drawing.Size(63, 13);
-            this.LBZahlungsart.TabIndex = 14;
-            this.LBZahlungsart.Text = "Zahlungsart";
-            // 
             // BTNBuchen
             // 
-            this.BTNBuchen.Location = new System.Drawing.Point(162, 316);
+            this.BTNBuchen.Location = new System.Drawing.Point(83, 316);
             this.BTNBuchen.Name = "BTNBuchen";
             this.BTNBuchen.Size = new System.Drawing.Size(75, 36);
             this.BTNBuchen.TabIndex = 8;
@@ -183,8 +164,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(249, 364);
             this.Controls.Add(this.BTNBuchen);
-            this.Controls.Add(this.LBZahlungsart);
-            this.Controls.Add(this.CBZahlungsart);
             this.Controls.Add(this.LBPreis);
             this.Controls.Add(this.LBFarbe);
             this.Controls.Add(this.LBName);
@@ -226,8 +205,6 @@
         private System.Windows.Forms.Label LBName;
         private System.Windows.Forms.Label LBFarbe;
         private System.Windows.Forms.Label LBPreis;
-        private System.Windows.Forms.ComboBox CBZahlungsart;
-        private System.Windows.Forms.Label LBZahlungsart;
         private System.Windows.Forms.Button BTNBuchen;
     }
 }
