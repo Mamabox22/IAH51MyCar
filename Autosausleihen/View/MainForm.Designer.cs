@@ -28,39 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.BTRegistrierung = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTLogIN = new System.Windows.Forms.Button();
             this.BTHinzufügen = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.LBUsername = new System.Windows.Forms.Label();
+            this.LBPasswort = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BTRegistrierung
             // 
             this.BTRegistrierung.BackColor = System.Drawing.SystemColors.Window;
-            this.BTRegistrierung.Location = new System.Drawing.Point(80, 360);
+            this.BTRegistrierung.Location = new System.Drawing.Point(143, 245);
             this.BTRegistrierung.Name = "BTRegistrierung";
-            this.BTRegistrierung.Size = new System.Drawing.Size(210, 70);
+            this.BTRegistrierung.Size = new System.Drawing.Size(145, 26);
             this.BTRegistrierung.TabIndex = 0;
             this.BTRegistrierung.Text = "Jetzt Registrieren";
             this.BTRegistrierung.UseVisualStyleBackColor = false;
             this.BTRegistrierung.Click += new System.EventHandler(this.BTRegistrierung_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(927, 483);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // BTLogIN
             // 
-            this.BTLogIN.Location = new System.Drawing.Point(770, 12);
+            this.BTLogIN.Location = new System.Drawing.Point(143, 216);
             this.BTLogIN.Name = "BTLogIN";
             this.BTLogIN.Size = new System.Drawing.Size(145, 23);
             this.BTLogIN.TabIndex = 2;
@@ -70,38 +60,80 @@
             // 
             // BTHinzufügen
             // 
-            this.BTHinzufügen.Location = new System.Drawing.Point(644, 360);
+            this.BTHinzufügen.Location = new System.Drawing.Point(168, 164);
             this.BTHinzufügen.Name = "BTHinzufügen";
-            this.BTHinzufügen.Size = new System.Drawing.Size(210, 70);
+            this.BTHinzufügen.Size = new System.Drawing.Size(98, 46);
             this.BTHinzufügen.TabIndex = 3;
             this.BTHinzufügen.Text = "Autos hinzufügen (Test)";
             this.BTHinzufügen.UseVisualStyleBackColor = true;
+            this.BTHinzufügen.Click += new System.EventHandler(this.BTHinzufügen_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(143, 55);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(145, 20);
+            this.textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(143, 112);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(145, 20);
+            this.textBox2.TabIndex = 5;
+            // 
+            // LBUsername
+            // 
+            this.LBUsername.AutoSize = true;
+            this.LBUsername.Location = new System.Drawing.Point(143, 36);
+            this.LBUsername.Name = "LBUsername";
+            this.LBUsername.Size = new System.Drawing.Size(58, 13);
+            this.LBUsername.TabIndex = 6;
+            this.LBUsername.Text = "Username:";
+            // 
+            // LBPasswort
+            // 
+            this.LBPasswort.AutoSize = true;
+            this.LBPasswort.Location = new System.Drawing.Point(143, 96);
+            this.LBPasswort.Name = "LBPasswort";
+            this.LBPasswort.Size = new System.Drawing.Size(53, 13);
+            this.LBPasswort.TabIndex = 7;
+            this.LBPasswort.Text = "Passwort:";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 483);
+            this.BackgroundImage = global::Autosausleihen.Properties.Resources.AutoMainForm;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(418, 320);
+            this.Controls.Add(this.LBPasswort);
+            this.Controls.Add(this.LBUsername);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BTHinzufügen);
             this.Controls.Add(this.BTLogIN);
             this.Controls.Add(this.BTRegistrierung);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(943, 522);
-            this.MinimumSize = new System.Drawing.Size(943, 522);
+            this.MaximumSize = new System.Drawing.Size(434, 358);
+            this.MinimumSize = new System.Drawing.Size(434, 358);
             this.Name = "MainForm";
+            this.ShowIcon = false;
             this.Text = "MyCar";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button BTRegistrierung;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BTLogIN;
         private System.Windows.Forms.Button BTHinzufügen;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label LBUsername;
+        private System.Windows.Forms.Label LBPasswort;
     }
 }

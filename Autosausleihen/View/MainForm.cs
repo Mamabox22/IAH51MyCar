@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Autosausleihen
 {
@@ -28,9 +29,26 @@ namespace Autosausleihen
 
         private void BTLogIN_Click(object sender, EventArgs e)
         {
-            LogIn login = new LogIn();
-            login.Show();
-            Hide();
+            using (var con = new MySqlConnection(MySQL.ConnectionString))
+            {
+                using (var dataAdapter = new MySqlDataAdapter("select username from Kunde", con))
+                {
+                    var UsernameTable = new DataTable();
+                    dataAdapter.Fill(UsernameTable);
+
+                    foreach (var username in UsernameTable.AsEnumerable())
+                    {
+
+                    }
+
+                }
+            }
+        }
+
+        private void BTHinzufügen_Click(object sender, EventArgs e)
+        {
+            AutosHinzufügen hinzufügen = new AutosHinzufügen();
+            hinzufügen.Show();
         }
     }
 }
