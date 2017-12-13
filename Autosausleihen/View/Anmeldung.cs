@@ -16,7 +16,6 @@ namespace Autosausleihen
 
     public partial class Anmeldung : Form
     {
-        bool AGB;
         string Passwortkodiert;
         public Anmeldung()
         {
@@ -36,11 +35,6 @@ namespace Autosausleihen
             }
         }
 
-        private void RegistrierungController_CheckedChanged(object sender, EventArgs e)
-        {
-            AGB = true;
-            //Muss noch abgeschaltet werden bei unchecken
-        }
    
         #region Textboxen Textchanged
         private void TBRAdresse_TextChanged(object sender, EventArgs e)
@@ -102,7 +96,6 @@ namespace Autosausleihen
         private void CBAGBs_CheckedChanged(object sender, EventArgs e)
         {
             RegistrierenButtonEnableDisable();
-            AGB = true;
         }
 
         private void TBRInsert_Click(object sender, EventArgs e)

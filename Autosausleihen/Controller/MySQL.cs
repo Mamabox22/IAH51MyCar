@@ -12,7 +12,7 @@ using Autosausleihen.Model;
     class MySQL
     {
         //Connectionstring zur SQLDatenbank
-        public static string ConnectionString = @"host=gethercode.de;user=xXMichNoScopeXx;passwort=#Foo438b;database=Micha_Is_Kacke";
+        public static string ConnectionString = @"host=mysql8.db4free.net;user=iah51;password=gso-koeln;database=mycar;port=3307;";
 
         #region Auto
             internal static void InsertAuto(AutoModel automodel)

@@ -47,7 +47,6 @@ namespace Autosausleihen
         {
             if (lvAutos.FocusedItem != null)
                 TBAModell.Text = lvAutos.FocusedItem.Text;
-                TBAHersteller.Text = lvAutos.FocusedItem.Text;
 
         }
     }
