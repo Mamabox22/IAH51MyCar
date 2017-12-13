@@ -157,6 +157,7 @@
             this.BTNBuchen.TabIndex = 8;
             this.BTNBuchen.Text = "Buchen";
             this.BTNBuchen.UseVisualStyleBackColor = true;
+            this.BTNBuchen.Click += new System.EventHandler(this.BTNBuchen_Click);
             // 
             // Buchung
             // 
