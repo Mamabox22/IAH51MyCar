@@ -16,7 +16,9 @@ namespace Autosausleihen
 
     public partial class Anmeldung : Form
     {
-        string Passwortkodiert;
+        //string Passwortkodiert;
+        int ValueTelefon;
+        int ValuePLZ;
         public Anmeldung()
         {
             InitializeComponent();
@@ -100,13 +102,22 @@ namespace Autosausleihen
 
         private void TBRInsert_Click(object sender, EventArgs e)
         {
-            if (TBRPasswort.Text == TBRPasswortW.Text)      //Hier müssen noch die Daten in die Datenbank eingetragen werden
+           
+            if (TBRPasswort.Text == TBRPasswortW.Text)
             {
-                
-                //MySQL.InsertUser(TBRName.Text, TBRVorname.Text, TBREmail.Text, TBRTelefon.Text, TBRAdresse, TBRPostleitzahl.Text, TBROrt, TBRUsername, TBRPasswort.Text);
+                if (!Int32.TryParse(TBRTelefon.Text, out ValueTelefon))
+                {
+                    MessageBox.Show("Gib bitte echte Werte an!");
+                }
+                if (!Int32.TryParse(TBRPostleitzahl.Text, out ValuePLZ))
+                {
+                    MessageBox.Show("Gib bitte echte Werte an!");
+                }
+
+                MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
                 AutoAnzeige Auswahl = new AutoAnzeige();
                 Auswahl.Show();
-                
+
             }
             else
                 {

@@ -9,7 +9,7 @@ using Autosausleihen.Model;
 
     namespace Autosausleihen
     {
-    class MySQL
+    static class MySQL
     {
         //Connectionstring zur SQLDatenbank
         public static string ConnectionString = @"host=mysql8.db4free.net;user=iah51;password=gso-koeln;database=mycar;port=3307;";
@@ -107,12 +107,14 @@ using Autosausleihen.Model;
 
 
             }
+
+
         #endregion
 
         #region Kunde
-            internal static void InsertUser(UserModel kundenmodel)
-        {
-            // create SqlConnection object
+        internal static void InsertUser(UserModel kundenmodel)
+            {
+                // create SqlConnection object
             using (MySqlConnection con = new MySqlConnection(ConnectionString))
             {
                 try
