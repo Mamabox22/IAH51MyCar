@@ -76,6 +76,8 @@
             this.herstellerColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.modelColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nameColum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TBAA_ID = new System.Windows.Forms.TextBox();
+            this.LBA_ID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -364,6 +366,7 @@
             this.TBAHersteller.Name = "TBAHersteller";
             this.TBAHersteller.Size = new System.Drawing.Size(121, 20);
             this.TBAHersteller.TabIndex = 119;
+            this.TBAHersteller.TextChanged += new System.EventHandler(this.TBAHersteller_TextChanged);
             // 
             // TBAModell
             // 
@@ -371,6 +374,7 @@
             this.TBAModell.Name = "TBAModell";
             this.TBAModell.Size = new System.Drawing.Size(121, 20);
             this.TBAModell.TabIndex = 120;
+            this.TBAModell.TextChanged += new System.EventHandler(this.TBAModell_TextChanged);
             // 
             // TBAName
             // 
@@ -378,6 +382,7 @@
             this.TBAName.Name = "TBAName";
             this.TBAName.Size = new System.Drawing.Size(121, 20);
             this.TBAName.TabIndex = 121;
+            this.TBAName.TextChanged += new System.EventHandler(this.TBAName_TextChanged);
             // 
             // label12
             // 
@@ -394,6 +399,7 @@
             this.TBAFarbe.Name = "TBAFarbe";
             this.TBAFarbe.Size = new System.Drawing.Size(121, 20);
             this.TBAFarbe.TabIndex = 124;
+            this.TBAFarbe.TextChanged += new System.EventHandler(this.TBAFarbe_TextChanged);
             // 
             // TBABaujahr
             // 
@@ -401,22 +407,24 @@
             this.TBABaujahr.Name = "TBABaujahr";
             this.TBABaujahr.Size = new System.Drawing.Size(121, 20);
             this.TBABaujahr.TabIndex = 125;
+            this.TBABaujahr.TextChanged += new System.EventHandler(this.TBABaujahr_TextChanged);
             // 
             // TBAVerfügbar
             // 
-            this.TBAVerfügbar.Location = new System.Drawing.Point(611, 410);
+            this.TBAVerfügbar.Location = new System.Drawing.Point(611, 422);
             this.TBAVerfügbar.Name = "TBAVerfügbar";
             this.TBAVerfügbar.Size = new System.Drawing.Size(367, 20);
             this.TBAVerfügbar.TabIndex = 126;
             // 
             // BTMieten
             // 
-            this.BTMieten.Location = new System.Drawing.Point(735, 436);
+            this.BTMieten.Location = new System.Drawing.Point(737, 448);
             this.BTMieten.Name = "BTMieten";
             this.BTMieten.Size = new System.Drawing.Size(148, 23);
             this.BTMieten.TabIndex = 127;
             this.BTMieten.Text = "Dieses Auto mieten";
             this.BTMieten.UseVisualStyleBackColor = true;
+            this.BTMieten.Click += new System.EventHandler(this.BTMieten_Click);
             // 
             // ComBSitzplätze
             // 
@@ -456,7 +464,6 @@
             this.lvAutos.TabIndex = 131;
             this.lvAutos.UseCompatibleStateImageBehavior = false;
             this.lvAutos.View = System.Windows.Forms.View.Details;
-
             // 
             // herstellerColumn
             // 
@@ -470,11 +477,30 @@
             // 
             this.nameColum.Text = "Name";
             // 
+            // TBAA_ID
+            // 
+            this.TBAA_ID.Location = new System.Drawing.Point(857, 396);
+            this.TBAA_ID.Name = "TBAA_ID";
+            this.TBAA_ID.Size = new System.Drawing.Size(121, 20);
+            this.TBAA_ID.TabIndex = 132;
+            this.TBAA_ID.TextChanged += new System.EventHandler(this.TBAA_ID_TextChanged);
+            // 
+            // LBA_ID
+            // 
+            this.LBA_ID.AutoSize = true;
+            this.LBA_ID.Location = new System.Drawing.Point(888, 382);
+            this.LBA_ID.Name = "LBA_ID";
+            this.LBA_ID.Size = new System.Drawing.Size(43, 13);
+            this.LBA_ID.TabIndex = 133;
+            this.LBA_ID.Text = "Auto ID";
+            // 
             // AutoAnzeige
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 483);
+            this.Controls.Add(this.LBA_ID);
+            this.Controls.Add(this.TBAA_ID);
             this.Controls.Add(this.lvAutos);
             this.Controls.Add(this.ComBBaujahr);
             this.Controls.Add(this.ComBFarbe);
@@ -575,6 +601,8 @@
         private System.Windows.Forms.ColumnHeader herstellerColumn;
         private System.Windows.Forms.ColumnHeader modelColumn;
         private System.Windows.Forms.ColumnHeader nameColum;
+        private System.Windows.Forms.TextBox TBAA_ID;
+        private System.Windows.Forms.Label LBA_ID;
     }
 }
 
