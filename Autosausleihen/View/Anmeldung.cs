@@ -42,11 +42,23 @@ namespace Autosausleihen
         private void TBRAdresse_TextChanged(object sender, EventArgs e)
         {
             RegistrierenButtonEnableDisable();
+
         }
 
         private void TBRPostleitzahl_TextChanged(object sender, EventArgs e)
         {
-            RegistrierenButtonEnableDisable();
+            if (!string.IsNullOrWhiteSpace(TBRPostleitzahl.Text))
+            {
+                if (!Int32.TryParse(TBRPostleitzahl.Text, out ValuePLZ))
+                {
+                    MessageBox.Show("Postleitzahl ungültig. Bitte nur Zahlen verwenden.");
+                    TBRPostleitzahl.Clear();
+                }
+                else
+                {
+                    RegistrierenButtonEnableDisable();
+                }
+            }
         }
 
         private void TBRZahlung_TextChanged(object sender, EventArgs e)
@@ -81,7 +93,18 @@ namespace Autosausleihen
 
         private void TBRTelefon_TextChanged(object sender, EventArgs e)
         {
-            RegistrierenButtonEnableDisable();
+            if (!string.IsNullOrWhiteSpace(TBRTelefon.Text))
+            {
+                if (!Int32.TryParse(TBRTelefon.Text, out ValueTelefon))
+                {
+                    MessageBox.Show("Telefonnummer ungültig. Bitte nur Zahlen verwenden.");
+                    TBRTelefon.Clear();
+                }
+                else
+                {
+                    RegistrierenButtonEnableDisable();
+                }
+            }
         }
 
         private void TBRUsername_TextChanged(object sender, EventArgs e)
@@ -102,22 +125,14 @@ namespace Autosausleihen
 
         private void TBRInsert_Click(object sender, EventArgs e)
         {
-           
+            
             if (TBRPasswort.Text == TBRPasswortW.Text)
             {
-                if (!Int32.TryParse(TBRTelefon.Text, out ValueTelefon))
-                {
-                    MessageBox.Show("Gib bitte echte Werte an!");
-                }
-                if (!Int32.TryParse(TBRPostleitzahl.Text, out ValuePLZ))
-                {
-                    MessageBox.Show("Gib bitte echte Werte an!");
-                }
-
-                MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
-                AutoAnzeige Auswahl = new AutoAnzeige();
-                Auswahl.Show();
-
+               
+                   MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
+                   AutoAnzeige Auswahl = new AutoAnzeige();
+                   Auswahl.Show();
+                  
             }
             else
                 {
