@@ -77,6 +77,7 @@
             this.TBSitzplätze.Name = "TBSitzplätze";
             this.TBSitzplätze.Size = new System.Drawing.Size(121, 20);
             this.TBSitzplätze.TabIndex = 4;
+            this.TBSitzplätze.TextChanged += new System.EventHandler(this.TBSitzplätze_TextChanged);
             // 
             // TBFarbe
             // 
@@ -184,6 +185,7 @@
             this.BTNHinzufügen.TabIndex = 16;
             this.BTNHinzufügen.Text = "Hinzufügen";
             this.BTNHinzufügen.UseVisualStyleBackColor = true;
+            this.BTNHinzufügen.Click += new System.EventHandler(this.BTNHinzufügen_Click);
             // 
             // lvAutos
             // 

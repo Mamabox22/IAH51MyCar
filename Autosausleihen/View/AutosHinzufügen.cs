@@ -45,5 +45,30 @@ namespace Autosausleihen
         {
 
         }
+        //In dieser Region wird "Versucht" den String aus den jeweiligen Textboxen in Ints zu konvertieren
+        #region
+        private void TBSitzplätze_TextChanged(object sender, EventArgs e)
+        {
+            string Sitzplätze = Convert.ToString(1);
+            TBSitzplätze.Text = Sitzplätze.ToString();
+        }
+        private void TBBaujahr_TextChanged(object sender, EventArgs e)
+        {
+            string Baujahr = Convert.ToString(1);
+            TBSitzplätze.Text = Baujahr.ToString();
+        }
+        private void Variante_TextChanged(object sender, EventArgs e)
+        {
+            string Variante = Convert.ToString(1);
+            TBSitzplätze.Text = Variante.ToString();
+        }
+#endregion
+        private void BTNHinzufügen_Click(object sender, EventArgs e)
+        {
+
+            MySQL.InsertAuto(new Model.AutoModel(TBName.Text, TBHersteller.Text, TBBaujahr.Text, TBFarbe.Text ));
+        }
+
+
     }
 }
