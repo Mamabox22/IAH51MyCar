@@ -16,7 +16,7 @@ namespace Autosausleihen
 
     public partial class Anmeldung : Form
     {
-        //string Passwortkodiert;
+      
         int ValueTelefon;
         int ValuePLZ;
         public Anmeldung()
@@ -25,9 +25,9 @@ namespace Autosausleihen
             TBRInsert.Enabled = false;
         }
 
-        public void RegistrierenButtonEnableDisable() //Diese Methode dient dazu den Registrierenbutton erst dann freizugeben wenn in alle Pflichtfelder etwas eingetragen wurde
+        public void RegistrierenButtonEnableDisable() //Diese Methode dient dazu den Registrierenbutton erst dann freizugeben wenn in alle Pflichtfelder etwas eingetragen wurde. Die Passwörter müssen auch gleich sein.
         {
-            if (!string.IsNullOrWhiteSpace(TBRName.Text) & !string.IsNullOrWhiteSpace(TBREmail.Text) & !string.IsNullOrWhiteSpace(TBRPasswort.Text) & !string.IsNullOrWhiteSpace(TBRPasswortW.Text) & !string.IsNullOrWhiteSpace(TBRAdresse.Text) & !string.IsNullOrWhiteSpace(TBRZahlung.Text) & !string.IsNullOrWhiteSpace(TBRPostleitzahl.Text) & CBAGBs.Checked == true)
+            if (!string.IsNullOrWhiteSpace(TBRName.Text) & !string.IsNullOrWhiteSpace(TBREmail.Text) & !string.IsNullOrWhiteSpace(TBRPasswort.Text) & !string.IsNullOrWhiteSpace(TBRPasswortW.Text) & !string.IsNullOrWhiteSpace(TBRAdresse.Text) & !string.IsNullOrWhiteSpace(TBRZahlung.Text) & !string.IsNullOrWhiteSpace(TBRPostleitzahl.Text) & CBAGBs.Checked == true & TBRPasswort.Text == TBRPasswortW.Text)
             {
                 TBRInsert.Enabled = true;
             }
@@ -37,12 +37,25 @@ namespace Autosausleihen
             }
         }
 
-   
-        #region Textboxen Textchanged
+        public void Passwortprufen() //Prüft ob die Passwörter gleich sind, falls nicht wird ein Label angezeigt und der RegistrierenButton kann nicht gedrückt werden.
+        {
+            if (TBRPasswort.Text != TBRPasswortW.Text)
+            {
+                LBpwprüfen.Visible = true;
+                TBRInsert.Enabled = false;
+            }
+            else if (TBRPasswort.Text == TBRPasswortW.Text)
+            {
+                LBpwprüfen.Visible = false;
+                RegistrierenButtonEnableDisable();
+            }
+        }
+
+        //In der Region findet man alle Befehle die in Kraft treten wenn man den Inhalt der Textboxen verändert.
+        #region Textboxen Textchanged 
         private void TBRAdresse_TextChanged(object sender, EventArgs e)
         {
             RegistrierenButtonEnableDisable();
-
         }
 
         private void TBRPostleitzahl_TextChanged(object sender, EventArgs e)
@@ -68,12 +81,12 @@ namespace Autosausleihen
 
         private void TBRPasswortW_TextChanged(object sender, EventArgs e)
         {
-            RegistrierenButtonEnableDisable();
+            Passwortprufen();
         }
 
         private void TBRPasswort_TextChanged(object sender, EventArgs e)
         {
-            RegistrierenButtonEnableDisable();
+            Passwortprufen();
         }
 
         private void TBREmail_TextChanged(object sender, EventArgs e)
@@ -85,7 +98,7 @@ namespace Autosausleihen
         {
             RegistrierenButtonEnableDisable();
         }
-        
+
         private void TBRVorname_TextChanged(object sender, EventArgs e)
         {
             RegistrierenButtonEnableDisable();
@@ -117,7 +130,6 @@ namespace Autosausleihen
             RegistrierenButtonEnableDisable();
         }
         #endregion
-
         private void CBAGBs_CheckedChanged(object sender, EventArgs e)
         {
             RegistrierenButtonEnableDisable();
@@ -125,21 +137,16 @@ namespace Autosausleihen
 
         private void TBRInsert_Click(object sender, EventArgs e)
         {
-            
+
             if (TBRPasswort.Text == TBRPasswortW.Text)
             {
-               
-                   MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
-                   AutoAnzeige Auswahl = new AutoAnzeige();
-                   Auswahl.Show();
-                  
+
+                MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
+                AutoAnzeige Auswahl = new AutoAnzeige();
+                Auswahl.Show();
+
             }
-            else
-                {
-                MessageBox.Show("Sie haben ihr Passwort nicht korrekt wiederholt eingegeben.");
-                TBRPasswort.Clear();
-                TBRPasswortW.Clear();
-                }
+          
         }
 
     }
