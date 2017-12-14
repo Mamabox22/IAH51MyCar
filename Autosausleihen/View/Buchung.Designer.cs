@@ -41,9 +41,9 @@
             this.LBName = new System.Windows.Forms.Label();
             this.LBFarbe = new System.Windows.Forms.Label();
             this.LBPreis = new System.Windows.Forms.Label();
-            this.CBZahlungsart = new System.Windows.Forms.ComboBox();
-            this.LBZahlungsart = new System.Windows.Forms.Label();
             this.BTNBuchen = new System.Windows.Forms.Button();
+            this.TBA_ID = new System.Windows.Forms.TextBox();
+            this.LBA_ID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pBAuto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.TBModell.Name = "TBModell";
             this.TBModell.Size = new System.Drawing.Size(100, 20);
             this.TBModell.TabIndex = 4;
+            this.TBModell.TextChanged += new System.EventHandler(this.TBModell_TextChanged);
             // 
             // TBName
             // 
@@ -68,6 +69,7 @@
             this.TBName.Name = "TBName";
             this.TBName.Size = new System.Drawing.Size(100, 20);
             this.TBName.TabIndex = 2;
+            this.TBName.TextChanged += new System.EventHandler(this.TBName_TextChanged);
             // 
             // TBHersteller
             // 
@@ -75,6 +77,7 @@
             this.TBHersteller.Name = "TBHersteller";
             this.TBHersteller.Size = new System.Drawing.Size(100, 20);
             this.TBHersteller.TabIndex = 1;
+            this.TBHersteller.TextChanged += new System.EventHandler(this.TBHersteller_TextChanged);
             // 
             // TBBaujahr
             // 
@@ -82,6 +85,7 @@
             this.TBBaujahr.Name = "TBBaujahr";
             this.TBBaujahr.Size = new System.Drawing.Size(100, 20);
             this.TBBaujahr.TabIndex = 5;
+            this.TBBaujahr.TextChanged += new System.EventHandler(this.TBBaujahr_TextChanged);
             // 
             // TBPreis
             // 
@@ -89,6 +93,7 @@
             this.TBPreis.Name = "TBPreis";
             this.TBPreis.Size = new System.Drawing.Size(100, 20);
             this.TBPreis.TabIndex = 6;
+            this.TBPreis.TextChanged += new System.EventHandler(this.TBPreis_TextChanged);
             // 
             // TBFarbe
             // 
@@ -96,6 +101,7 @@
             this.TBFarbe.Name = "TBFarbe";
             this.TBFarbe.Size = new System.Drawing.Size(100, 20);
             this.TBFarbe.TabIndex = 3;
+            this.TBFarbe.TextChanged += new System.EventHandler(this.TBFarbe_TextChanged);
             // 
             // LBHersteller
             // 
@@ -151,40 +157,40 @@
             this.LBPreis.TabIndex = 12;
             this.LBPreis.Text = "Preis";
             // 
-            // CBZahlungsart
-            // 
-            this.CBZahlungsart.FormattingEnabled = true;
-            this.CBZahlungsart.Location = new System.Drawing.Point(12, 325);
-            this.CBZahlungsart.Name = "CBZahlungsart";
-            this.CBZahlungsart.Size = new System.Drawing.Size(121, 21);
-            this.CBZahlungsart.TabIndex = 7;
-            // 
-            // LBZahlungsart
-            // 
-            this.LBZahlungsart.AutoSize = true;
-            this.LBZahlungsart.Location = new System.Drawing.Point(41, 309);
-            this.LBZahlungsart.Name = "LBZahlungsart";
-            this.LBZahlungsart.Size = new System.Drawing.Size(63, 13);
-            this.LBZahlungsart.TabIndex = 14;
-            this.LBZahlungsart.Text = "Zahlungsart";
-            // 
             // BTNBuchen
             // 
-            this.BTNBuchen.Location = new System.Drawing.Point(162, 316);
+            this.BTNBuchen.Location = new System.Drawing.Point(136, 316);
             this.BTNBuchen.Name = "BTNBuchen";
-            this.BTNBuchen.Size = new System.Drawing.Size(75, 36);
+            this.BTNBuchen.Size = new System.Drawing.Size(100, 36);
             this.BTNBuchen.TabIndex = 8;
             this.BTNBuchen.Text = "Buchen";
             this.BTNBuchen.UseVisualStyleBackColor = true;
+            this.BTNBuchen.Click += new System.EventHandler(this.BTNBuchen_Click);
+            // 
+            // TBA_ID
+            // 
+            this.TBA_ID.Location = new System.Drawing.Point(12, 316);
+            this.TBA_ID.Name = "TBA_ID";
+            this.TBA_ID.Size = new System.Drawing.Size(100, 20);
+            this.TBA_ID.TabIndex = 13;
+            // 
+            // LBA_ID
+            // 
+            this.LBA_ID.AutoSize = true;
+            this.LBA_ID.Location = new System.Drawing.Point(41, 300);
+            this.LBA_ID.Name = "LBA_ID";
+            this.LBA_ID.Size = new System.Drawing.Size(43, 13);
+            this.LBA_ID.TabIndex = 14;
+            this.LBA_ID.Text = "Auto ID";
             // 
             // Buchung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(249, 364);
+            this.Controls.Add(this.LBA_ID);
+            this.Controls.Add(this.TBA_ID);
             this.Controls.Add(this.BTNBuchen);
-            this.Controls.Add(this.LBZahlungsart);
-            this.Controls.Add(this.CBZahlungsart);
             this.Controls.Add(this.LBPreis);
             this.Controls.Add(this.LBFarbe);
             this.Controls.Add(this.LBName);
@@ -226,8 +232,8 @@
         private System.Windows.Forms.Label LBName;
         private System.Windows.Forms.Label LBFarbe;
         private System.Windows.Forms.Label LBPreis;
-        private System.Windows.Forms.ComboBox CBZahlungsart;
-        private System.Windows.Forms.Label LBZahlungsart;
         private System.Windows.Forms.Button BTNBuchen;
+        private System.Windows.Forms.TextBox TBA_ID;
+        private System.Windows.Forms.Label LBA_ID;
     }
 }
