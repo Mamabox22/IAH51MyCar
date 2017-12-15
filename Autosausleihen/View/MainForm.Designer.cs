@@ -81,6 +81,7 @@
             this.TBLPasswort.Name = "TBLPasswort";
             this.TBLPasswort.Size = new System.Drawing.Size(145, 20);
             this.TBLPasswort.TabIndex = 2;
+            this.TBLPasswort.UseSystemPasswordChar = true;
             // 
             // LBUsername
             // 
@@ -109,7 +110,7 @@
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImage = global::Autosausleihen.Properties.Resources.AutoMainForm;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(418, 320);
+            this.ClientSize = new System.Drawing.Size(418, 319);
             this.Controls.Add(this.LBPasswort);
             this.Controls.Add(this.LBUsername);
             this.Controls.Add(this.TBLPasswort);

@@ -8,6 +8,16 @@ namespace Autosausleihen.Model
 {
     class AutoModel
     {
+        public AutoModel(string Hersteller, string Modell, string Name, string Farbe) //int Sitzplätze, int Variante, int Buajahr
+        {
+            this.Hersteller = Hersteller;
+            this.Modell = Modell;
+            this.Name = Name;
+            //this.Baujahr = Baujahr;
+            //this.Sitzplätze = Sitzplätze;
+            this.Farbe = Farbe;
+            //this.Variante = Variante;
+        }
 
         public string Hersteller { get; set; }
 

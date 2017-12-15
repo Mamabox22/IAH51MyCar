@@ -13,11 +13,16 @@ namespace Autosausleihen.View
 {
     public partial class Buchung : Form
     {
-        private readonly MySqlDataReader reader;
+        public readonly MySqlDataReader reader;
 
-        public Buchung()
+        public Buchung(string ID)
         {
+            InitializeComponent();
+            TBA_ID.Text = ID;
 
+        //In Dieser Region sind die vorher benutzen SQL Anweisungen welche jeweils Werte abfragen (Wurde probehalber ersetzt)
+#region
+            /* Wurde hauptsächlich ersetzt durch den Bereich in Zeile 112-126 dieser Form
             using (var con = new MySqlConnection(MySQL.ConnectionString)) //Werte werden aus der Datenbank gelesen und in die Textboxen geschrieben.
             {
                 using (var cmdHersteller = new MySqlCommand("select hersteller from auto", con))
@@ -103,10 +108,30 @@ namespace Autosausleihen.View
                 }
 
 
-            }
-
-
+            }*/
+#endregion
         }
+
+        // Anstatt die Werte aus der Datenbank zu nehmen werden die Werte aus der vorherigen Form übernommen
+        #region
+        public string Herstellerstring { get; set; } 
+        public string Namestring { get; set; }
+        public string Modellstring { get; set; }
+        public string Baujahrstring { get; set; }
+        public string Farbestring { get; set; }
+        public string IDstring { get; set; }
+
+
+        private void Buchung_Load(object sender, EventArgs e)
+        {
+            TBHersteller.Text = Herstellerstring;
+            TBName.Text = Namestring;
+            TBModell.Text = Modellstring;
+            TBBaujahr.Text = Baujahrstring;
+            TBFarbe.Text = Farbestring;
+            TBA_ID.Text = IDstring;
+        }
+        #endregion
         public void BuchungButtonEnableDisable() //Diese Methode dient dazu den Buchenbutton erst dann freizugeben wenn in alle Pflichtfelder etwas eingetragen wurde
         {
             if (!string.IsNullOrWhiteSpace(TBBaujahr.Text) & !string.IsNullOrWhiteSpace(TBFarbe.Text) &!string.IsNullOrWhiteSpace(TBHersteller.Text) &!string.IsNullOrWhiteSpace(TBModell.Text) &!string.IsNullOrWhiteSpace(TBName.Text) &!string.IsNullOrWhiteSpace(TBPreis.Text))

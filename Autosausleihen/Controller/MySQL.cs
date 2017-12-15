@@ -15,7 +15,7 @@ using Autosausleihen.Model;
         public static string ConnectionString = @"host=mysql8.db4free.net;user=iah51;password=gso-koeln;database=mycar;port=3307;";
 
         #region Auto
-            internal static void InsertAuto(AutoModel automodel)
+            public static void InsertAuto(Model.AutoModel automodel)
             {
                 // create SqlConnection object
                 using (MySqlConnection con = new MySqlConnection(ConnectionString))
@@ -46,7 +46,7 @@ using Autosausleihen.Model;
 
             }
 
-            internal static void UpdateAuto(AutoModel automodel)
+            internal static void UpdateAuto(Model.AutoModel automodel)
             {
                 // create SqlConnection object
                 using (MySqlConnection con = new MySqlConnection(ConnectionString))
@@ -77,7 +77,7 @@ using Autosausleihen.Model;
 
             }
 
-            internal static void DeleteAuto(AutoModel automodel)
+            internal static void DeleteAuto(Model.AutoModel automodel)
             {
                 // create SqlConnection object
                 using (MySqlConnection con = new MySqlConnection(ConnectionString))

@@ -53,6 +53,9 @@
             this.TBRUsername = new System.Windows.Forms.TextBox();
             this.LBUsername = new System.Windows.Forms.Label();
             this.LBSternchen = new System.Windows.Forms.Label();
+            this.LBpwprüfen = new System.Windows.Forms.Label();
+            this.LBpwlänge = new System.Windows.Forms.Label();
+            this.BTNAgb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBName
@@ -75,7 +78,7 @@
             // 
             // TBRInsert
             // 
-            this.TBRInsert.Location = new System.Drawing.Point(47, 375);
+            this.TBRInsert.Location = new System.Drawing.Point(50, 386);
             this.TBRInsert.Name = "TBRInsert";
             this.TBRInsert.Size = new System.Drawing.Size(75, 23);
             this.TBRInsert.TabIndex = 13;
@@ -86,7 +89,7 @@
             // CBAGBs
             // 
             this.CBAGBs.AutoSize = true;
-            this.CBAGBs.Location = new System.Drawing.Point(47, 352);
+            this.CBAGBs.Location = new System.Drawing.Point(50, 363);
             this.CBAGBs.Name = "CBAGBs";
             this.CBAGBs.Size = new System.Drawing.Size(281, 17);
             this.CBAGBs.TabIndex = 12;
@@ -218,6 +221,7 @@
             this.TBRPasswortW.Name = "TBRPasswortW";
             this.TBRPasswortW.Size = new System.Drawing.Size(100, 20);
             this.TBRPasswortW.TabIndex = 9;
+            this.TBRPasswortW.UseSystemPasswordChar = true;
             this.TBRPasswortW.TextChanged += new System.EventHandler(this.TBRPasswortW_TextChanged);
             // 
             // TBRPasswort
@@ -260,25 +264,60 @@
             this.LBUsername.AutoSize = true;
             this.LBUsername.Location = new System.Drawing.Point(167, 44);
             this.LBUsername.Name = "LBUsername";
-            this.LBUsername.Size = new System.Drawing.Size(55, 13);
+            this.LBUsername.Size = new System.Drawing.Size(59, 13);
             this.LBUsername.TabIndex = 24;
-            this.LBUsername.Text = "Username";
+            this.LBUsername.Text = "Username*";
             // 
             // LBSternchen
             // 
             this.LBSternchen.AutoSize = true;
             this.LBSternchen.ForeColor = System.Drawing.Color.Crimson;
-            this.LBSternchen.Location = new System.Drawing.Point(47, 333);
+            this.LBSternchen.Location = new System.Drawing.Point(47, 347);
             this.LBSternchen.Name = "LBSternchen";
             this.LBSternchen.Size = new System.Drawing.Size(210, 13);
             this.LBSternchen.TabIndex = 25;
             this.LBSternchen.Text = "Die mit * markierten Felder sind Pflichtfelder";
             // 
+            // LBpwprüfen
+            // 
+            this.LBpwprüfen.AutoSize = true;
+            this.LBpwprüfen.ForeColor = System.Drawing.Color.Crimson;
+            this.LBpwprüfen.Location = new System.Drawing.Point(47, 334);
+            this.LBpwprüfen.Name = "LBpwprüfen";
+            this.LBpwprüfen.Size = new System.Drawing.Size(184, 13);
+            this.LBpwprüfen.TabIndex = 26;
+            this.LBpwprüfen.Text = "Beide Passwörter müssen gleich sein.";
+            this.LBpwprüfen.Visible = false;
+            // 
+            // LBpwlänge
+            // 
+            this.LBpwlänge.AutoSize = true;
+            this.LBpwlänge.ForeColor = System.Drawing.Color.Crimson;
+            this.LBpwlänge.Location = new System.Drawing.Point(47, 321);
+            this.LBpwlänge.Name = "LBpwlänge";
+            this.LBpwlänge.Size = new System.Drawing.Size(221, 13);
+            this.LBpwlänge.TabIndex = 27;
+            this.LBpwlänge.Text = "Ihr Passwort muss mehr als 6 Zeichen haben,";
+            this.LBpwlänge.Visible = false;
+            // 
+            // BTNAgb
+            // 
+            this.BTNAgb.Location = new System.Drawing.Point(170, 386);
+            this.BTNAgb.Name = "BTNAgb";
+            this.BTNAgb.Size = new System.Drawing.Size(75, 23);
+            this.BTNAgb.TabIndex = 28;
+            this.BTNAgb.Text = "AGB";
+            this.BTNAgb.UseVisualStyleBackColor = true;
+            this.BTNAgb.Click += new System.EventHandler(this.BTNAgb_Click);
+            // 
             // Anmeldung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 451);
+            this.ClientSize = new System.Drawing.Size(371, 452);
+            this.Controls.Add(this.BTNAgb);
+            this.Controls.Add(this.LBpwlänge);
+            this.Controls.Add(this.LBpwprüfen);
             this.Controls.Add(this.LBSternchen);
             this.Controls.Add(this.LBUsername);
             this.Controls.Add(this.TBRUsername);
@@ -343,5 +382,8 @@
         private System.Windows.Forms.TextBox TBRUsername;
         private System.Windows.Forms.Label LBUsername;
         private System.Windows.Forms.Label LBSternchen;
+        private System.Windows.Forms.Label LBpwprüfen;
+        private System.Windows.Forms.Label LBpwlänge;
+        private System.Windows.Forms.Button BTNAgb;
     }
 }
