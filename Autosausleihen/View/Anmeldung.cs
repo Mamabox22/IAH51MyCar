@@ -198,8 +198,10 @@ namespace Autosausleihen
             {
 
                 MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
+                // Registriert Kunden
                 AutoAnzeige Auswahl = new AutoAnzeige();
                 Auswahl.Show();
+                //Verweist auf neue Form
 
             }
           

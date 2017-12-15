@@ -66,9 +66,13 @@ namespace Autosausleihen
         private void BTNHinzufügen_Click(object sender, EventArgs e)
         {
 
-            MySQL.InsertAuto(new Model.AutoModel(TBName.Text, TBHersteller.Text, TBBaujahr.Text, TBFarbe.Text ));
+            //MySQL.InsertAuto(new Model.AutoModel(TBHersteller.Text, TBModell.Text, TBName.Text, TBBaujahr.Text, TBSitzplätze.Text, TBFarbe.Text, variante /*Preis*/));
+
         }
 
+        /* Muss noch ne If anweisung rein das Variante bei CheckboxCabrio.checked
+         * variable = 1 ist usw.
+         */
 
     }
 }
