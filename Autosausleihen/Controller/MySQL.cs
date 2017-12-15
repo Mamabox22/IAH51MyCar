@@ -112,24 +112,24 @@ using Autosausleihen.Model;
         #endregion
 
         #region Kunde
-        internal static void InsertUser(UserModel kundenmodel)
+            internal static void InsertUser(UserModel kundenmodel)
             {
                 // create SqlConnection object
-            using (MySqlConnection con = new MySqlConnection(ConnectionString))
-            {
-                try
+                using (MySqlConnection con = new MySqlConnection(ConnectionString))
                 {
-                    // open connection to database
-                    con.Open();
-                    MessageBox.Show("Connected");
-                    MySqlCommand com = new MySqlCommand("insert into user (Name, Vorname, Email, Telefon, Adresse, Postleitzahl, Ort, Username, Passwort) values ('" + kundenmodel.Name + "','" + kundenmodel.Vorname + "' ,'" + kundenmodel.Email + "', '" + kundenmodel.Telefon + "', '" + kundenmodel.Adresse + "', '" + kundenmodel.Postleitzahl + "', '" + kundenmodel.Ort + "', '" + kundenmodel.Username + "', '" + kundenmodel.Passwort + "' )", con);
-                    MessageBox.Show("User wurde erstellt");
-                    // Insert UserModel in User
+                    try
+                    {
+                        // open connection to database
+                        con.Open();
+                        MessageBox.Show("Connected");
+                        MySqlCommand com = new MySqlCommand("insert into user (Name, Vorname, Email, Telefon, Adresse, Postleitzahl, Ort, Username, Passwort) values ('" + kundenmodel.Name + "','" + kundenmodel.Vorname + "' ,'" + kundenmodel.Email + "', '" + kundenmodel.Telefon + "', '" + kundenmodel.Adresse + "', '" + kundenmodel.Postleitzahl + "', '" + kundenmodel.Ort + "', '" + kundenmodel.Username + "', '" + kundenmodel.Passwort + "' )", con);
+                        MessageBox.Show("User wurde erstellt");
+                        // Insert UserModel in User
 
-                    com.ExecuteNonQuery();
+                        com.ExecuteNonQuery();
 
-                }
-                catch (Exception e)
+                    }
+                    catch (Exception e)
                 {
                     throw e;
                 }
