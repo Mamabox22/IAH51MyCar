@@ -81,7 +81,7 @@
             // TBRInsert
             // 
             this.TBRInsert.Location = new System.Drawing.Point(90, 476);
-            this.TBRInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRInsert.Margin = new System.Windows.Forms.Padding(4);
             this.TBRInsert.Name = "TBRInsert";
             this.TBRInsert.Size = new System.Drawing.Size(100, 28);
             this.TBRInsert.TabIndex = 13;
@@ -93,7 +93,7 @@
             // 
             this.CBAGBs.AutoSize = true;
             this.CBAGBs.Location = new System.Drawing.Point(68, 427);
-            this.CBAGBs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CBAGBs.Margin = new System.Windows.Forms.Padding(4);
             this.CBAGBs.Name = "CBAGBs";
             this.CBAGBs.Size = new System.Drawing.Size(374, 21);
             this.CBAGBs.TabIndex = 12;
@@ -104,7 +104,7 @@
             // TBRName
             // 
             this.TBRName.Location = new System.Drawing.Point(67, 74);
-            this.TBRName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRName.Margin = new System.Windows.Forms.Padding(4);
             this.TBRName.Name = "TBRName";
             this.TBRName.Size = new System.Drawing.Size(132, 22);
             this.TBRName.TabIndex = 1;
@@ -113,7 +113,7 @@
             // TBRVorname
             // 
             this.TBRVorname.Location = new System.Drawing.Point(67, 123);
-            this.TBRVorname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRVorname.Margin = new System.Windows.Forms.Padding(4);
             this.TBRVorname.Name = "TBRVorname";
             this.TBRVorname.Size = new System.Drawing.Size(132, 22);
             this.TBRVorname.TabIndex = 2;
@@ -122,16 +122,16 @@
             // TBRTelefon
             // 
             this.TBRTelefon.Location = new System.Drawing.Point(228, 223);
-            this.TBRTelefon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRTelefon.Margin = new System.Windows.Forms.Padding(4);
             this.TBRTelefon.Name = "TBRTelefon";
             this.TBRTelefon.Size = new System.Drawing.Size(132, 22);
-            this.TBRTelefon.TabIndex = 4;
+            this.TBRTelefon.TabIndex = 10;
             this.TBRTelefon.TextChanged += new System.EventHandler(this.TBRTelefon_TextChanged);
             // 
             // TBREmail
             // 
             this.TBREmail.Location = new System.Drawing.Point(67, 171);
-            this.TBREmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBREmail.Margin = new System.Windows.Forms.Padding(4);
             this.TBREmail.Name = "TBREmail";
             this.TBREmail.Size = new System.Drawing.Size(132, 22);
             this.TBREmail.TabIndex = 3;
@@ -160,7 +160,7 @@
             // TBRZahlung
             // 
             this.TBRZahlung.Location = new System.Drawing.Point(227, 282);
-            this.TBRZahlung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRZahlung.Margin = new System.Windows.Forms.Padding(4);
             this.TBRZahlung.Name = "TBRZahlung";
             this.TBRZahlung.Size = new System.Drawing.Size(132, 22);
             this.TBRZahlung.TabIndex = 11;
@@ -169,10 +169,10 @@
             // TBROrt
             // 
             this.TBROrt.Location = new System.Drawing.Point(228, 171);
-            this.TBROrt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBROrt.Margin = new System.Windows.Forms.Padding(4);
             this.TBROrt.Name = "TBROrt";
             this.TBROrt.Size = new System.Drawing.Size(132, 22);
-            this.TBROrt.TabIndex = 10;
+            this.TBROrt.TabIndex = 9;
             this.TBROrt.TextChanged += new System.EventHandler(this.TBROrt_TextChanged);
             // 
             // LBZahlung
@@ -198,19 +198,19 @@
             // TBRPostleitzahl
             // 
             this.TBRPostleitzahl.Location = new System.Drawing.Point(228, 128);
-            this.TBRPostleitzahl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRPostleitzahl.Margin = new System.Windows.Forms.Padding(4);
             this.TBRPostleitzahl.Name = "TBRPostleitzahl";
             this.TBRPostleitzahl.Size = new System.Drawing.Size(132, 22);
-            this.TBRPostleitzahl.TabIndex = 6;
+            this.TBRPostleitzahl.TabIndex = 8;
             this.TBRPostleitzahl.TextChanged += new System.EventHandler(this.TBRPostleitzahl_TextChanged);
             // 
             // TBRAdresse
             // 
             this.TBRAdresse.Location = new System.Drawing.Point(228, 73);
-            this.TBRAdresse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRAdresse.Margin = new System.Windows.Forms.Padding(4);
             this.TBRAdresse.Name = "TBRAdresse";
             this.TBRAdresse.Size = new System.Drawing.Size(132, 22);
-            this.TBRAdresse.TabIndex = 5;
+            this.TBRAdresse.TabIndex = 7;
             this.TBRAdresse.TextChanged += new System.EventHandler(this.TBRAdresse_TextChanged);
             // 
             // LBPostleitzahl
@@ -236,20 +236,20 @@
             // TBRPasswortW
             // 
             this.TBRPasswortW.Location = new System.Drawing.Point(67, 330);
-            this.TBRPasswortW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRPasswortW.Margin = new System.Windows.Forms.Padding(4);
             this.TBRPasswortW.Name = "TBRPasswortW";
             this.TBRPasswortW.Size = new System.Drawing.Size(132, 22);
-            this.TBRPasswortW.TabIndex = 9;
+            this.TBRPasswortW.TabIndex = 6;
             this.TBRPasswortW.UseSystemPasswordChar = true;
             this.TBRPasswortW.TextChanged += new System.EventHandler(this.TBRPasswortW_TextChanged);
             // 
             // TBRPasswort
             // 
             this.TBRPasswort.Location = new System.Drawing.Point(67, 282);
-            this.TBRPasswort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRPasswort.Margin = new System.Windows.Forms.Padding(4);
             this.TBRPasswort.Name = "TBRPasswort";
             this.TBRPasswort.Size = new System.Drawing.Size(132, 22);
-            this.TBRPasswort.TabIndex = 8;
+            this.TBRPasswort.TabIndex = 5;
             this.TBRPasswort.UseSystemPasswordChar = true;
             this.TBRPasswort.TextChanged += new System.EventHandler(this.TBRPasswort_TextChanged);
             // 
@@ -276,10 +276,10 @@
             // TBRUsername
             // 
             this.TBRUsername.Location = new System.Drawing.Point(67, 223);
-            this.TBRUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBRUsername.Margin = new System.Windows.Forms.Padding(4);
             this.TBRUsername.Name = "TBRUsername";
             this.TBRUsername.Size = new System.Drawing.Size(132, 22);
-            this.TBRUsername.TabIndex = 7;
+            this.TBRUsername.TabIndex = 4;
             this.TBRUsername.TextChanged += new System.EventHandler(this.TBRUsername_TextChanged);
             // 
             // LBUsername
@@ -330,7 +330,7 @@
             // BTNAgb
             // 
             this.BTNAgb.Location = new System.Drawing.Point(250, 476);
-            this.BTNAgb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNAgb.Margin = new System.Windows.Forms.Padding(4);
             this.BTNAgb.Name = "BTNAgb";
             this.BTNAgb.Size = new System.Drawing.Size(100, 28);
             this.BTNAgb.TabIndex = 28;
@@ -372,7 +372,7 @@
             this.Controls.Add(this.LBVorname);
             this.Controls.Add(this.LBName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(510, 592);
             this.MinimumSize = new System.Drawing.Size(510, 592);

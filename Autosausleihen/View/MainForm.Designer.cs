@@ -40,9 +40,10 @@
             // BTRegistrierung
             // 
             this.BTRegistrierung.BackColor = System.Drawing.Color.Transparent;
-            this.BTRegistrierung.Location = new System.Drawing.Point(143, 245);
+            this.BTRegistrierung.Location = new System.Drawing.Point(191, 302);
+            this.BTRegistrierung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTRegistrierung.Name = "BTRegistrierung";
-            this.BTRegistrierung.Size = new System.Drawing.Size(145, 26);
+            this.BTRegistrierung.Size = new System.Drawing.Size(193, 32);
             this.BTRegistrierung.TabIndex = 4;
             this.BTRegistrierung.Text = "Jetzt Registrieren";
             this.BTRegistrierung.UseVisualStyleBackColor = false;
@@ -50,9 +51,10 @@
             // 
             // BTLogIN
             // 
-            this.BTLogIN.Location = new System.Drawing.Point(143, 216);
+            this.BTLogIN.Location = new System.Drawing.Point(191, 266);
+            this.BTLogIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTLogIN.Name = "BTLogIN";
-            this.BTLogIN.Size = new System.Drawing.Size(145, 23);
+            this.BTLogIN.Size = new System.Drawing.Size(193, 28);
             this.BTLogIN.TabIndex = 3;
             this.BTLogIN.Text = "Einloggen";
             this.BTLogIN.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // 
             // BTHinzufügen
             // 
-            this.BTHinzufügen.Location = new System.Drawing.Point(168, 164);
+            this.BTHinzufügen.Location = new System.Drawing.Point(224, 202);
+            this.BTHinzufügen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTHinzufügen.Name = "BTHinzufügen";
-            this.BTHinzufügen.Size = new System.Drawing.Size(98, 46);
+            this.BTHinzufügen.Size = new System.Drawing.Size(131, 57);
             this.BTHinzufügen.TabIndex = 6;
             this.BTHinzufügen.Text = "Autos hinzufügen (Test)";
             this.BTHinzufügen.UseVisualStyleBackColor = true;
@@ -70,16 +73,18 @@
             // 
             // TBLUsername
             // 
-            this.TBLUsername.Location = new System.Drawing.Point(143, 55);
+            this.TBLUsername.Location = new System.Drawing.Point(191, 68);
+            this.TBLUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBLUsername.Name = "TBLUsername";
-            this.TBLUsername.Size = new System.Drawing.Size(145, 20);
+            this.TBLUsername.Size = new System.Drawing.Size(192, 22);
             this.TBLUsername.TabIndex = 1;
             // 
             // TBLPasswort
             // 
-            this.TBLPasswort.Location = new System.Drawing.Point(143, 112);
+            this.TBLPasswort.Location = new System.Drawing.Point(191, 138);
+            this.TBLPasswort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBLPasswort.Name = "TBLPasswort";
-            this.TBLPasswort.Size = new System.Drawing.Size(145, 20);
+            this.TBLPasswort.Size = new System.Drawing.Size(192, 22);
             this.TBLPasswort.TabIndex = 2;
             this.TBLPasswort.UseSystemPasswordChar = true;
             // 
@@ -87,9 +92,10 @@
             // 
             this.LBUsername.AutoSize = true;
             this.LBUsername.BackColor = System.Drawing.Color.Transparent;
-            this.LBUsername.Location = new System.Drawing.Point(79, 58);
+            this.LBUsername.Location = new System.Drawing.Point(105, 71);
+            this.LBUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBUsername.Name = "LBUsername";
-            this.LBUsername.Size = new System.Drawing.Size(58, 13);
+            this.LBUsername.Size = new System.Drawing.Size(77, 17);
             this.LBUsername.TabIndex = 6;
             this.LBUsername.Text = "Username:";
             // 
@@ -97,20 +103,21 @@
             // 
             this.LBPasswort.AutoSize = true;
             this.LBPasswort.BackColor = System.Drawing.Color.Transparent;
-            this.LBPasswort.Location = new System.Drawing.Point(84, 115);
+            this.LBPasswort.Location = new System.Drawing.Point(112, 142);
+            this.LBPasswort.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBPasswort.Name = "LBPasswort";
-            this.LBPasswort.Size = new System.Drawing.Size(53, 13);
+            this.LBPasswort.Size = new System.Drawing.Size(69, 17);
             this.LBPasswort.TabIndex = 7;
             this.LBPasswort.Text = "Passwort:";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImage = global::Autosausleihen.Properties.Resources.AutoMainForm;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(418, 319);
+            this.ClientSize = new System.Drawing.Size(555, 383);
             this.Controls.Add(this.LBPasswort);
             this.Controls.Add(this.LBUsername);
             this.Controls.Add(this.TBLPasswort);
@@ -119,9 +126,10 @@
             this.Controls.Add(this.BTLogIN);
             this.Controls.Add(this.BTRegistrierung);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(434, 358);
-            this.MinimumSize = new System.Drawing.Size(434, 358);
+            this.MaximumSize = new System.Drawing.Size(573, 430);
+            this.MinimumSize = new System.Drawing.Size(573, 430);
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.Text = "MyCar";

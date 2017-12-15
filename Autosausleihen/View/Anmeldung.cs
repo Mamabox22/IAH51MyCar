@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Autosausleihen;
 
 namespace Autosausleihen
 {
@@ -18,6 +19,7 @@ namespace Autosausleihen
 
         int ValueTelefon;
         int ValuePLZ;
+        
         public Anmeldung()
         {
             InitializeComponent();
@@ -105,6 +107,7 @@ namespace Autosausleihen
         }
      
         //In der Region findet man alle Befehle die in Kraft treten wenn man den Inhalt der Textboxen verändert.
+
         #region Textboxen Textchanged 
         private void TBRAdresse_TextChanged(object sender, EventArgs e)
         {
@@ -183,6 +186,7 @@ namespace Autosausleihen
             RegistrierenButtonEnableDisable();
         }
         #endregion
+
         private void CBAGBs_CheckedChanged(object sender, EventArgs e)
         {
             RegistrierenButtonEnableDisable();
@@ -196,8 +200,9 @@ namespace Autosausleihen
             }
       */      if (TBRPasswort.Text == TBRPasswortW.Text)
             {
-
-                MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
+                
+                
+                MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, Passwort.EncryptMP5(TBRPasswort.Text)));
                 // Registriert Kunden
                 AutoAnzeige Auswahl = new AutoAnzeige();
                 Auswahl.Show();
