@@ -16,7 +16,7 @@ namespace Autosausleihen
 
     public partial class Anmeldung : Form
     {
-      
+
         int ValueTelefon;
         int ValuePLZ;
         public Anmeldung()
@@ -39,18 +39,72 @@ namespace Autosausleihen
 
         public void Passwortprufen() //Prüft ob die Passwörter gleich sind, falls nicht wird ein Label angezeigt und der RegistrierenButton kann nicht gedrückt werden.
         {
-            if (TBRPasswort.Text != TBRPasswortW.Text)
+            if (TBRPasswort.Text != TBRPasswortW.Text | TBRPasswort.TextLength <= 5 )  //prüft ob passwörter ungleich sind oder die mindestlänge nicht erfüllt wurde
+            {
+                if (TBRPasswort.TextLength <= 5)    //wenn die mindestlänge nicht erfüllt wurde wird der kann der RegistrierenButton nicht gedrückt werden und ein label wird angezeigt
+                {
+                    LBpwlänge.Visible = true;
+                    TBRInsert.Enabled = false;
+                }
+                else if (TBRPasswort.TextLength >= 5) //wenn die mindestlänge erfüllt wurde wird das label nicht angezeigt
+                {
+                    LBpwlänge.Visible = false;
+                }
+
+                if (TBRPasswort.Text != TBRPasswortW.Text) //hier wird geprüft ob die passwörter in 'TBRPasswort' und 'TBRPasswortW' ungleich sind. Wenn sie ungleich sind kann der RegistrierenButton nicht gedrückt werden und ein label wird angezeigt
+                {
+                    TBRInsert.Enabled = false;
+                    LBpwprüfen.Visible = true;
+                }
+                else if (TBRPasswort.Text == TBRPasswortW.Text) //wenn die Passwörter übereinstimmen wird das label nicht angezeigt
+                {
+                    LBpwprüfen.Visible = false;
+                }
+            }
+            else if (TBRPasswort.Text != TBRPasswortW.Text) //hier wird geprüft ob die passwörter in 'TBRPasswort' und 'TBRPasswortW' ungleich sind. Wenn sie ungleich sind kann der RegistrierenButton nicht gedrückt werden und ein label wird angezeigt
             {
                 LBpwprüfen.Visible = true;
                 TBRInsert.Enabled = false;
             }
-            else if (TBRPasswort.Text == TBRPasswortW.Text)
+            else if (TBRPasswort.Text == TBRPasswortW.Text) //wenn die Passwörter übereinstimmen wird das label nicht angezeigt
             {
                 LBpwprüfen.Visible = false;
-                RegistrierenButtonEnableDisable();
+            }
+            if (TBRPasswort.TextLength <= 5)     //wenn die mindestlänge nicht erfüllt wurde wird der kann der RegistrierenButton nicht gedrückt werden und ein label wird angezeigt
+            {
+                LBpwlänge.Visible = true;
+                TBRInsert.Enabled = false;
+            }
+            else if (TBRPasswort.TextLength >= 5)   //wenn die mindestlänge erfüllt wurde wird das label nicht angezeigt
+            {
+                LBpwlänge.Visible = false;
+            }
+            else if (TBRPasswort.Text == TBRPasswortW.Text | TBRPasswort.TextLength >= 5) //prüft ob passwörter gleich sind oder länge richtig ist
+            {
+                if(TBRPasswort.TextLength >= 5) //wenn die mindestlänge erfüllt wurde wird das label nicht angezeigt
+                {
+                    LBpwlänge.Visible = false;
+                }
+                else if(TBRPasswort.Text == TBRPasswortW.Text) //wenn die Passwörter übereinstimmen wird das label nicht angezeigt
+                {
+                    LBpwprüfen.Visible = false;
+                }
+                if (TBRPasswort.TextLength >= 5 && TBRPasswort.Text == TBRPasswortW.Text) //Wenn das Passwort in Beiden Feldern richtig ist und die mindestlänge erfüllt wird werden keine label angezeigt und wenn die Pflichtfelder ausgefüllt sind kann man auf Registrieren klicken
+                {
+
+                    LBpwlänge.Visible = false;
+                    LBpwprüfen.Visible = false;
+                    RegistrierenButtonEnableDisable();
+                }
+                else if (TBRPasswort.TextLength <= 5) //wenn die mindestlänge nicht erfüllt wurde wird der kann der RegistrierenButton nicht gedrückt werden und ein label wird angezeigt
+                {
+                    LBpwlänge.Visible = true;
+                    TBRInsert.Enabled = false;
+                }
+
             }
         }
-
+     
         //In der Region findet man alle Befehle die in Kraft treten wenn man den Inhalt der Textboxen verändert.
         #region Textboxen Textchanged 
         private void TBRAdresse_TextChanged(object sender, EventArgs e)

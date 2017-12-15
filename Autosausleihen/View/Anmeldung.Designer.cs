@@ -54,6 +54,7 @@
             this.LBUsername = new System.Windows.Forms.Label();
             this.LBSternchen = new System.Windows.Forms.Label();
             this.LBpwprüfen = new System.Windows.Forms.Label();
+            this.LBpwlänge = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LBName
@@ -280,18 +281,30 @@
             // 
             this.LBpwprüfen.AutoSize = true;
             this.LBpwprüfen.ForeColor = System.Drawing.Color.Crimson;
-            this.LBpwprüfen.Location = new System.Drawing.Point(47, 325);
+            this.LBpwprüfen.Location = new System.Drawing.Point(47, 334);
             this.LBpwprüfen.Name = "LBpwprüfen";
             this.LBpwprüfen.Size = new System.Drawing.Size(184, 13);
             this.LBpwprüfen.TabIndex = 26;
             this.LBpwprüfen.Text = "Beide Passwörter müssen gleich sein.";
             this.LBpwprüfen.Visible = false;
             // 
+            // LBpwlänge
+            // 
+            this.LBpwlänge.AutoSize = true;
+            this.LBpwlänge.ForeColor = System.Drawing.Color.Crimson;
+            this.LBpwlänge.Location = new System.Drawing.Point(47, 321);
+            this.LBpwlänge.Name = "LBpwlänge";
+            this.LBpwlänge.Size = new System.Drawing.Size(221, 13);
+            this.LBpwlänge.TabIndex = 27;
+            this.LBpwlänge.Text = "Ihr Passwort muss mehr als 6 Zeichen haben,";
+            this.LBpwlänge.Visible = false;
+            // 
             // Anmeldung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 451);
+            this.Controls.Add(this.LBpwlänge);
             this.Controls.Add(this.LBpwprüfen);
             this.Controls.Add(this.LBSternchen);
             this.Controls.Add(this.LBUsername);
@@ -358,5 +371,6 @@
         private System.Windows.Forms.Label LBUsername;
         private System.Windows.Forms.Label LBSternchen;
         private System.Windows.Forms.Label LBpwprüfen;
+        private System.Windows.Forms.Label LBpwlänge;
     }
 }
