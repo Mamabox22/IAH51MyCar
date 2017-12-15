@@ -122,7 +122,7 @@ using Autosausleihen.Model;
                     // open connection to database
                     con.Open();
                     MessageBox.Show("Connected");
-                    MySqlCommand com = new MySqlCommand("insert into User (Name, Vorname, Email, Telefon, Adresse, Postleitzahl, Ort, Username, Passwort,) values ('" + kundenmodel.Name + "','" + kundenmodel.Vorname + "' ,'" + kundenmodel.Email + "', '" + kundenmodel.Telefon + "', '" + kundenmodel.Adresse + "', '" + kundenmodel.Postleitzahl + "', '" + kundenmodel.Ort + "', '" + kundenmodel.Username + "', '" + kundenmodel.Passwort + "' )", con);
+                    MySqlCommand com = new MySqlCommand("insert into user (Name, Vorname, Email, Telefon, Adresse, Postleitzahl, Ort, Username, Passwort) values ('" + kundenmodel.Name + "','" + kundenmodel.Vorname + "' ,'" + kundenmodel.Email + "', '" + kundenmodel.Telefon + "', '" + kundenmodel.Adresse + "', '" + kundenmodel.Postleitzahl + "', '" + kundenmodel.Ort + "', '" + kundenmodel.Username + "', '" + kundenmodel.Passwort + "' )", con);
                     MessageBox.Show("User wurde erstellt");
                     // Insert UserModel in User
 
