@@ -55,6 +55,7 @@
             this.LBSternchen = new System.Windows.Forms.Label();
             this.LBpwprüfen = new System.Windows.Forms.Label();
             this.LBpwlänge = new System.Windows.Forms.Label();
+            this.BTNAgb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBName
@@ -263,9 +264,9 @@
             this.LBUsername.AutoSize = true;
             this.LBUsername.Location = new System.Drawing.Point(167, 44);
             this.LBUsername.Name = "LBUsername";
-            this.LBUsername.Size = new System.Drawing.Size(55, 13);
+            this.LBUsername.Size = new System.Drawing.Size(59, 13);
             this.LBUsername.TabIndex = 24;
-            this.LBUsername.Text = "Username";
+            this.LBUsername.Text = "Username*";
             // 
             // LBSternchen
             // 
@@ -299,11 +300,22 @@
             this.LBpwlänge.Text = "Ihr Passwort muss mehr als 6 Zeichen haben,";
             this.LBpwlänge.Visible = false;
             // 
+            // BTNAgb
+            // 
+            this.BTNAgb.Location = new System.Drawing.Point(170, 386);
+            this.BTNAgb.Name = "BTNAgb";
+            this.BTNAgb.Size = new System.Drawing.Size(75, 23);
+            this.BTNAgb.TabIndex = 28;
+            this.BTNAgb.Text = "AGB";
+            this.BTNAgb.UseVisualStyleBackColor = true;
+            this.BTNAgb.Click += new System.EventHandler(this.BTNAgb_Click);
+            // 
             // Anmeldung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 451);
+            this.ClientSize = new System.Drawing.Size(371, 452);
+            this.Controls.Add(this.BTNAgb);
             this.Controls.Add(this.LBpwlänge);
             this.Controls.Add(this.LBpwprüfen);
             this.Controls.Add(this.LBSternchen);
@@ -372,5 +384,6 @@
         private System.Windows.Forms.Label LBSternchen;
         private System.Windows.Forms.Label LBpwprüfen;
         private System.Windows.Forms.Label LBpwlänge;
+        private System.Windows.Forms.Button BTNAgb;
     }
 }

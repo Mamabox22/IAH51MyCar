@@ -15,9 +15,10 @@ namespace Autosausleihen.View
     {
         public readonly MySqlDataReader reader;
 
-        public Buchung()
+        public Buchung(string ID)
         {
             InitializeComponent();
+            TBA_ID.Text = ID;
 
         //In Dieser Region sind die vorher benutzen SQL Anweisungen welche jeweils Werte abfragen (Wurde probehalber ersetzt)
 #region

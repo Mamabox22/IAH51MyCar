@@ -27,7 +27,7 @@ namespace Autosausleihen
 
         public void RegistrierenButtonEnableDisable() //Diese Methode dient dazu den Registrierenbutton erst dann freizugeben wenn in alle Pflichtfelder etwas eingetragen wurde. Die Passwörter müssen auch gleich sein.
         {
-            if (!string.IsNullOrWhiteSpace(TBRName.Text) & !string.IsNullOrWhiteSpace(TBREmail.Text) & !string.IsNullOrWhiteSpace(TBRPasswort.Text) & !string.IsNullOrWhiteSpace(TBRPasswortW.Text) & !string.IsNullOrWhiteSpace(TBRAdresse.Text) & !string.IsNullOrWhiteSpace(TBRZahlung.Text) & !string.IsNullOrWhiteSpace(TBRPostleitzahl.Text) & CBAGBs.Checked == true & TBRPasswort.Text == TBRPasswortW.Text)
+            if (!string.IsNullOrWhiteSpace(TBRName.Text) & !string.IsNullOrWhiteSpace(TBREmail.Text) & !string.IsNullOrWhiteSpace(TBRPasswort.Text) & !string.IsNullOrWhiteSpace(TBRPasswortW.Text) & !string.IsNullOrWhiteSpace(TBRAdresse.Text) & !string.IsNullOrWhiteSpace(TBRZahlung.Text) & !string.IsNullOrWhiteSpace(TBRPostleitzahl.Text) & !string.IsNullOrWhiteSpace(TBRUsername.Text) & CBAGBs.Checked == true & TBRPasswort.Text == TBRPasswortW.Text)
             {
                 TBRInsert.Enabled = true;
             }
@@ -191,8 +191,11 @@ namespace Autosausleihen
 
         private void TBRInsert_Click(object sender, EventArgs e)
         {
-
-            if (TBRPasswort.Text == TBRPasswortW.Text)
+    /*        if(TBREmail.Text = MySql.Data.)
+            {
+                MessageBox.Show("Die E-Mail-Adresse wird schon verwendet. Bitte eine andere verwenden.");
+            }
+      */      if (TBRPasswort.Text == TBRPasswortW.Text)
             {
 
                 MySQL.InsertUser(new Model.UserModel(TBRName.Text, TBRVorname.Text, TBREmail.Text, ValueTelefon, TBRAdresse.Text, ValuePLZ, TBROrt.Text, TBRUsername.Text, TBRPasswort.Text));
@@ -201,6 +204,11 @@ namespace Autosausleihen
 
             }
           
+        }
+
+        private void BTNAgb_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("(1) Bitte die AGB von einer anderen Carsharing app durchlesen. Die AGB sind im Grunde dieselben.", "Allgemeine Geschäftsbedingungen");
         }
 
     }

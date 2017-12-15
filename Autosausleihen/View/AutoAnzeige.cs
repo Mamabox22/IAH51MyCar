@@ -53,57 +53,11 @@ namespace Autosausleihen
         
         //In dieser Region werden Strings erstellt in welche die Werte für die Buchung aus ausgewählten Textboxen geschrieben werden
 #region
-        private void TBAHersteller_TextChanged(object sender, EventArgs e)
-        {
-            Buchung Hersteller = new Buchung
-            {
-                Herstellerstring = TBAHersteller.Text
-            };
-        }
 
-        private void TBAModell_TextChanged(object sender, EventArgs e)
-        {
-            Buchung Modell = new Buchung
-            {
-                Modellstring = TBAModell.Text
-            };
-        }
-
-        private void TBAName_TextChanged(object sender, EventArgs e)
-        {
-            Buchung Name = new Buchung
-            {
-                Namestring = TBAName.Text
-            };
-        }
-
-        private void TBABaujahr_TextChanged(object sender, EventArgs e)
-        {
-            Buchung Baujahr = new Buchung
-            {
-                Baujahrstring = TBABaujahr.Text
-            };
-        }
-
-        private void TBAFarbe_TextChanged(object sender, EventArgs e)
-        {
-            Buchung Farbe = new Buchung
-            {
-                Farbestring = TBAFarbe.Text
-            };
-        }
-
-        private void TBAA_ID_TextChanged(object sender, EventArgs e)
-        {
-            Buchung ID = new Buchung
-            {
-                IDstring = TBAA_ID.Text
-            };
-        }
 
         private void BTMieten_Click(object sender, EventArgs e)
         {
-            Buchung buchung = new Buchung();
+            Buchung buchung = new Buchung(TBAA_ID.Text);
             buchung.Show();
 
         }

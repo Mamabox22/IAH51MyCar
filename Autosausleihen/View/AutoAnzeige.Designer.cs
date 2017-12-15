@@ -366,7 +366,7 @@
             this.TBAHersteller.Name = "TBAHersteller";
             this.TBAHersteller.Size = new System.Drawing.Size(121, 20);
             this.TBAHersteller.TabIndex = 119;
-            this.TBAHersteller.TextChanged += new System.EventHandler(this.TBAHersteller_TextChanged);
+            
             // 
             // TBAModell
             // 
@@ -374,7 +374,6 @@
             this.TBAModell.Name = "TBAModell";
             this.TBAModell.Size = new System.Drawing.Size(121, 20);
             this.TBAModell.TabIndex = 120;
-            this.TBAModell.TextChanged += new System.EventHandler(this.TBAModell_TextChanged);
             // 
             // TBAName
             // 
@@ -382,7 +381,6 @@
             this.TBAName.Name = "TBAName";
             this.TBAName.Size = new System.Drawing.Size(121, 20);
             this.TBAName.TabIndex = 121;
-            this.TBAName.TextChanged += new System.EventHandler(this.TBAName_TextChanged);
             // 
             // label12
             // 
@@ -399,7 +397,6 @@
             this.TBAFarbe.Name = "TBAFarbe";
             this.TBAFarbe.Size = new System.Drawing.Size(121, 20);
             this.TBAFarbe.TabIndex = 124;
-            this.TBAFarbe.TextChanged += new System.EventHandler(this.TBAFarbe_TextChanged);
             // 
             // TBABaujahr
             // 
@@ -407,7 +404,6 @@
             this.TBABaujahr.Name = "TBABaujahr";
             this.TBABaujahr.Size = new System.Drawing.Size(121, 20);
             this.TBABaujahr.TabIndex = 125;
-            this.TBABaujahr.TextChanged += new System.EventHandler(this.TBABaujahr_TextChanged);
             // 
             // TBAVerfügbar
             // 
@@ -483,7 +479,6 @@
             this.TBAA_ID.Name = "TBAA_ID";
             this.TBAA_ID.Size = new System.Drawing.Size(121, 20);
             this.TBAA_ID.TabIndex = 132;
-            this.TBAA_ID.TextChanged += new System.EventHandler(this.TBAA_ID_TextChanged);
             // 
             // LBA_ID
             // 
