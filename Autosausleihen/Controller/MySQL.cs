@@ -13,6 +13,7 @@ using Autosausleihen.Model;
     {
         //Connectionstring zur SQLDatenbank
         public static string ConnectionString = @"host=mysql8.db4free.net;user=iah51;password=gso-koeln;database=mycar;port=3307;";
+        
 
         #region Auto
 
@@ -119,7 +120,7 @@ using Autosausleihen.Model;
                     {
                         // open connection to database
                         con.Open();
-                        MySqlCommand com = new MySqlCommand("insert into user (Name, Vorname, Email, Telefon, Adresse, Postleitzahl, Ort, Username, Passwort) values ('" + kundenmodel.Name + "','" + kundenmodel.Vorname + "' ,'" + kundenmodel.Email + "', '" + kundenmodel.Telefon + "', '" + kundenmodel.Adresse + "', '" + kundenmodel.Postleitzahl + "', '" + kundenmodel.Ort + "', '" + kundenmodel.Username + "', '" + kundenmodel.Passwort + "' )", con);
+                        MySqlCommand com = new MySqlCommand("insert into user (Name, Vorname, Email, Telefon, Adresse, Postleitzahl, Ort, Username, Passwort, AdminUnterscheidung) values ('" + kundenmodel.Name + "','" + kundenmodel.Vorname + "' ,'" + kundenmodel.Email + "', '" + kundenmodel.Telefon + "', '" + kundenmodel.Adresse + "', '" + kundenmodel.Postleitzahl + "', '" + kundenmodel.Ort + "', '" + kundenmodel.Username + "', '" + kundenmodel.Passwort + "', '" + kundenmodel.AdminUnterscheidung + "' )", con);
                         
                         // Insert UserModel in User
 

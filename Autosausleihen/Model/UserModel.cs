@@ -41,7 +41,7 @@ namespace Autosausleihen.Model
 
         public string Passwort { get; set; }
 
-        public bool Admin { get; set; }
+        public int AdminUnterscheidung = 0;
         
 
     }

@@ -30,7 +30,6 @@
         {
             this.BTRegistrierung = new System.Windows.Forms.Button();
             this.BTLogIN = new System.Windows.Forms.Button();
-            this.BTHinzufügen = new System.Windows.Forms.Button();
             this.TBLUsername = new System.Windows.Forms.TextBox();
             this.TBLPasswort = new System.Windows.Forms.TextBox();
             this.LBUsername = new System.Windows.Forms.Label();
@@ -40,10 +39,10 @@
             // BTRegistrierung
             // 
             this.BTRegistrierung.BackColor = System.Drawing.Color.Transparent;
-            this.BTRegistrierung.Location = new System.Drawing.Point(191, 302);
+            this.BTRegistrierung.Location = new System.Drawing.Point(213, 279);
             this.BTRegistrierung.Margin = new System.Windows.Forms.Padding(4);
             this.BTRegistrierung.Name = "BTRegistrierung";
-            this.BTRegistrierung.Size = new System.Drawing.Size(193, 32);
+            this.BTRegistrierung.Size = new System.Drawing.Size(149, 32);
             this.BTRegistrierung.TabIndex = 4;
             this.BTRegistrierung.Text = "Jetzt Registrieren";
             this.BTRegistrierung.UseVisualStyleBackColor = false;
@@ -51,25 +50,14 @@
             // 
             // BTLogIN
             // 
-            this.BTLogIN.Location = new System.Drawing.Point(191, 266);
+            this.BTLogIN.Location = new System.Drawing.Point(214, 226);
             this.BTLogIN.Margin = new System.Windows.Forms.Padding(4);
             this.BTLogIN.Name = "BTLogIN";
-            this.BTLogIN.Size = new System.Drawing.Size(193, 28);
+            this.BTLogIN.Size = new System.Drawing.Size(149, 28);
             this.BTLogIN.TabIndex = 3;
             this.BTLogIN.Text = "Einloggen";
             this.BTLogIN.UseVisualStyleBackColor = true;
             this.BTLogIN.Click += new System.EventHandler(this.BTLogIN_Click);
-            // 
-            // BTHinzufügen
-            // 
-            this.BTHinzufügen.Location = new System.Drawing.Point(224, 202);
-            this.BTHinzufügen.Margin = new System.Windows.Forms.Padding(4);
-            this.BTHinzufügen.Name = "BTHinzufügen";
-            this.BTHinzufügen.Size = new System.Drawing.Size(131, 57);
-            this.BTHinzufügen.TabIndex = 6;
-            this.BTHinzufügen.Text = "Autos hinzufügen (Test)";
-            this.BTHinzufügen.UseVisualStyleBackColor = true;
-            this.BTHinzufügen.Click += new System.EventHandler(this.BTHinzufügen_Click);
             // 
             // TBLUsername
             // 
@@ -122,7 +110,6 @@
             this.Controls.Add(this.LBUsername);
             this.Controls.Add(this.TBLPasswort);
             this.Controls.Add(this.TBLUsername);
-            this.Controls.Add(this.BTHinzufügen);
             this.Controls.Add(this.BTLogIN);
             this.Controls.Add(this.BTRegistrierung);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -142,7 +129,6 @@
 
         private System.Windows.Forms.Button BTRegistrierung;
         private System.Windows.Forms.Button BTLogIN;
-        private System.Windows.Forms.Button BTHinzufügen;
         private System.Windows.Forms.TextBox TBLUsername;
         private System.Windows.Forms.TextBox TBLPasswort;
         private System.Windows.Forms.Label LBUsername;

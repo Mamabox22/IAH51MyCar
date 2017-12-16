@@ -206,6 +206,7 @@ namespace Autosausleihen
                 // Registriert Kunden
                 AutoAnzeige Auswahl = new AutoAnzeige();
                 Auswahl.Show();
+                Close();
                 //Verweist auf neue Form
 
             }

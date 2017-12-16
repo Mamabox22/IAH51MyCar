@@ -14,6 +14,7 @@ namespace Autosausleihen
     public partial class MainForm : Form
     {
         int i;
+        int iadmin;
         public MainForm()
         {
             InitializeComponent();
@@ -45,21 +46,31 @@ namespace Autosausleihen
 
                     if (i == 0)
                     {
-                        MessageBox.Show("Der Username oder das Passwort sind falsch!");
+                        MessageBox.Show("Der Username oder das Passwort ist falsch!");
                     }
                     else
                     {
-                        AutoAnzeige anzeige = new AutoAnzeige();
-                        anzeige.Show();
-                        Hide();
-                    }
-            con.Close();
-        }
+                        cmd.CommandText = "Select Count(AdminUnterscheidung) from user where Username ='" + TBLUsername.Text + "' ";
+                        cmd.ExecuteNonQuery();
 
-        private void BTHinzufügen_Click(object sender, EventArgs e)
-        {
-            AutosHinzufügen hinzufügen = new AutosHinzufügen();
-            hinzufügen.Show();
+                        DataTable adminTable = new DataTable();
+                        MySqlDataAdapter daadmin = new MySqlDataAdapter(cmd);
+                        daadmin.Fill(adminTable);
+                        iadmin = Convert.ToInt16(adminTable.Rows.Count.ToString());
+                        if (iadmin == 1)
+                        {
+                            AutosHinzufügen hinzufügen = new AutosHinzufügen();
+                            hinzufügen.Show();
+                            Hide();
+                        }
+                        else
+                        {
+                            AutoAnzeige anzeige = new AutoAnzeige();
+                            anzeige.Show();
+                            Hide();
+                        }
+                    }
+                    con.Close();
         }
     }
 }
