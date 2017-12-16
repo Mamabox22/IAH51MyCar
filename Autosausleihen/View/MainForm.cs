@@ -14,7 +14,7 @@ namespace Autosausleihen
     public partial class MainForm : Form
     {
         int i;
-        int iadmin;
+        string iadmin;
         public MainForm()
         {
             InitializeComponent();
@@ -43,34 +43,40 @@ namespace Autosausleihen
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(userTable);
             i = Convert.ToInt32(userTable.Rows.Count.ToString());
+            con.Close();
+                if (i == 0)
+                {
+                MessageBox.Show("Der Username oder das Passwort ist falsch!");
+                }
+                else
+                {
+                    string Adminquery = "Select AdminUnterscheidung from user where Username ='" + TBLUsername.Text + "' ";
 
-                    if (i == 0)
-                    {
-                        MessageBox.Show("Der Username oder das Passwort ist falsch!");
-                    }
-                    else
-                    {
-                        cmd.CommandText = "Select Count(AdminUnterscheidung) from user where Username ='" + TBLUsername.Text + "' ";
-                        cmd.ExecuteNonQuery();
+                    con.Open();
+                    
+                    MySqlConnection Conn = new MySqlConnection(MySQL.ConnectionString);
+                    MySqlCommand Comm1 = new MySqlCommand(Adminquery, Conn);
+                    Conn.Open();
+                    MySqlDataReader DR1 = Comm1.ExecuteReader();
 
-                        DataTable adminTable = new DataTable();
-                        MySqlDataAdapter daadmin = new MySqlDataAdapter(cmd);
-                        daadmin.Fill(adminTable);
-                        iadmin = Convert.ToInt16(adminTable.Rows.Count.ToString());
-                        if (iadmin == 1)
-                        {
-                            AutosHinzufügen hinzufügen = new AutosHinzufügen();
-                            hinzufügen.Show();
-                            Hide();
-                        }
-                        else
+                    if (DR1.Read())
+                    {
+                        iadmin = DR1.GetValue(0).ToString();
+                        if (iadmin == "0")
                         {
                             AutoAnzeige anzeige = new AutoAnzeige();
                             anzeige.Show();
                             Hide();
                         }
-                    }
-                    con.Close();
+                        else
+                        {
+                            AutosHinzufügen hinzufügen = new AutosHinzufügen();
+                            hinzufügen.Show();
+                            Hide();
+                        }
+                    }   
+                }
+                    
         }
     }
 }

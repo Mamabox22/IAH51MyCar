@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BTRegistrierung = new System.Windows.Forms.Button();
             this.BTLogIN = new System.Windows.Forms.Button();
             this.TBLUsername = new System.Windows.Forms.TextBox();
             this.TBLPasswort = new System.Windows.Forms.TextBox();
             this.LBUsername = new System.Windows.Forms.Label();
             this.LBPasswort = new System.Windows.Forms.Label();
+            this.Test = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // BTRegistrierung
@@ -98,6 +101,19 @@
             this.LBPasswort.TabIndex = 7;
             this.LBPasswort.Text = "Passwort:";
             // 
+            // Test
+            // 
+            this.Test.Location = new System.Drawing.Point(42, 211);
+            this.Test.Name = "Test";
+            this.Test.Size = new System.Drawing.Size(100, 22);
+            this.Test.TabIndex = 8;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,6 +122,7 @@
             this.BackgroundImage = global::Autosausleihen.Properties.Resources.AutoMainForm;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(555, 383);
+            this.Controls.Add(this.Test);
             this.Controls.Add(this.LBPasswort);
             this.Controls.Add(this.LBUsername);
             this.Controls.Add(this.TBLPasswort);
@@ -133,5 +150,7 @@
         private System.Windows.Forms.TextBox TBLPasswort;
         private System.Windows.Forms.Label LBUsername;
         private System.Windows.Forms.Label LBPasswort;
+        private System.Windows.Forms.TextBox Test;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
