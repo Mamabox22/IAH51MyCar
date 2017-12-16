@@ -52,16 +52,16 @@ namespace Autosausleihen
                 {
                     string Adminquery = "Select AdminUnterscheidung from user where Username ='" + TBLUsername.Text + "' ";
 
-                    con.Open();
+                    
                     
                     MySqlConnection Conn = new MySqlConnection(MySQL.ConnectionString);
                     MySqlCommand Comm1 = new MySqlCommand(Adminquery, Conn);
                     Conn.Open();
-                    MySqlDataReader DR1 = Comm1.ExecuteReader();
+                    MySqlDataReader AdminReader = Comm1.ExecuteReader();
 
-                    if (DR1.Read())
+                    if (AdminReader.Read())
                     {
-                        iadmin = DR1.GetValue(0).ToString();
+                        iadmin = AdminReader.GetValue(0).ToString();
                         if (iadmin == "0")
                         {
                             AutoAnzeige anzeige = new AutoAnzeige();
@@ -74,9 +74,11 @@ namespace Autosausleihen
                             hinzufügen.Show();
                             Hide();
                         }
-                    }   
-                }
+                    }
+                    Conn.Close();
+            }
                     
         }
+
     }
 }
