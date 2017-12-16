@@ -217,6 +217,13 @@ namespace Autosausleihen
             MessageBox.Show("(1) Bitte die AGB von einer anderen Carsharing app durchlesen. Die AGB sind im Grunde dieselben.", "Allgemeine Geschäftsbedingungen");
         }
 
+        private void Anmeldung_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+            MainForm mainform = new MainForm();
+            mainform.Close();
+
+        }
     }
 
 }

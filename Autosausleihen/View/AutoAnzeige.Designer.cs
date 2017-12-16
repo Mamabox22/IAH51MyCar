@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutoAnzeige));
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.NameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -85,36 +86,40 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(274, 148);
+            this.NameLabel.Location = new System.Drawing.Point(365, 182);
+            this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(35, 13);
+            this.NameLabel.Size = new System.Drawing.Size(45, 17);
             this.NameLabel.TabIndex = 6;
             this.NameLabel.Text = "Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(274, 107);
+            this.label1.Location = new System.Drawing.Point(365, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Modell";
             // 
             // Hersteller
             // 
             this.Hersteller.AutoSize = true;
-            this.Hersteller.Location = new System.Drawing.Point(274, 62);
+            this.Hersteller.Location = new System.Drawing.Point(365, 76);
+            this.Hersteller.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Hersteller.Name = "Hersteller";
-            this.Hersteller.Size = new System.Drawing.Size(51, 13);
+            this.Hersteller.Size = new System.Drawing.Size(69, 17);
             this.Hersteller.TabIndex = 10;
             this.Hersteller.Text = "Hersteller";
             // 
             // CBCabrio
             // 
             this.CBCabrio.AutoSize = true;
-            this.CBCabrio.Location = new System.Drawing.Point(247, 213);
+            this.CBCabrio.Location = new System.Drawing.Point(329, 262);
+            this.CBCabrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBCabrio.Name = "CBCabrio";
-            this.CBCabrio.Size = new System.Drawing.Size(56, 17);
+            this.CBCabrio.Size = new System.Drawing.Size(71, 21);
             this.CBCabrio.TabIndex = 3;
             this.CBCabrio.Text = "Cabrio";
             this.CBCabrio.UseVisualStyleBackColor = true;
@@ -122,9 +127,10 @@
             // CBLimousine
             // 
             this.CBLimousine.AutoSize = true;
-            this.CBLimousine.Location = new System.Drawing.Point(246, 236);
+            this.CBLimousine.Location = new System.Drawing.Point(328, 290);
+            this.CBLimousine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBLimousine.Name = "CBLimousine";
-            this.CBLimousine.Size = new System.Drawing.Size(73, 17);
+            this.CBLimousine.Size = new System.Drawing.Size(94, 21);
             this.CBLimousine.TabIndex = 5;
             this.CBLimousine.Text = "Limousine";
             this.CBLimousine.UseVisualStyleBackColor = true;
@@ -132,9 +138,10 @@
             // CBCombie
             // 
             this.CBCombie.AutoSize = true;
-            this.CBCombie.Location = new System.Drawing.Point(342, 213);
+            this.CBCombie.Location = new System.Drawing.Point(456, 262);
+            this.CBCombie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBCombie.Name = "CBCombie";
-            this.CBCombie.Size = new System.Drawing.Size(61, 17);
+            this.CBCombie.Size = new System.Drawing.Size(77, 21);
             this.CBCombie.TabIndex = 4;
             this.CBCombie.Text = "Combie";
             this.CBCombie.UseVisualStyleBackColor = true;
@@ -142,36 +149,40 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(275, 320);
+            this.label2.Location = new System.Drawing.Point(367, 394);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 18;
             this.label2.Text = "Sitzplätze";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(275, 265);
+            this.label3.Location = new System.Drawing.Point(367, 326);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(57, 17);
             this.label3.TabIndex = 16;
             this.label3.Text = "Baujahr";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(439, 263);
+            this.label4.Location = new System.Drawing.Point(585, 324);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.Size = new System.Drawing.Size(45, 17);
             this.label4.TabIndex = 37;
             this.label4.Text = "Farbe";
             // 
             // CBASitz5
             // 
             this.CBASitz5.AutoSize = true;
-            this.CBASitz5.Location = new System.Drawing.Point(699, 378);
+            this.CBASitz5.Location = new System.Drawing.Point(932, 465);
+            this.CBASitz5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBASitz5.Name = "CBASitz5";
-            this.CBASitz5.Size = new System.Drawing.Size(32, 17);
+            this.CBASitz5.Size = new System.Drawing.Size(38, 21);
             this.CBASitz5.TabIndex = 22;
             this.CBASitz5.Text = "5";
             this.CBASitz5.UseVisualStyleBackColor = true;
@@ -179,9 +190,10 @@
             // CBASitz4
             // 
             this.CBASitz4.AutoSize = true;
-            this.CBASitz4.Location = new System.Drawing.Point(671, 378);
+            this.CBASitz4.Location = new System.Drawing.Point(895, 465);
+            this.CBASitz4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBASitz4.Name = "CBASitz4";
-            this.CBASitz4.Size = new System.Drawing.Size(32, 17);
+            this.CBASitz4.Size = new System.Drawing.Size(38, 21);
             this.CBASitz4.TabIndex = 21;
             this.CBASitz4.Text = "4";
             this.CBASitz4.UseVisualStyleBackColor = true;
@@ -189,9 +201,10 @@
             // CBASitz2
             // 
             this.CBASitz2.AutoSize = true;
-            this.CBASitz2.Location = new System.Drawing.Point(639, 378);
+            this.CBASitz2.Location = new System.Drawing.Point(852, 465);
+            this.CBASitz2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBASitz2.Name = "CBASitz2";
-            this.CBASitz2.Size = new System.Drawing.Size(32, 17);
+            this.CBASitz2.Size = new System.Drawing.Size(38, 21);
             this.CBASitz2.TabIndex = 20;
             this.CBASitz2.Text = "2";
             this.CBASitz2.UseVisualStyleBackColor = true;
@@ -199,36 +212,40 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(888, 334);
+            this.label5.Location = new System.Drawing.Point(1184, 411);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.Size = new System.Drawing.Size(45, 17);
             this.label5.TabIndex = 55;
             this.label5.Text = "Farbe";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(668, 356);
+            this.label6.Location = new System.Drawing.Point(891, 438);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.Size = new System.Drawing.Size(69, 17);
             this.label6.TabIndex = 53;
             this.label6.Text = "Sitzplätze";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(879, 287);
+            this.label7.Location = new System.Drawing.Point(1172, 353);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.Size = new System.Drawing.Size(57, 17);
             this.label7.TabIndex = 52;
             this.label7.Text = "Baujahr";
             // 
             // CBACombie
             // 
             this.CBACombie.AutoSize = true;
-            this.CBACombie.Location = new System.Drawing.Point(876, 237);
+            this.CBACombie.Location = new System.Drawing.Point(1168, 292);
+            this.CBACombie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBACombie.Name = "CBACombie";
-            this.CBACombie.Size = new System.Drawing.Size(61, 17);
+            this.CBACombie.Size = new System.Drawing.Size(77, 21);
             this.CBACombie.TabIndex = 16;
             this.CBACombie.Text = "Combie";
             this.CBACombie.UseVisualStyleBackColor = true;
@@ -236,9 +253,10 @@
             // CBALimousine
             // 
             this.CBALimousine.AutoSize = true;
-            this.CBALimousine.Location = new System.Drawing.Point(780, 264);
+            this.CBALimousine.Location = new System.Drawing.Point(1040, 325);
+            this.CBALimousine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBALimousine.Name = "CBALimousine";
-            this.CBALimousine.Size = new System.Drawing.Size(73, 17);
+            this.CBALimousine.Size = new System.Drawing.Size(94, 21);
             this.CBALimousine.TabIndex = 17;
             this.CBALimousine.Text = "Limousine";
             this.CBALimousine.UseVisualStyleBackColor = true;
@@ -246,177 +264,199 @@
             // CBACabrio
             // 
             this.CBACabrio.AutoSize = true;
-            this.CBACabrio.Location = new System.Drawing.Point(778, 233);
+            this.CBACabrio.Location = new System.Drawing.Point(1037, 287);
+            this.CBACabrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBACabrio.Name = "CBACabrio";
-            this.CBACabrio.Size = new System.Drawing.Size(56, 17);
+            this.CBACabrio.Size = new System.Drawing.Size(71, 21);
             this.CBACabrio.TabIndex = 15;
             this.CBACabrio.Text = "Cabrio";
             this.CBACabrio.UseVisualStyleBackColor = true;
             // 
             // BSuche
             // 
-            this.BSuche.Location = new System.Drawing.Point(387, 78);
+            this.BSuche.Location = new System.Drawing.Point(516, 96);
+            this.BSuche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BSuche.Name = "BSuche";
-            this.BSuche.Size = new System.Drawing.Size(157, 107);
+            this.BSuche.Size = new System.Drawing.Size(209, 132);
             this.BSuche.TabIndex = 11;
             this.BSuche.Text = "Filtern";
             this.BSuche.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(611, 78);
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(815, 96);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(224, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(299, 164);
             this.pictureBox1.TabIndex = 101;
             this.pictureBox1.TabStop = false;
             // 
             // ComBHersteller
             // 
             this.ComBHersteller.FormattingEnabled = true;
-            this.ComBHersteller.Location = new System.Drawing.Point(247, 78);
+            this.ComBHersteller.Location = new System.Drawing.Point(329, 96);
+            this.ComBHersteller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComBHersteller.Name = "ComBHersteller";
-            this.ComBHersteller.Size = new System.Drawing.Size(121, 21);
+            this.ComBHersteller.Size = new System.Drawing.Size(160, 24);
             this.ComBHersteller.TabIndex = 103;
             // 
             // ComBModell
             // 
             this.ComBModell.FormattingEnabled = true;
-            this.ComBModell.Location = new System.Drawing.Point(247, 122);
+            this.ComBModell.Location = new System.Drawing.Point(329, 150);
+            this.ComBModell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComBModell.Name = "ComBModell";
-            this.ComBModell.Size = new System.Drawing.Size(121, 21);
+            this.ComBModell.Size = new System.Drawing.Size(160, 24);
             this.ComBModell.TabIndex = 104;
             // 
             // ComBName
             // 
             this.ComBName.FormattingEnabled = true;
-            this.ComBName.Location = new System.Drawing.Point(247, 164);
+            this.ComBName.Location = new System.Drawing.Point(329, 202);
+            this.ComBName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComBName.Name = "ComBName";
-            this.ComBName.Size = new System.Drawing.Size(121, 21);
+            this.ComBName.Size = new System.Drawing.Size(160, 24);
             this.ComBName.TabIndex = 105;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(668, 221);
+            this.label8.Location = new System.Drawing.Point(891, 272);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 13);
+            this.label8.Size = new System.Drawing.Size(69, 17);
             this.label8.TabIndex = 108;
             this.label8.Text = "Hersteller";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(668, 266);
+            this.label9.Location = new System.Drawing.Point(891, 327);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.Size = new System.Drawing.Size(49, 17);
             this.label9.TabIndex = 107;
             this.label9.Text = "Modell";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(668, 307);
+            this.label10.Location = new System.Drawing.Point(891, 378);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.Size = new System.Drawing.Size(45, 17);
             this.label10.TabIndex = 106;
             this.label10.Text = "Name";
             // 
             // label80
             // 
             this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(903, 62);
+            this.label80.Location = new System.Drawing.Point(1204, 76);
+            this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(38, 13);
+            this.label80.Size = new System.Drawing.Size(51, 17);
             this.label80.TabIndex = 112;
             this.label80.Text = "Straße";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(903, 105);
+            this.label11.Location = new System.Drawing.Point(1204, 129);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(21, 13);
+            this.label11.Size = new System.Drawing.Size(28, 17);
             this.label11.TabIndex = 114;
             this.label11.Text = "Ort";
             // 
             // TBAStraße
             // 
-            this.TBAStraße.Location = new System.Drawing.Point(857, 78);
+            this.TBAStraße.Location = new System.Drawing.Point(1143, 96);
+            this.TBAStraße.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAStraße.Name = "TBAStraße";
-            this.TBAStraße.Size = new System.Drawing.Size(121, 20);
+            this.TBAStraße.Size = new System.Drawing.Size(160, 22);
             this.TBAStraße.TabIndex = 115;
             // 
             // TBAOrt
             // 
-            this.TBAOrt.Location = new System.Drawing.Point(857, 121);
+            this.TBAOrt.Location = new System.Drawing.Point(1143, 149);
+            this.TBAOrt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAOrt.Name = "TBAOrt";
-            this.TBAOrt.Size = new System.Drawing.Size(121, 20);
+            this.TBAOrt.Size = new System.Drawing.Size(160, 22);
             this.TBAOrt.TabIndex = 116;
             // 
             // TBAPLZ
             // 
-            this.TBAPLZ.Location = new System.Drawing.Point(857, 162);
+            this.TBAPLZ.Location = new System.Drawing.Point(1143, 199);
+            this.TBAPLZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAPLZ.Name = "TBAPLZ";
-            this.TBAPLZ.Size = new System.Drawing.Size(121, 20);
+            this.TBAPLZ.Size = new System.Drawing.Size(160, 22);
             this.TBAPLZ.TabIndex = 117;
             // 
             // TBAHersteller
             // 
-            this.TBAHersteller.Location = new System.Drawing.Point(630, 237);
+            this.TBAHersteller.Location = new System.Drawing.Point(840, 292);
+            this.TBAHersteller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAHersteller.Name = "TBAHersteller";
-            this.TBAHersteller.Size = new System.Drawing.Size(121, 20);
+            this.TBAHersteller.Size = new System.Drawing.Size(160, 22);
             this.TBAHersteller.TabIndex = 119;
-            
             // 
             // TBAModell
             // 
-            this.TBAModell.Location = new System.Drawing.Point(630, 281);
+            this.TBAModell.Location = new System.Drawing.Point(840, 346);
+            this.TBAModell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAModell.Name = "TBAModell";
-            this.TBAModell.Size = new System.Drawing.Size(121, 20);
+            this.TBAModell.Size = new System.Drawing.Size(160, 22);
             this.TBAModell.TabIndex = 120;
             // 
             // TBAName
             // 
-            this.TBAName.Location = new System.Drawing.Point(630, 324);
+            this.TBAName.Location = new System.Drawing.Point(840, 399);
+            this.TBAName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAName.Name = "TBAName";
-            this.TBAName.Size = new System.Drawing.Size(121, 20);
+            this.TBAName.Size = new System.Drawing.Size(160, 22);
             this.TBAName.TabIndex = 121;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(864, 146);
+            this.label12.Location = new System.Drawing.Point(1152, 180);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 13);
+            this.label12.Size = new System.Drawing.Size(80, 17);
             this.label12.TabIndex = 122;
             this.label12.Text = "Postleitzahl";
             // 
             // TBAFarbe
             // 
-            this.TBAFarbe.Location = new System.Drawing.Point(857, 356);
+            this.TBAFarbe.Location = new System.Drawing.Point(1143, 438);
+            this.TBAFarbe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAFarbe.Name = "TBAFarbe";
-            this.TBAFarbe.Size = new System.Drawing.Size(121, 20);
+            this.TBAFarbe.Size = new System.Drawing.Size(160, 22);
             this.TBAFarbe.TabIndex = 124;
             // 
             // TBABaujahr
             // 
-            this.TBABaujahr.Location = new System.Drawing.Point(857, 312);
+            this.TBABaujahr.Location = new System.Drawing.Point(1143, 384);
+            this.TBABaujahr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBABaujahr.Name = "TBABaujahr";
-            this.TBABaujahr.Size = new System.Drawing.Size(121, 20);
+            this.TBABaujahr.Size = new System.Drawing.Size(160, 22);
             this.TBABaujahr.TabIndex = 125;
             // 
             // TBAVerfügbar
             // 
-            this.TBAVerfügbar.Location = new System.Drawing.Point(611, 422);
+            this.TBAVerfügbar.Location = new System.Drawing.Point(815, 519);
+            this.TBAVerfügbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAVerfügbar.Name = "TBAVerfügbar";
-            this.TBAVerfügbar.Size = new System.Drawing.Size(367, 20);
+            this.TBAVerfügbar.Size = new System.Drawing.Size(488, 22);
             this.TBAVerfügbar.TabIndex = 126;
             // 
             // BTMieten
             // 
-            this.BTMieten.Location = new System.Drawing.Point(737, 448);
+            this.BTMieten.Location = new System.Drawing.Point(983, 551);
+            this.BTMieten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTMieten.Name = "BTMieten";
-            this.BTMieten.Size = new System.Drawing.Size(148, 23);
+            this.BTMieten.Size = new System.Drawing.Size(197, 28);
             this.BTMieten.TabIndex = 127;
             this.BTMieten.Text = "Dieses Auto mieten";
             this.BTMieten.UseVisualStyleBackColor = true;
@@ -425,25 +465,28 @@
             // ComBSitzplätze
             // 
             this.ComBSitzplätze.FormattingEnabled = true;
-            this.ComBSitzplätze.Location = new System.Drawing.Point(247, 336);
+            this.ComBSitzplätze.Location = new System.Drawing.Point(329, 414);
+            this.ComBSitzplätze.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComBSitzplätze.Name = "ComBSitzplätze";
-            this.ComBSitzplätze.Size = new System.Drawing.Size(121, 21);
+            this.ComBSitzplätze.Size = new System.Drawing.Size(160, 24);
             this.ComBSitzplätze.TabIndex = 128;
             // 
             // ComBFarbe
             // 
             this.ComBFarbe.FormattingEnabled = true;
-            this.ComBFarbe.Location = new System.Drawing.Point(401, 279);
+            this.ComBFarbe.Location = new System.Drawing.Point(535, 343);
+            this.ComBFarbe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComBFarbe.Name = "ComBFarbe";
-            this.ComBFarbe.Size = new System.Drawing.Size(121, 21);
+            this.ComBFarbe.Size = new System.Drawing.Size(160, 24);
             this.ComBFarbe.TabIndex = 129;
             // 
             // ComBBaujahr
             // 
             this.ComBBaujahr.FormattingEnabled = true;
-            this.ComBBaujahr.Location = new System.Drawing.Point(248, 280);
+            this.ComBBaujahr.Location = new System.Drawing.Point(331, 345);
+            this.ComBBaujahr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComBBaujahr.Name = "ComBBaujahr";
-            this.ComBBaujahr.Size = new System.Drawing.Size(121, 21);
+            this.ComBBaujahr.Size = new System.Drawing.Size(160, 24);
             this.ComBBaujahr.TabIndex = 130;
             // 
             // lvAutos
@@ -453,10 +496,11 @@
             this.modelColumn,
             this.nameColum});
             this.lvAutos.FullRowSelect = true;
-            this.lvAutos.Location = new System.Drawing.Point(24, 62);
+            this.lvAutos.Location = new System.Drawing.Point(32, 76);
+            this.lvAutos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvAutos.MultiSelect = false;
             this.lvAutos.Name = "lvAutos";
-            this.lvAutos.Size = new System.Drawing.Size(195, 397);
+            this.lvAutos.Size = new System.Drawing.Size(259, 488);
             this.lvAutos.TabIndex = 131;
             this.lvAutos.UseCompatibleStateImageBehavior = false;
             this.lvAutos.View = System.Windows.Forms.View.Details;
@@ -475,25 +519,27 @@
             // 
             // TBAA_ID
             // 
-            this.TBAA_ID.Location = new System.Drawing.Point(857, 396);
+            this.TBAA_ID.Location = new System.Drawing.Point(1143, 487);
+            this.TBAA_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TBAA_ID.Name = "TBAA_ID";
-            this.TBAA_ID.Size = new System.Drawing.Size(121, 20);
+            this.TBAA_ID.Size = new System.Drawing.Size(160, 22);
             this.TBAA_ID.TabIndex = 132;
             // 
             // LBA_ID
             // 
             this.LBA_ID.AutoSize = true;
-            this.LBA_ID.Location = new System.Drawing.Point(888, 382);
+            this.LBA_ID.Location = new System.Drawing.Point(1184, 470);
+            this.LBA_ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBA_ID.Name = "LBA_ID";
-            this.LBA_ID.Size = new System.Drawing.Size(43, 13);
+            this.LBA_ID.Size = new System.Drawing.Size(54, 17);
             this.LBA_ID.TabIndex = 133;
             this.LBA_ID.Text = "Auto ID";
             // 
             // AutoAnzeige
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 483);
+            this.ClientSize = new System.Drawing.Size(1340, 594);
             this.Controls.Add(this.LBA_ID);
             this.Controls.Add(this.TBAA_ID);
             this.Controls.Add(this.lvAutos);
@@ -539,6 +585,7 @@
             this.Controls.Add(this.Hersteller);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NameLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AutoAnzeige";
             this.Text = "Autos leihen ";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

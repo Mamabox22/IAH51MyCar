@@ -13,7 +13,7 @@ namespace Autosausleihen
 {
     public partial class MainForm : Form
     {
-        
+        int i;
         public MainForm()
         {
             InitializeComponent();
@@ -29,20 +29,31 @@ namespace Autosausleihen
 
         private void BTLogIN_Click(object sender, EventArgs e)
         {
-            using (var con = new MySqlConnection(MySQL.ConnectionString))
-            {
-                using (var dataAdapter = new MySqlDataAdapter("select username from Kunde", con))
-                {
-                    var UsernameTable = new DataTable();
-                    dataAdapter.Fill(UsernameTable);
 
-                    foreach (var username in UsernameTable.AsEnumerable())
+            i = 0;
+            MySqlConnection con = new MySqlConnection(MySQL.ConnectionString);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * from user where Username='" + TBLUsername.Text + "' and Passwort='" + Passwort.EncryptMP5(TBLPasswort.Text) + "'";
+            cmd.ExecuteNonQuery();  
+                   
+            DataTable userTable = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(userTable);
+            i = Convert.ToInt32(userTable.Rows.Count.ToString());
+
+                    if (i == 0)
                     {
-
+                        MessageBox.Show("Der Username oder das Passwort sind falsch!");
                     }
-
-                }
-            }
+                    else
+                    {
+                        AutoAnzeige anzeige = new AutoAnzeige();
+                        anzeige.Show();
+                        Hide();
+                    }
+            con.Close();
         }
 
         private void BTHinzufügen_Click(object sender, EventArgs e)

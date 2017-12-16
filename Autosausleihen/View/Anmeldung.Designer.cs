@@ -379,6 +379,7 @@
             this.Name = "Anmeldung";
             this.ShowIcon = false;
             this.Text = "Registrieren";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Anmeldung_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

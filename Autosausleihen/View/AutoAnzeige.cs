@@ -51,16 +51,14 @@ namespace Autosausleihen
         }
         
         //In dieser Region werden Strings erstellt in welche die Werte für die Buchung aus ausgewählten Textboxen geschrieben werden
-#region
-
-
+        
         private void BTMieten_Click(object sender, EventArgs e)
         {
             Buchung buchung = new Buchung(TBAA_ID.Text);
             buchung.Show();
 
         }
-        #endregion
+        
 
 
     }

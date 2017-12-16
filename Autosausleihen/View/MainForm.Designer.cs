@@ -41,7 +41,7 @@
             // 
             this.BTRegistrierung.BackColor = System.Drawing.Color.Transparent;
             this.BTRegistrierung.Location = new System.Drawing.Point(191, 302);
-            this.BTRegistrierung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTRegistrierung.Margin = new System.Windows.Forms.Padding(4);
             this.BTRegistrierung.Name = "BTRegistrierung";
             this.BTRegistrierung.Size = new System.Drawing.Size(193, 32);
             this.BTRegistrierung.TabIndex = 4;
@@ -52,7 +52,7 @@
             // BTLogIN
             // 
             this.BTLogIN.Location = new System.Drawing.Point(191, 266);
-            this.BTLogIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTLogIN.Margin = new System.Windows.Forms.Padding(4);
             this.BTLogIN.Name = "BTLogIN";
             this.BTLogIN.Size = new System.Drawing.Size(193, 28);
             this.BTLogIN.TabIndex = 3;
@@ -63,7 +63,7 @@
             // BTHinzufügen
             // 
             this.BTHinzufügen.Location = new System.Drawing.Point(224, 202);
-            this.BTHinzufügen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTHinzufügen.Margin = new System.Windows.Forms.Padding(4);
             this.BTHinzufügen.Name = "BTHinzufügen";
             this.BTHinzufügen.Size = new System.Drawing.Size(131, 57);
             this.BTHinzufügen.TabIndex = 6;
@@ -74,7 +74,7 @@
             // TBLUsername
             // 
             this.TBLUsername.Location = new System.Drawing.Point(191, 68);
-            this.TBLUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBLUsername.Margin = new System.Windows.Forms.Padding(4);
             this.TBLUsername.Name = "TBLUsername";
             this.TBLUsername.Size = new System.Drawing.Size(192, 22);
             this.TBLUsername.TabIndex = 1;
@@ -82,7 +82,7 @@
             // TBLPasswort
             // 
             this.TBLPasswort.Location = new System.Drawing.Point(191, 138);
-            this.TBLPasswort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBLPasswort.Margin = new System.Windows.Forms.Padding(4);
             this.TBLPasswort.Name = "TBLPasswort";
             this.TBLPasswort.Size = new System.Drawing.Size(192, 22);
             this.TBLPasswort.TabIndex = 2;
@@ -126,13 +126,13 @@
             this.Controls.Add(this.BTLogIN);
             this.Controls.Add(this.BTRegistrierung);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(573, 430);
             this.MinimumSize = new System.Drawing.Size(573, 430);
             this.Name = "MainForm";
             this.ShowIcon = false;
-            this.Text = "MyCar";
+            this.Text = "a";
             this.ResumeLayout(false);
             this.PerformLayout();
 
