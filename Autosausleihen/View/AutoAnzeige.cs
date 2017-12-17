@@ -73,14 +73,49 @@ namespace Autosausleihen
                     }
                 }
             }
-
         }
         
         public void LvAutos_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lvAutos.FocusedItem != null)
-                TBAModell.Text = lvAutos.FocusedItem.Text;
+            {
+                ListViewItem item = lvAutos.SelectedItems[0];
+                TBAHersteller.Text = item.SubItems[0].Text;
+                TBAModell.Text = item.SubItems[1].Text;
+                TBAName.Text = item.SubItems[2].Text;
+                TBABaujahr.Text = item.SubItems[3].Text;
+                TBASitzplatz.Text = item.SubItems[4].Text;
+                
+            }
+            string NameQuerry = "Select * from auto where Hersteller = '" + lvAutos.FocusedItem.Text + "' ";
+            MySqlConnection con = new MySqlConnection(MySQL.ConnectionString);
+            MySqlCommand cmd = new MySqlCommand(NameQuerry, con);
+            MySqlDataReader myReader;
+            try
+            {
+                con.Open();
+                myReader = cmd.ExecuteReader();
+                while (myReader.Read())
+                {
+                    string sHersteller = myReader.GetString("Hersteller");
+                    string sModell = myReader.GetString("Modell");
+                    string sName = myReader.GetString("Name");
+                    string sBaujahr = myReader.GetInt32("Baujahr").ToString();
+                    string sSitzplatz = myReader.GetInt32("Sitzplätze").ToString();
+                    string sFarbe = myReader.GetString("Farbe");
+                    TBAHersteller.Text = sHersteller;
+                    TBAModell.Text = sModell;
+                    TBAName.Text = sName;
+                    TBABaujahr.Text = sBaujahr;
+                    TBASitzplatz.Text = sSitzplatz;
+                    TBAFarbe.Text = sFarbe;
 
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
         }
         
         //In dieser Region werden Strings erstellt in welche die Werte für die Buchung aus ausgewählten Textboxen geschrieben werden
